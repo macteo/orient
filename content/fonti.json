@@ -1,0 +1,93 @@
+{
+  "v": 1,
+  "contatto": "matteo@gavagnin.com",
+  "fonti": [
+    {
+      "id": "s3-descrizioni",
+      "titolo": "Descrizioni dei punti IOF, edizione italiana",
+      "autori": "Commissione regolamenti IOF; adattamento Swiss Orienteering; traduzione Bea Arn",
+      "editore": "IOF Rules Commission (D. Rosen, V. Frey, U. Strand-Karlsen); editore B. Elkington; adattamento Swiss Orienteering",
+      "data": "Non datato; il contenuto corrisponde alla revisione IOF del 2018",
+      "licenza": {
+        "nome": "Nessuna licenza dichiarata (copyright IOF presunto)",
+        "url": "https://orienteering.sport/iof/rules/control-descriptions/"
+      },
+      "cosaUsiamo": "nomi e definizioni dei pittogrammi, l’esempio di pagina 3, gli esempi sul terreno con le loro immagini e frasi.",
+      "attribuzione": "Riproduzione di estratti per uso familiare, senza modifiche. © International Orienteering Federation.",
+      "url": "https://orienteering.sport/iof/rules/control-descriptions/"
+    },
+    {
+      "id": "s4-purple-pen",
+      "titolo": "Pittogrammi delle descrizioni (SVG)",
+      "autori": "Purple Pen, © 2006–2007 Peter Golde; estrazione di Per Liedman",
+      "editore": "Purple Pen (Peter Golde); estrazione Per Liedman",
+      "data": "Estrazione: commit del 2024-12-28",
+      "licenza": {
+        "nome": "BSD a tre clausole",
+        "testoFile": "purple-pen-bsd.txt"
+      },
+      "cosaUsiamo": "i disegni dei pittogrammi in tutte le carte delle descrizioni.",
+      "attribuzione": "Licenza BSD a tre clausole: il testo completo è riportato in fondo a questa pagina.",
+      "url": "https://github.com/petergolde/PurplePen"
+    },
+    {
+      "id": "s1-isom",
+      "titolo": "ISOM 2017-2 CH, edizione italiana",
+      "autori": "Swiss Orienteering, Commissione Carte; traduzione C. Tarabocchia (FISO) e T. Pezzati; aggiornamento C. Moreni",
+      "editore": "Swiss Orienteering, Commissione Carte",
+      "edizione": "ISOM 2017-2 CH",
+      "data": "Versione 2022-04-08",
+      "licenza": {
+        "nome": "CC BY-ND 4.0",
+        "url": "https://creativecommons.org/licenses/by-nd/4.0/",
+        "testoFile": "cc-by-nd-4.0.md"
+      },
+      "cosaUsiamo": "numeri, nomi e descrizioni dei simboli della carta.",
+      "attribuzione": "Testi riprodotti senza modifiche. Licenza Creative Commons Attribuzione – Non opere derivate 4.0."
+    },
+    {
+      "id": "s5-isom-illustrazioni",
+      "titolo": "Illustrazioni dei simboli ISOM 2017-2",
+      "autori": "IOF Map Commission, pacchetto per le commissioni carte nazionali",
+      "editore": "IOF Map Commission",
+      "edizione": "ISOM 2017-2, Revision 6",
+      "data": "File datati da 2023-11 a 2024-02",
+      "licenza": {
+        "nome": "CC BY-ND 4.0",
+        "url": "https://creativecommons.org/licenses/by-nd/4.0/",
+        "testoFile": "cc-by-nd-4.0.md"
+      },
+      "cosaUsiamo": "i disegni dei simboli della carta, con le annotazioni come stampate nella norma.",
+      "attribuzione": "Riprodotti senza modifiche. © International Orienteering Federation.",
+      "url": "https://orienteering.sport/iof/mapping/"
+    },
+    {
+      "id": "preline",
+      "titolo": "Preline UI",
+      "autori": "Preline Labs",
+      "editore": "Preline Labs Ltd.",
+      "edizione": "5",
+      "data": "2026",
+      "licenza": {
+        "nome": "MIT (con Preline UI Fair Use License)",
+        "testoFile": "preline-mit.txt"
+      },
+      "cosaUsiamo": "i componenti dell’interfaccia.",
+      "attribuzione": "Licenza MIT.",
+      "url": "https://preline.co"
+    },
+    {
+      "id": "fonts",
+      "titolo": "Inter e JetBrains Mono",
+      "autori": "Rasmus Andersson; JetBrains",
+      "data": "Inter: 2016; JetBrains Mono: 2020",
+      "licenza": {
+        "nome": "SIL Open Font License 1.1",
+        "testoFile": "ofl-1.1.txt"
+      },
+      "cosaUsiamo": "i caratteri, ospitati sul sito stesso.",
+      "attribuzione": "SIL Open Font License 1.1.",
+      "url": "https://fontsource.org"
+    }
+  ]
+}
