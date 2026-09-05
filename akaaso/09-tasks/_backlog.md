@@ -13,7 +13,7 @@
 | 0 | ☑ done | [P1-CONTENUTI-TOOL-parse-isom](P1-CONTENUTI-TOOL-parse-isom.md) — Parse ISOM 2017-2 symbol list | Content | S | S-004, S-005, S-008, S-009 | — |
 | 0 | ☑ done | [P1-SITO-CONFIG-scaffold](P1-SITO-CONFIG-scaffold.md) — Project scaffold: Vite + TS + Tailwind 4 + Preline 5 | Config | M | infra | — |
 | 0 | ☑ done | [WAVE0-E2E-wave-gate](WAVE0-E2E-wave-gate.md) — Wave 0 post-merge gate | Test | S | — | P1-SITO-CONFIG-scaffold, P1-CONTENUTI-TOOL-parse-descrizioni, P1-CONTENUTI-TOOL-parse-isom, P1-CONTENUTI-TOOL-extract-isom, P1-CONTENUTI-TOOL-extract-esempi, P1-CONTENUTI-DATA-fonti-e-sezioni |
-| 1 | ☐ todo | [P1-ALLENAMENTO-LOGIC-serie-quiz-storage](P1-ALLENAMENTO-LOGIC-serie-quiz-storage.md) — Run reducer, quiz options, storage, seeded RNG | Logic | M | S-001, S-002, S-003, S-004, S-005, S-006 | P1-SITO-CONFIG-scaffold |
+| 1 | ☑ done | [P1-ALLENAMENTO-LOGIC-serie-quiz-storage](P1-ALLENAMENTO-LOGIC-serie-quiz-storage.md) — Run reducer, quiz options, storage, seeded RNG | Logic | M | S-001, S-002, S-003, S-004, S-005, S-006 | P1-SITO-CONFIG-scaffold |
 | 1 | ☐ todo | [P1-ALLENAMENTO-UI-facce](P1-ALLENAMENTO-UI-facce.md) — Card faces and the description-row grid | UI | M | S-001, S-002, S-003, S-004, S-005 | P1-SITO-CONFIG-scaffold |
 | 1 | ☑ done | [P1-CONTENUTI-DATA-compatibilita](P1-CONTENUTI-DATA-compatibilita.md) — Compatibility table for generated rows | Content | M | S-003, S-008 | P1-CONTENUTI-TOOL-parse-descrizioni |
 | 1 | ☑ done | [P1-CONTENUTI-DATA-righe-ufficiali](P1-CONTENUTI-DATA-righe-ufficiali.md) — Transcribe the nine official rows | Content | M | S-003, S-008 | P1-CONTENUTI-TOOL-parse-descrizioni, P1-CONTENUTI-TOOL-extract-esempi |
