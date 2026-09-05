@@ -25,8 +25,8 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 
 ## Wave 2 — 1 tasks + gate
 
-- ☐ **P1-CONTENUTI-TOOL-generate-righe** — Prefix-stable generator for description rows (Content, M)
-- ☐ **WAVE2-E2E-wave-gate** — Wave 2 post-merge gate (Test, S)
+- ☑ **P1-CONTENUTI-TOOL-generate-righe** — Prefix-stable generator for description rows (Content, M)
+- ☑ **WAVE2-E2E-wave-gate** — Wave 2 post-merge gate (Test, S)
 
 ## Wave 3 — 1 tasks + gate
 

@@ -563,7 +563,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 2,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-generate-righe",
@@ -586,6 +586,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:15:36.407Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:15:36.451Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-generate-righe, sha: 6977f09; 200 rows, seed 20260905"
         }
       ],
       "notes": null
@@ -596,7 +606,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 2,
       "effort": "S",
       "branch": "develop",
@@ -612,6 +622,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T11:15:36.484Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:15:36.518Z",
+          "event": "gate",
+          "note": "check:content all OK incl. regen diff; npm test 106 passed; tsc clean; build ok; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
