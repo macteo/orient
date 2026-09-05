@@ -826,7 +826,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-risultati",
@@ -854,6 +854,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:08:07.656Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:08:07.701Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-risultati, sha: 166ddb3"
         }
       ],
       "notes": null
@@ -953,7 +963,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "S",
       "branch": "develop",
@@ -973,6 +983,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T12:08:07.733Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:08:07.766Z",
+          "event": "gate",
+          "note": "check:content OK; npm test all green; tsc clean; build ok /orient/; full Playwright suite green; 0 conflict markers; sprite namespace fix applied this wave"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
