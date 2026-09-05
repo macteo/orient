@@ -344,7 +344,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-facce",
@@ -368,6 +368,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:51:05.429Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:51:05.524Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-facce, sha: dad0bb1; pixel test vs page-3 crop green in Playwright"
         }
       ],
       "notes": null
