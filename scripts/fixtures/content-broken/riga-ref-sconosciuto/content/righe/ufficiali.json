@@ -1,0 +1,17 @@
+{
+  "v": 1,
+  "sorgente": "S3",
+  "pagina": 3,
+  "righe": [
+    {
+      "id": "dc:ufficiale:1",
+      "numero": "1",
+      "codice": "101",
+      "celle": {
+        "D": { "rif": "99.9" }
+      },
+      "testo": "Curva striscia di palude",
+      "origine": "ufficiale"
+    }
+  ]
+}

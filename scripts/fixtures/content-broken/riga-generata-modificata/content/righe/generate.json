@@ -1,0 +1,17 @@
+{
+  "v": 1,
+  "count": 1,
+  "seed": 20260905,
+  "versioneRegole": 1,
+  "sorgente": "S3",
+  "righe": [
+    {
+      "id": "dc:gen:0001",
+      "celle": {
+        "D": { "rif": "0.1" }
+      },
+      "testo": "Più a nord",
+      "origine": "generata"
+    }
+  ]
+}

@@ -90,9 +90,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { leggiSorgente, pagine, unisciRighe } from './_text.ts';
 
-type Geometria = 'L' | 'P' | 'A' | 'T';
+export type Geometria = 'L' | 'P' | 'A' | 'T';
 
-type Simbolo = {
+export type Simbolo = {
   rif: string;
   fonte: 'S1';
   sezione: string;
@@ -119,8 +119,11 @@ type VoceEsclusa = {
 
 const QUI = dirname(fileURLToPath(import.meta.url));
 const RADICE = join(QUI, '..', '..');
-const SORGENTE_MD = join(RADICE, 'akaaso', 'sources', 'ISOM_2017-2_CH_IT.md');
-const CARTELLA_S5 = join(RADICE, 'sources', 'iof-isom-2017-2-revision-6-links');
+// Exported: scripts/check-content.ts reads the same source file and S5
+// directory to rebuild the same §3.1-3.7 inventory the parser produces,
+// instead of duplicating these paths.
+export const SORGENTE_MD = join(RADICE, 'akaaso', 'sources', 'ISOM_2017-2_CH_IT.md');
+export const CARTELLA_S5 = join(RADICE, 'sources', 'iof-isom-2017-2-revision-6-links');
 const OUT_SIMBOLI = join(RADICE, 'content', 'simboli', 'isom.json');
 const OUT_ESCLUSI = join(RADICE, 'content', 'esclusi', 'isom.json');
 
@@ -193,7 +196,7 @@ const ATTESO_SIMBOLI_ESCLUSI_SEZIONE = 3; // 601–603
 const ATTESO_SIMBOLI_ESCLUSI_ARTWORK = 1; // 550
 const ATTESO_SIMBOLI_INCLUSI = 107; // 111 - 3 - 1
 
-type RigaConPagina = { pagina: number; testo: string };
+export type RigaConPagina = { pagina: number; testo: string };
 
 function escapeRegExp(testo: string): string {
   return testo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -207,7 +210,7 @@ const RE_INTESTAZIONE_UNA_RIGA = new RegExp(`^\\d+\\s+${escapeRegExp(INTESTAZION
  * ripetuta a inizio pagina (con o senza numero di pagina, su una o due righe)
  * e i separatori "---" tra una pagina e l'altra.
  */
-function righeConPagina(testoSorgente: string): RigaConPagina[] {
+export function righeConPagina(testoSorgente: string): RigaConPagina[] {
   const risultato: RigaConPagina[] = [];
 
   for (const p of pagine(testoSorgente)) {
@@ -238,7 +241,7 @@ function righeConPagina(testoSorgente: string): RigaConPagina[] {
   return risultato;
 }
 
-type SimboloGrezzo = {
+export type SimboloGrezzo = {
   rif: string;
   nome: string;
   geometriaGrezza: string;
@@ -247,7 +250,7 @@ type SimboloGrezzo = {
 };
 
 /** Scansiona §3.1 – 3.7 (fino all'inizio del capitolo 3.8 escluso) individuando un simbolo per riga-confine. */
-function analizza(righe: RigaConPagina[]): SimboloGrezzo[] {
+export function analizza(righe: RigaConPagina[]): SimboloGrezzo[] {
   const iniziale = righe.findIndex((r) => r.testo === INIZIO_CAPITOLO);
   const finale = righe.findIndex((r) => r.testo === FINE_CAPITOLO);
   if (iniziale === -1 || finale === -1 || finale <= iniziale) {
@@ -321,7 +324,7 @@ function risolviRefArtwork(rif: string, elencoFileS5: string[]): string | null {
   return null;
 }
 
-function costruisciSimboli(
+export function costruisciSimboli(
   grezzi: SimboloGrezzo[],
   elencoFileS5: string[],
 ): { inclusi: Simbolo[]; esclusiSezione: SimboloGrezzo[]; esclusiArtwork: SimboloGrezzo[] } {
@@ -461,4 +464,12 @@ function main(): void {
   );
 }
 
-main();
+// Guarded so scripts/check-content.ts can import this module's exported
+// helpers (righeConPagina, analizza, costruisciSimboli, SORGENTE_MD,
+// CARTELLA_S5) to rebuild the same §3.1-3.7 inventory without re-running the
+// parse and its writes as a side effect of the import. Direct execution
+// (`node scripts/parse/parse-isom.ts`) is unaffected: import.meta.main is
+// true there.
+if (import.meta.main) {
+  main();
+}

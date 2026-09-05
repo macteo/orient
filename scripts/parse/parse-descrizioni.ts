@@ -63,7 +63,7 @@ const OUT_CONTATTO = join(RADICE, 'content/_contact/descrizioni-nomi.md');
 // Types (Simbolo mirrors akaaso/09-tasks/_context.md's content model).
 // ---------------------------------------------------------------------------
 
-type Colonna = 'C' | 'D' | 'E' | 'F' | 'G' | 'H';
+export type Colonna = 'C' | 'D' | 'E' | 'F' | 'G' | 'H';
 
 type Simbolo = {
   rif: string;
@@ -87,9 +87,9 @@ const DIREZIONI_ORDINE = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
 // 1. Inventario S4: sources/svg-control-descriptions/symbols/*.svg
 // ---------------------------------------------------------------------------
 
-type VoceS4 = { base: string; direzioni: Map<string, string>; piatto?: string };
+export type VoceS4 = { base: string; direzioni: Map<string, string>; piatto?: string };
 
-function leggiInventarioS4(): { voci: Map<string, VoceS4>; nonConformi: string[] } {
+export function leggiInventarioS4(): { voci: Map<string, VoceS4>; nonConformi: string[] } {
   const nomiFile = readdirSync(CARTELLA_S4).filter((f) => f.endsWith('.svg'));
   const voci = new Map<string, VoceS4>();
   const nonConformi: string[] = [];
@@ -228,7 +228,7 @@ function costruisciMarcatori(testoPagina: string, whitelist: Set<string>): Marca
   return filtrati;
 }
 
-type RigaGrezza = {
+export type RigaGrezza = {
   rif: string;
   pagina: number;
   colonna?: Colonna;
@@ -237,7 +237,7 @@ type RigaGrezza = {
   grezzo: string;
 };
 
-function estraiRigheGrezze(whitelist: Set<string>): RigaGrezza[] {
+export function estraiRigheGrezze(whitelist: Set<string>): RigaGrezza[] {
   const testoCompleto = leggiSorgente(FONTE_TESTO);
   const tutte = pagine(testoCompleto).filter((p) => p.n >= 7 && p.n <= 16);
   const righe: RigaGrezza[] = [];
@@ -277,7 +277,11 @@ function estraiRigheGrezze(whitelist: Set<string>): RigaGrezza[] {
 //    unisciRighe unisce le righe con uno spazio, senza togliere il trattino).
 // ---------------------------------------------------------------------------
 
-const NOMI: Record<string, string> = {
+// Exported for scripts/check-content.ts: the curated names double as the
+// missing-symbol message's `<nome>` when a rif that should exist (found in
+// the source text, not in content/esclusi/descrizioni.json) is absent from
+// descrizioni-punti.json.
+export const NOMI: Record<string, string> = {
   '0.1': 'Più a nord', '0.2': 'Più a sud-est', '0.3': 'superiore', '0.4': 'inferiore', '0.5': 'centrale',
   '1.1': 'Terrazzo', '1.2': 'Naso', '1.3': 'Rientranza', '1.4': 'Scarpata ripida', '1.5': 'Cava',
   '1.6': 'Muro di terra', '1.7': 'Fossa', '1.8': 'Piccola fossa', '1.9': 'Collina', '1.10': 'Collinetta',
@@ -315,8 +319,20 @@ const NOMI: Record<string, string> = {
   '12.4': 'Controllo',
 };
 
-const RIGHE_ISTRUZIONI = new Set(['13.1', '13.2', '13.3', '13.4', '13.5', '14.1', '14.2', '14.3']);
-const RIGHE_DIMENSIONI = new Set(['9.1', '9.2', '9.3', '9.4']);
+export const RIGHE_ISTRUZIONI = new Set(['13.1', '13.2', '13.3', '13.4', '13.5', '14.1', '14.2', '14.3']);
+export const RIGHE_DIMENSIONI = new Set(['9.1', '9.2', '9.3', '9.4']);
+
+/**
+ * The same whitelist `main()` builds before scanning the source text: every
+ * S4 base ref plus the two hardcoded non-S4 rows (9.1-9.4 dimension examples,
+ * 12.3 which has no S4 artwork). Exported so check-content.ts's inventory
+ * check scans the source text for exactly the refs the parser itself would
+ * recognise as row boundaries, instead of duplicating this list.
+ */
+export function costruisciWhitelistDescrizioni(): Set<string> {
+  const { voci } = leggiInventarioS4();
+  return new Set<string>([...voci.keys(), '9.1', '9.2', '9.3', '9.4', '12.3']);
+}
 
 // ISOM cross-refs: solo le righe di colonna D a pagina 7 (1.1-1.10) hanno i
 // numeri ISOM ancora attaccati alla propria riga nel testo estratto; da
@@ -614,4 +630,12 @@ function main(): void {
   }
 }
 
-main();
+// Guarded so scripts/check-content.ts can import this module's exported
+// helpers (leggiInventarioS4, estraiRigheGrezze, costruisciWhitelistDescrizioni,
+// NOMI, RIGHE_ISTRUZIONI, RIGHE_DIMENSIONI) without re-running the parse and
+// its writes as a side effect of the import. Direct execution
+// (`node scripts/parse/parse-descrizioni.ts`) is unaffected: import.meta.main
+// is true there.
+if (import.meta.main) {
+  main();
+}
