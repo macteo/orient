@@ -1,0 +1,1910 @@
+{
+  "v": 1,
+  "generato": "2026-09-05",
+  "sorgente": "S3",
+  "simboli": [
+    {
+      "rif": "0.1",
+      "fonte": "S3",
+      "sezione": "colonna-c",
+      "nome": "Più a nord",
+      "descrizione": "Di due oggetti simili il più a nord oppure il più a nord di tanti oggetti simili.",
+      "colonna": "C",
+      "direzioni": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/0.1N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "0d9ed02553f52e2b23e15a14022c36319dc400511f91d776648c4ba6b5ef01be"
+      }
+    },
+    {
+      "rif": "0.2",
+      "fonte": "S3",
+      "sezione": "colonna-c",
+      "nome": "Più a sud-est",
+      "descrizione": "Di due oggetti simili il più a sud-est oppure il più a sud-est di tanti oggetti simili.",
+      "colonna": "C",
+      "direzioni": [
+        "NE",
+        "SE",
+        "SW",
+        "NW"
+      ],
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/0.2NE.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "6c9ef5f158b7c97275de155d7db6d7abedba4d246e12b618039166354f40db0f"
+      }
+    },
+    {
+      "rif": "0.3",
+      "fonte": "S3",
+      "sezione": "colonna-c",
+      "nome": "superiore",
+      "descrizione": "Quando l’oggetto del punto è direttamente sopra un oggetto simile.",
+      "colonna": "C",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/0.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "eb5267cea7816d0838d30e99667c9155b99455b1eb0aab166a26e1824aa15f89"
+      }
+    },
+    {
+      "rif": "0.4",
+      "fonte": "S3",
+      "sezione": "colonna-c",
+      "nome": "inferiore",
+      "descrizione": "Quando l’oggetto del punto è direttamente sotto un oggetto simile.",
+      "colonna": "C",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/0.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "970eb3fb10cbda640074b68e12fa82bd1a9d65eb02b3f80b1a01319318293e63"
+      }
+    },
+    {
+      "rif": "0.5",
+      "fonte": "S3",
+      "sezione": "colonna-c",
+      "nome": "centrale",
+      "descrizione": "Quando l’oggetto del punto è quello centrale rispetto ad altri oggetti simili.",
+      "colonna": "C",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/0.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "971632bde875dc3da6f5f866120c19c0fbae60aa61b7717f905c2377d4460385"
+      }
+    },
+    {
+      "rif": "1.1",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Terrazzo",
+      "descrizione": "Ripiano in un pendio.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2ba61c74c89fc3dafc3f16cd6d1cdc7408336131eac955cfb1288a1f7bc3f377"
+      }
+    },
+    {
+      "rif": "1.2",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Naso",
+      "descrizione": "Piccola sporgenza del terreno su un pendio.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "e56b1ded52d7e6a71135b6c233e2b9450ffcb5cd7f1c1ca3ab12d64a196702bc"
+      }
+    },
+    {
+      "rif": "1.3",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Rientranza",
+      "descrizione": "Insenatura del terreno su un pendio, valletta, il contrario di un naso.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "03d1750acb5b46a73ff579fdea44e71b11ea11f99597aec181f30ba9e346cdf1"
+      }
+    },
+    {
+      "rif": "1.4",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Scarpata ripida",
+      "descrizione": "Superficie di terreno più ripida del terreno circostante, chiaramente identificabile.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "9796686736035bd98dce844dbfaddec9cfb2e1d24ba7ee0f1c0b9c022fafe973"
+      },
+      "isom": [
+        "106"
+      ]
+    },
+    {
+      "rif": "1.5",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Cava",
+      "descrizione": "Luogo di estrazione di sabbia o pietre, situato su terreno pianeggiante o su un pendio.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "8aa3a2135c3cb03ee480705133ebcf45653f9473cf26d531337e2c0356dd51a4"
+      },
+      "isom": [
+        "106"
+      ]
+    },
+    {
+      "rif": "1.6",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Muro di terra",
+      "descrizione": "Muro di terra emergente dal terreno circostante; può essere parzialmente sassoso, di solito artificiale. Usato con il simbolo 8.11 per indicare un muro di terra rovinato.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.6.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "dd98ec59a08b37ebf756b838866f935060bc00790a1e51bb0a82515b3a147a0e"
+      },
+      "isom": [
+        "107",
+        "108"
+      ]
+    },
+    {
+      "rif": "1.7",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Fossa",
+      "descrizione": "Una fossa creata dall’erosione oppure un fossato, normalmente asciutto/secco.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "14bf9d1362e59469bef714d0ac107687ef2daa9206d51d036caf2f0070e6e68f"
+      },
+      "isom": [
+        "109"
+      ]
+    },
+    {
+      "rif": "1.8",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Piccola fossa",
+      "descrizione": "Una piccola fossa creata dall’erosione oppure un piccolo fossato, normalmente asciutto/secco.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.8.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "437643f7d202f44aff05db79c89f16a7d86a3359cb6980f9ccd4a7a9c2a90842"
+      },
+      "isom": [
+        "110"
+      ]
+    },
+    {
+      "rif": "1.9",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Collina",
+      "descrizione": "Rilievo, rappresentato sulla carta mediante curve di livello.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "5e7c61c7064160376f7b25344c62d0f65fd85a6fab55db6c57966548d1de42c5"
+      },
+      "isom": [
+        "101",
+        "111"
+      ]
+    },
+    {
+      "rif": "1.10",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Collinetta",
+      "descrizione": "Piccolo rilievo ben visibile. Usato con il simbolo 8.6 per indicare una collinetta rocciosa.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.10.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "627d8bada82aa1c7242b1ab441f597cb2d7a2e6c8c3c8cece267adb46293cf5c"
+      },
+      "isom": [
+        "112",
+        "113"
+      ]
+    },
+    {
+      "rif": "1.11",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Sella",
+      "descrizione": "Luogo più basso tra due punti più elevati.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.11.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "d131eb37f2331807d846f6d4f09b16417f9f8c49567201fd56f77b7095964691"
+      }
+    },
+    {
+      "rif": "1.12",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Depressione",
+      "descrizione": "Depressione o buca da cui il suolo si rialza su tutti i lati. Rappresentato sulla carta mediante curve di livello.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.12.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "580a10277c76f5b82eb299028229e3b289c2abeeadb054515a11717b7093abf8"
+      }
+    },
+    {
+      "rif": "1.13",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Buca",
+      "descrizione": "Piccola, poco profonda depressione o buca naturale da cui il suolo si rialza su tutti i lati.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.13.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "11b04f5fb6147b57dbf4ebc955c84af4bfa53842764b4faa9e39002a23faa9af"
+      }
+    },
+    {
+      "rif": "1.14",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Buca profonda",
+      "descrizione": "Cavità o buca dai lati pronunciatamente ripidi. Normalmente artificiale. Abbinato con il simbolo 8.6 indica una cavità rocciosa.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.14.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "a1ec51972ac7c4bacc72d942586be310b881c09f1e7ee0d929a147114dc12bab"
+      }
+    },
+    {
+      "rif": "1.15",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Terreno acciden- tato",
+      "descrizione": "Terreno irregolare con particolari troppo piccoli e numerosi per essere mappati individualmente; incluse tane o scavi di animali.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.15.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "5bc3e463449b44a848a1ecbfb33e03e29ddcdecd3cf8afebb423b5592b56d385"
+      }
+    },
+    {
+      "rif": "1.16",
+      "fonte": "S3",
+      "sezione": "d-morfologici",
+      "nome": "Formicaio (termitaio)",
+      "descrizione": "Cumulo creato da formiche o termiti.",
+      "colonna": "D",
+      "famiglia": "Oggetti morfologici",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/1.16.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "47885ce3e8619f8af25a12f27c086204aa3d10393bbbf6d79f14e4aabb397d82"
+      }
+    },
+    {
+      "rif": "2.1",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Roccia, parete rocciosa",
+      "descrizione": "Una roccia o una parete rocciosa, attraversabile o non attraversabile.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2587590748922887682556b117380a03d48ce3e8cda315fe30c0fdd596ba8a93"
+      }
+    },
+    {
+      "rif": "2.2",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Torre di roccia, spuntone",
+      "descrizione": "Masso a sviluppo verticale.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "6b6df997aba3c0071d996a43aa292e95a1d4e47dabdbfd9a04f7b64164ee368a"
+      }
+    },
+    {
+      "rif": "2.3",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Caverna",
+      "descrizione": "Buca in una parete rocciosa o su un lato di una collina, spesso poi con cunicoli sotterranei.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "aa4863b85526fd0017febee046b15c89ebab7c96a099b62170cf7d98d2843eb5"
+      }
+    },
+    {
+      "rif": "2.4",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Sasso",
+      "descrizione": "Frammento roccioso isolato.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "adb24fc0bd81848c211193d8e1d24fce4e259757713ca285414dbbe180ac0093"
+      }
+    },
+    {
+      "rif": "2.5",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Sassaia",
+      "descrizione": "Area ricoperta da svariati sassi da non poter essere mappati individualmente.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "480beb04d744491d0f7e1e4f2df26253386fdd944f34d3bc6ea963df10b30452"
+      }
+    },
+    {
+      "rif": "2.6",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Gruppo di sassi",
+      "descrizione": "Un piccolo gruppo di sassi così vicini da non poter essere rilevati singolarmente.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.6.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b013a47cf66dd0fa7fe882c61fa2ff3c1593eab90907947962ea315d60212b27"
+      }
+    },
+    {
+      "rif": "2.7",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Terreno pietro- so/sassoso",
+      "descrizione": "Terreno ricoperto da svariate pietre o sassi.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "7545e6604a43fdf64e264c0779d0d1bb48a76f44a51fcdbdd1041262714ae45d"
+      }
+    },
+    {
+      "rif": "2.8",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Roccia nuda",
+      "descrizione": "Area corribile non ricoperta da terra o vegetazione.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.8.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "cfa2827988346ab8bada01bb3578c46a58995a00a14e3fcd84e90de6e278e1d2"
+      }
+    },
+    {
+      "rif": "2.9",
+      "fonte": "S3",
+      "sezione": "d-rocce",
+      "nome": "Passaggio stretto",
+      "descrizione": "Varco tra due rocce o pareti rocciose che si trovano uno di fronte all’altro.",
+      "colonna": "D",
+      "famiglia": "Rocce e sassi",
+      "pagina": 8,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/2.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "43a6fe719f6e8255e00ddfa61fae456c8db370b0c880a9698792ab1ea06e0d65"
+      }
+    },
+    {
+      "rif": "3.1",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Lago",
+      "descrizione": "Grande superficie di acqua normalmente non attra- versabile.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "631541db8da0e8fa2ef9bbacf97e89de773fbf5adc9b0961ce5f0206217e699e"
+      }
+    },
+    {
+      "rif": "3.2",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Stagno",
+      "descrizione": "Superficie piccola di acqua.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "001fa889497b59c30871902fd40077cb84277d92100035dcb1e855cbd4c8513c"
+      }
+    },
+    {
+      "rif": "3.3",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Buca profonda con acqua",
+      "descrizione": "Buca profonda o depressione colma d’acqua.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "0f121ef2bf49a801c43cb68f8270d032d60d429f393b4fcbd178380ef027647e"
+      }
+    },
+    {
+      "rif": "3.4",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Fiume, ruscello, corso d’acqua",
+      "descrizione": "Corso d’acqua naturale o artificiale con acqua ferma o in movimento.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "9c7cded1929081a6867888288a35e2254ba234c1df53fecc8a97464faa260043"
+      }
+    },
+    {
+      "rif": "3.5",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Piccolo canale, rigagnolo",
+      "descrizione": "Piccolo corso d’acqua naturale o artificiale con pre- senza di acqua occasionale.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "44c86c116dce1e0da9d936138d9dd13fa035d1d419ab40d632686682a5fcfbf1"
+      }
+    },
+    {
+      "rif": "3.6",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Striscia di palude",
+      "descrizione": "Striscia di palude troppo stretta per essere carto- grafata con il simbolo della palude.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.6.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "0a1d90e8a5f462229509f332a4c868931a00030c1058b92f50b7db86060552cd"
+      }
+    },
+    {
+      "rif": "3.7",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Palude",
+      "descrizione": "Area costantemente umida con vegetazione tipica da palude.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "438d37ed416a977cca34893cfbbb0bb625ac837fa3db7925b0937b0127e5cbc4"
+      }
+    },
+    {
+      "rif": "3.8",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Isola in una palude",
+      "descrizione": "Superficie di terraferma situata nel mezzo di una pa- lude oppure tra due paludi.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.8.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "39b432dc62381a0a1305b8a056e05e76e17c36fcdbfe7f16bf0ab7448aa548c2"
+      }
+    },
+    {
+      "rif": "3.9",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Fontana",
+      "descrizione": "Condotto contenente acqua o sorgente regimentata, chiaramente visibile sul terreno. Spesso circondato da una costruzione fatta dall’uomo.*",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2b802353f98414bae2cbca376a4635f1966197e876c28970a46fa40ae2ad7b2b"
+      }
+    },
+    {
+      "rif": "3.10",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Sorgente",
+      "descrizione": "Sorgente di un corso d’acqua con chiaro sgorgare d’acqua.",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.10.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b3954749da5502367d69343e32d20ba91b887e5ea4da5671b56ec135bb281c00"
+      }
+    },
+    {
+      "rif": "3.11",
+      "fonte": "S3",
+      "sezione": "d-idrografia",
+      "nome": "Cisterna d’acqua, pozzo, abbeveratoio",
+      "descrizione": "Contenitore d’acqua costruito dall’uomo.*",
+      "colonna": "D",
+      "famiglia": "Idrografia",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/3.11.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "a8c1b3363ac84e030c221857be8792bdf6b3fc5a1dc341a34bfdb114af82404a"
+      }
+    },
+    {
+      "rif": "4.1",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Terreno aperto, campo",
+      "descrizione": "Area priva di alberi, pascolo, prato o campo. Anche brughiera o landa.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b1541642704974821057c4d281c576b12d718c8bad5b2bcc6bdadb8cc346a964"
+      }
+    },
+    {
+      "rif": "4.2",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Terreno semi-aperto",
+      "descrizione": "Area di terreno aperto con occasionali alberi o cespugli.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2da9a5ae8f0c12a2dda38588ff6ffdb67147836ef2cddde389daf361dabfed2f"
+      }
+    },
+    {
+      "rif": "4.3",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Angolo di bosco",
+      "descrizione": "Angolo o punta boschiva sporgente su un terreno aperto.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "4759f619e179e5d37e0a58381786b4aa10497b3877286dd2f8111d2bb7a7b1fb"
+      }
+    },
+    {
+      "rif": "4.4",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Radura",
+      "descrizione": "Area circoscritta priva di alberi nel bosco.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 9,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "832f667ce37be2d38a61e5c3f0899153f0668ee3e373b6e9a4a494c36b24dbba"
+      }
+    },
+    {
+      "rif": "4.5",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Boschetto fitto",
+      "descrizione": "Piccola area di bosco dove gli alberi o il sottobosco è così fitto da rendere difficile il passaggio.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "3e83db859d2c0bd49beaa7b5a24bd58c2f8125b46ba3437116fbcf01d68a2250"
+      }
+    },
+    {
+      "rif": "4.6",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Boschetto fitto, lineare",
+      "descrizione": "Una fila artificiale di alberi o cespugli difficile da attraversare.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.6.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "ee4147aad5cbce46c7123a69c24471a6cd8146d7550311775eaaf9235ea3dcc0"
+      }
+    },
+    {
+      "rif": "4.7",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Limite di vege- tazione",
+      "descrizione": "Evidente limite tra differenti tipi di alberi o di vege- tazione.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b8673473b09130db53e5ab7f3a43ef96df6f66c8ed905256cebca4314fff53b0"
+      }
+    },
+    {
+      "rif": "4.8",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Gruppo d’alberi",
+      "descrizione": "Una piccola zona di alberi in un terreno aperto.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.8.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "97aa5e02f41553322aae0f5e33361b39b5e49984d2f6c82fd20861bf554f1c9a"
+      }
+    },
+    {
+      "rif": "4.9",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Albero parti- colare",
+      "descrizione": "Un albero particolare o ben diverso in un’area di terreno aperto o nel bosco; spesso viene indicato anche il tipo di albero.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "0161d4c41d81ba7c5b1bc9068f77f57c3016979d7d8c5d6847c9a4b531a654b0"
+      }
+    },
+    {
+      "rif": "4.10",
+      "fonte": "S3",
+      "sezione": "d-vegetazione",
+      "nome": "Ceppo, radice",
+      "descrizione": "Ceppo d’albero. La radice rovesciata di un albero caduto con o senza tronco.",
+      "colonna": "D",
+      "famiglia": "Vegetazione",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/4.10.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "52c0b29e121dca7b358c16de7e4be4affd9796d6c175563b67a13cd717402f2f"
+      }
+    },
+    {
+      "rif": "5.1",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Strada",
+      "descrizione": "Strada asfaltata o sterrata, adatta ai veicoli in condizioni meteo normali.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "057127e21d837698e0ef01b7dd28137c4b7722bb5f6099620c89eb95c256f834"
+      }
+    },
+    {
+      "rif": "5.2",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Sentiero, pista",
+      "descrizione": "Una traccia visibile costruita dall’uomo o da animali. La pista può essere percorsa da veicoli fuoristrada.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "e2433f2fd3daf25b1cda6e46d9a7eb1411ab07064cc93b8cb757ea649c8b1a97"
+      }
+    },
+    {
+      "rif": "5.3",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Taglio di bosco",
+      "descrizione": "Striscia ben visibile di terreno priva di vegetazione situata nel bosco, senza un sentiero ben definito.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "4acc63e9ec70eca66253a2485760b7fa915727f56f1d9167617b705dd3406df6"
+      }
+    },
+    {
+      "rif": "5.4",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Ponte",
+      "descrizione": "Punto di passaggio sopra un corso d’acqua o un altro oggetto di forma lineare.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "d0056fd208512fb9c95c87c106022e74d592cfffde2098964175dd89f32ebcda"
+      }
+    },
+    {
+      "rif": "5.5",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Linea elettrica",
+      "descrizione": "Linea elettrica o del telefono, fili di una funivia o di uno sci lift.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "63527ed5f39629cf4d64258b0e601a92772db04512170e61836c8dc1aab8c101"
+      }
+    },
+    {
+      "rif": "5.6",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Pilone di linea elettrica",
+      "descrizione": "Supporto per una linea elettrica o del telefono, di una funivia o di uno sci lift.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.6.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "a0aea1475bb403f120f5154582e06e61e8876c28e0b5a3c16c50ee24b1434883"
+      }
+    },
+    {
+      "rif": "5.7",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Galleria",
+      "descrizione": "Un passaggio sotto strade, ferrovie, ecc.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b763b2ab3f2a062335c15aa4ffd79f5ca19157a79f5eab95b2e4aaab5db55f56"
+      }
+    },
+    {
+      "rif": "5.8",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Muro in pietra",
+      "descrizione": "Muro di pietra o terrapieno in sasso. Usato con il simbolo 8.11 per indicare un muro di pietra rovinato.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 10,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.8.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "46c7b7d2ea944b79a62bbc6b9a7487fdcd7a5db0e72ce7dcbb0e8d3a97ccf7a4"
+      }
+    },
+    {
+      "rif": "5.9",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Recinto",
+      "descrizione": "Confine in metallo o legno. Usato con il simbolo 8.11 per indicare un recinto rovinato.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b51372c6837c30b1110c485b82735490e8dd939c9785835c4666f325a3a96a87"
+      }
+    },
+    {
+      "rif": "5.10",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Punto di passaggio",
+      "descrizione": "Un passaggio attraverso o sopra un muro, un recinto o una condotta, comprendente un cancello o una scaletta.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.10.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "3d71319b70e8e1899a4049fb2045a567d3122752fcfcb05731084a3ed710b47d"
+      }
+    },
+    {
+      "rif": "5.11",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Edificio",
+      "descrizione": "Una costruzione permanente di mattoni, legno o sasso.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.11.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "c894d9bd7d6a5f8c3e4f68fe81e7511d6b26b6ff54c023af1e6e0fc69fccadee"
+      }
+    },
+    {
+      "rif": "5.12",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Area pavimen- tata",
+      "descrizione": "Un’area con una pavimentazione solida usata come posteggio o per altri scopi.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.12.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "bbbd5b7f7b631314e72d5bfee67966a6f48028c40bd2563240b6b1156e8aa57e"
+      }
+    },
+    {
+      "rif": "5.13",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Rovina, rudere",
+      "descrizione": "I resti di un edificio che è crollato.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.13.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "a5bb725a1277f3bc9dc98b7dbc5b39c16e082caa2b205fdc0d3e00ca7869b167"
+      }
+    },
+    {
+      "rif": "5.14",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Condotta",
+      "descrizione": "na condotta (gas, acqua, petrolio, ecc.) sopra il suolo.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.14.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "64a7029f1882a8eb2c81a69dd1e398ac1a5d65cc9106b1375ca7de93ffd2ce81"
+      }
+    },
+    {
+      "rif": "5.15",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Torre",
+      "descrizione": "Una costruzione alta di metallo, legno o mattoni, normalmente usata per osservazioni nel bosco.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.15.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "e9719edce451025cc0d31d1cbbd15aba94be9f113c11a99e0a987eab5083c4b7"
+      }
+    },
+    {
+      "rif": "5.16",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Posta del cac- ciatore",
+      "descrizione": "Struttura attaccata ad un albero su cui può sedersi un cacciatore o osservatore.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.16.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "101f60d3688ec46e4bf40112a71e6fdf7897d28139d86b0406ed1e9ca1653403"
+      }
+    },
+    {
+      "rif": "5.17",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Cippo di con- fine, tumulo di pietre",
+      "descrizione": "Un sasso o un mucchio di sassi creato dall’uomo. Un tumulo di pietre, memoriale, cippo di confine o un punto trigonometrico.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.17.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2c95cd86aa4fea7870b0ae25b7ff944872fe3e86c024c4ce26e4233825ebadc9"
+      }
+    },
+    {
+      "rif": "5.18",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Mangiatoia",
+      "descrizione": "Costruzione destinata a contenere foraggio per animali.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.18.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "428abcefd20b3db658409217866ce708eaf23be497253d8fa924d9b4c2378c9f"
+      }
+    },
+    {
+      "rif": "5.19",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Carbonaia",
+      "descrizione": "Resti evidenti di luogo dove in passato si produceva carbone. Piccolo ripiano artificiale in un pendio (piattaforma).",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.19.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "4db00ab9119ab909911ecceafbd8da3629dde25a57cbc427a226689b3b24f31a"
+      }
+    },
+    {
+      "rif": "5.20",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Monumento o statua",
+      "descrizione": "Un monumento, un memoriale o una statua.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.20.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "83e2346455eefeda2589cd06018cfe2c5ee21b0870d7b248b9b1de7ec82e9f43"
+      }
+    },
+    {
+      "rif": "5.23",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Sottopassaggio",
+      "descrizione": "Un’arcata, passaggio interno o passaggio attraverso una casa.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.23.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "d91335705a318f17fd23904c04ef42c2e8d2ff2b68f59960ad82c81291e73620"
+      }
+    },
+    {
+      "rif": "5.24",
+      "fonte": "S3",
+      "sezione": "d-costruzioni",
+      "nome": "Scala",
+      "descrizione": "Scala con almeno due scalini.",
+      "colonna": "D",
+      "famiglia": "Costruzioni",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/5.24.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2154f097761f04f03f14bb346f5883f288c33e66f5f2ada012fe7f5f8b0a1c5f"
+      }
+    },
+    {
+      "rif": "6.1",
+      "fonte": "S3",
+      "sezione": "d-particolari",
+      "nome": "Oggetto parti- colare",
+      "descrizione": "Se è usato, è necessario spiegarne il significato ai concorrenti nelle informazioni pre-gara.",
+      "colonna": "D",
+      "famiglia": "Simboli particolari",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/6.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "c5d75b33e030e65dd7d2ade7f17aff8c2fe53488c16a51f25ba3c15108ac9c8a"
+      }
+    },
+    {
+      "rif": "6.2",
+      "fonte": "S3",
+      "sezione": "d-particolari",
+      "nome": "Oggetto parti- colare",
+      "descrizione": "Se è usato, è necessario spiegarne il significato ai concorrenti nelle informazioni pre-gara.",
+      "colonna": "D",
+      "famiglia": "Simboli particolari",
+      "pagina": 11,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/6.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "dc6ccc32915dd1945e9219b38a488b781912113186091281f6eb8dd5c2c07343"
+      }
+    },
+    {
+      "rif": "8.1",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Basso",
+      "descrizione": "Se l’oggetto è particolarmente basso o piatto ma questo non è riconoscibile sulla carta; es. collina bassa.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "f44e093b63f4f9172154d16a890176fd885e44af58bca1ad7b566be1f0edcdeb"
+      }
+    },
+    {
+      "rif": "8.2",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Piatto, poco profondo",
+      "descrizione": "Se l’oggetto è particolarmente poco profondo ma questo non è riconoscibile dalla carta; es. rientranza piatta.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "8d26457db9c2d7320487e4c6b759dd19542640980a247d4cd38e57b8d7884b1a"
+      }
+    },
+    {
+      "rif": "8.3",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Profondo",
+      "descrizione": "Se l’oggetto è particolarmente profondo ma questo non è riconoscibile dalla carta; es. buca profonda.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "6978b75f2a6810b369fc1c69189bcac13cebd34c8571ad0cd969d48a82c6eb01"
+      }
+    },
+    {
+      "rif": "8.4",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Ricoperto di sterpi, «verde»",
+      "descrizione": "Se l’oggetto è particolarmente ricoperto di vegetazione o da cespugli che non sono cartografati; es. rovina nel «verde».",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "5f0256d349d57194b1ea0d6fab8f1254d8024307b1429acd98f491a899449fc2"
+      }
+    },
+    {
+      "rif": "8.5",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Aperto",
+      "descrizione": "Se l’oggetto è in una zona dove il numero di alberi è molto esiguo rispetto ai dintorni ma questa differenza non è carto- grafata; es. palude nel terreno aperto.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "1b29c2dd3f404d9332db7cce7ec6739dd0a91bea820aedfe37200e873f04f396"
+      }
+    },
+    {
+      "rif": "8.6",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Roccioso, sassoso",
+      "descrizione": "Se l’oggetto è in una zona rocciosa o sassosa che non è cartografata; es. buca in zona sassosa.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.6.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "5b7fbb3271bf1007657db9bc1ff5cd56886eb8974c452b0921f1fab47a6f9802"
+      }
+    },
+    {
+      "rif": "8.7",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Paludoso",
+      "descrizione": "Se l’oggetto è in una zona paludosa ma questa non è carto- grafata; es. rientranza paludosa.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "8b7d251f20f2b4d7c7385f3e02d49e371c2cd20969f793a4ef579d1e7fbf265f"
+      }
+    },
+    {
+      "rif": "8.8",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Sabbioso",
+      "descrizione": "Se l’oggetto è in una zona sabbiosa che non è cartografata; es. naso in terreno sabbioso.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.8.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "f591aac5b345037eda2e1780ef19012acc553347194522541374b5bb07d0efad"
+      }
+    },
+    {
+      "rif": "8.9",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Conifera",
+      "descrizione": "Se l’albero, o gli alberi, dell’oggetto del punto di controllo hanno aghi; es. albero particolare, conifera.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "641f152309fc8381047db8d641f06cb3145fda21003ce8b05e28c192e73a1e5f"
+      }
+    },
+    {
+      "rif": "8.10",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Latifoglia",
+      "descrizione": "Se l’albero, o gli alberi, dell’oggetto del punto di controllo hanno foglie; es. gruppo d’alberi, latifoglie.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.10.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "3f4029cff7ad0a506ff9e2939411a5d92daa86eae65d6c76d508acbd3819123b"
+      }
+    },
+    {
+      "rif": "8.11",
+      "fonte": "S3",
+      "sezione": "colonna-e",
+      "nome": "Rovinato, distrutto",
+      "descrizione": "Quando la costruzione è caduta al suolo; es. recinto rovinato.",
+      "colonna": "E",
+      "pagina": 12,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/8.11.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "79fe8d298451379cb0e873b142d3ba5c79c0a32c051a5cc76f08a721547a626e"
+      }
+    },
+    {
+      "rif": "10.1",
+      "fonte": "S3",
+      "sezione": "colonna-f",
+      "nome": "Incrocio",
+      "descrizione": "Il punto in cui due oggetti lineari si intersecano.",
+      "colonna": "F",
+      "pagina": 13,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/10.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "e5296e8a691c559efaec5fc5a116dabbd83958e87be2258a47a42d2e9c427c2a"
+      }
+    },
+    {
+      "rif": "10.2",
+      "fonte": "S3",
+      "sezione": "colonna-f",
+      "nome": "Bivio, biforcazione",
+      "descrizione": "Il punto in cui due oggetti lineari si incontrano.",
+      "colonna": "F",
+      "pagina": 13,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/10.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "7e9af7f7122f061d9beafa1b88f25631fae64042bf1e5a89b63e797e4b0167cb"
+      }
+    },
+    {
+      "rif": "11.1",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Parte (esterna) nord-est",
+      "descrizione": "Usato quando l’oggetto sporge dal terreno; es. sasso, parte nord-est; rovina, parte ovest.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.1N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b1d13de865d310e2db777c887def83115e5e27e622174883e951125e9645d300"
+      }
+    },
+    {
+      "rif": "11.2",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Bordo sud-est",
+      "descrizione": "Usato quando: a) L’oggetto si estende al di sotto del livello del terreno cir- costante e la lanterna è posata al bordo, al livello del terreno circostante; es. depressione, angolo sud-est. b) L’oggetto si estende parallelamente al terreno circostante e la lanterna si trova al bordo di questa superficie; es. palu- de, angolo ovest; radura, angolo nord-ovest.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.2N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "408884963a461e33288dc87b3f7862ebce9f685627bb90f3bed33d77f8e45f20"
+      }
+    },
+    {
+      "rif": "11.3",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Parte (interna) ovest",
+      "descrizione": "Usato quando l’oggetto ha un’estensione orizzontale e il punto di controllo non è situato né al centro né in un angolo; es. palude, parte ovest; depressione, parte sud-est.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.3N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2b3ded8244ecc003eb00f9460b1c227cefffe4ec8f9eb10dc117f80d2e69f903"
+      }
+    },
+    {
+      "rif": "11.4",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Angolo est (interno)",
+      "descrizione": "Usato quando: a) Il bordo dell’oggetto forma un angolo tra 45°–135°; es. campo, angolo est (interno). b) Un oggetto lineare compie una curva; es. recinto, angolo sud (interno); muro di sassi, angolo ovest (esterno). L’orientamento del simbolo indica la direzione in cui punta l’angolo.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.4N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "a81a9da3ea3f652a140aacc6a1f68c00a908dfc854386c97dd58d5e3174eb65d"
+      }
+    },
+    {
+      "rif": "11.5",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Angolo sud (esterno)",
+      "descrizione": "Usato quando: a) Il bordo dell’oggetto forma un angolo tra 45°–135°; es. campo, angolo est (interno). b) Un oggetto lineare compie una curva; es. recinto, angolo sud (interno); muro di sassi, angolo ovest (esterno). L’orientamento del simbolo indica la direzione in cui punta l’angolo.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.5N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "443321c783f9f12a4987baebb78e540ac0d16ca40821ae3ed2ff7a889188ad9a"
+      }
+    },
+    {
+      "rif": "11.6",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Punta sud-ovest",
+      "descrizione": "Usato quando il bordo dell’oggetto forma un angolo inferiore ai 45°; es. palude, punta sud-ovest.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.6N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2b14ef0d530680e1857e644ec1c7d5126768be3451a3038c37783b73238493fa"
+      }
+    },
+    {
+      "rif": "11.7",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Curva",
+      "descrizione": "Usato dove un oggetto lineare compie una curva dolce; es. curva di sentiero; curva di ruscello.",
+      "colonna": "G",
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.7.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "93be15294ad149e4a327a0b4db04c4c141ffb9f901ed34495d64056f4bbd749b"
+      }
+    },
+    {
+      "rif": "11.8",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Estremità nord-ovest",
+      "descrizione": "Luogo in cui inizia o termina un oggetto lineare; es. taglio di bosco, estremità nord-ovest; muro di sasso, estremità sud.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.8N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "5ac32858c23439c240b20c9dcda36180de1c0bbcb88216fe633a52a1ac39f991"
+      }
+    },
+    {
+      "rif": "11.9",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Parte superiore",
+      "descrizione": "Se l’oggetto si estende su due o più curve di livello e la lanterna è posizionata vicino all’inizio superiore; es. fossa, parte superiore.",
+      "colonna": "G",
+      "pagina": 14,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.9.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "4784fed9172955b923878e0b07229ce6314cb70e0c338bdd3a7afd51ff2ca56e"
+      }
+    },
+    {
+      "rif": "11.10",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Parte inferiore",
+      "descrizione": "Se l’oggetto si estende su due o più curve di livello e la lanterna è posizionata vicino all’inizio inferiore; es. rientranza, parte inferiore.",
+      "colonna": "G",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.10.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "0e8a38dc7ec79d208a8652c7c9458314b7dfbf5cbafe9d0779a8d1037a142e93"
+      }
+    },
+    {
+      "rif": "11.11",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "In cima a, sopra",
+      "descrizione": "Se la lanterna è posizionata sul punto più alto di un oggetto e questa posizione non è la regola; es. roccia, sopra.",
+      "colonna": "G",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.11.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "4e5c14b696aa7de4931677c8eced753ac3a70342919c904e45f79b63ff25cf34"
+      }
+    },
+    {
+      "rif": "11.12",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Sotto, al di sotto di",
+      "descrizione": "Se la lanterna è posato sotto l’oggetto; es. condotta, sotto.",
+      "colonna": "G",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.12.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "ef0cafdd4cc192ba74f74e3aa243c7e5c62953fc72df4832169eb17cdf36b53a"
+      }
+    },
+    {
+      "rif": "11.13",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Al piede (direzione non specificata)",
+      "descrizione": "Se la lanterna è posizionata dove il lato pendente dell’oggetto e il terreno circostante s’incrociano; es. terrapieno, al piede.",
+      "colonna": "G",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.13.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "e1fcb24b51874b69d6d3352dd58832af257228db216f2d0da6babe6878473720"
+      }
+    },
+    {
+      "rif": "11.14",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Piede nord-est",
+      "descrizione": "Come sopra, ma dove l’oggetto è largo abbastanza per posizionare la lanterna su più di un lato; es. collina, piede nord-est.",
+      "colonna": "G",
+      "direzioni": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.14N.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "58d01a04d669cc82df108c0592a15cec819aec448ddf21463b757f037ae3a173"
+      }
+    },
+    {
+      "rif": "11.15",
+      "fonte": "S3",
+      "sezione": "colonna-g",
+      "nome": "Tra, fra, in mezzo",
+      "descrizione": "Se la lanterna è posizionata tra due oggetti; es. tra due boschetti fitti; tra sasso e collinetta.",
+      "colonna": "G",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/11.15.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "1c4ff40b4711ba5c7402841a5fe16924c44d6a2de4181949f8bb39d543b97c1a"
+      }
+    },
+    {
+      "rif": "12.1",
+      "fonte": "S3",
+      "sezione": "colonna-h",
+      "nome": "Pronto soccorso",
+      "descrizione": "Punto di controllo con annesso pronto soccorso.",
+      "colonna": "H",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/12.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "88dba6856896913becba788332a19bf1cc65ef6a012a99cc8e76d581f79586c6"
+      }
+    },
+    {
+      "rif": "12.2",
+      "fonte": "S3",
+      "sezione": "colonna-h",
+      "nome": "Punti con rifornimento",
+      "descrizione": "Punto di controllo dove è presente un rifornimento.",
+      "colonna": "H",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/12.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "3e97772d4f7a3470b9c8bcff5a2157fec3aabdba57fc38245c82fff7efcbba6d"
+      }
+    },
+    {
+      "rif": "12.3",
+      "fonte": "S3",
+      "sezione": "colonna-h",
+      "nome": "Punto radio o TV",
+      "descrizione": "Posizione di un punto radio o TV.",
+      "colonna": "H",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/12.3.svg",
+        "formato": "svg",
+        "origine": "S3",
+        "sha256": ""
+      }
+    },
+    {
+      "rif": "12.4",
+      "fonte": "S3",
+      "sezione": "colonna-h",
+      "nome": "Controllo",
+      "descrizione": "Punto di controllo dove persone controllano il testimone.",
+      "colonna": "H",
+      "pagina": 15,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/12.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "023c1c53657bb2648cc25768435f803d4ac804593850d08a2db3ef1b745b837d"
+      }
+    },
+    {
+      "rif": "13.1",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "Seguire percorso segnalato per 60 m dal punto.",
+      "descrizione": "Seguire percorso segnalato per 60 m dal punto.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/13.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "41a8e141de40c36df170b9c4cce614a11f61d57c0d75dc3a2e95573854002426"
+      }
+    },
+    {
+      "rif": "13.2",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "Seguire percorso segnalato, 300 m tra due punti.",
+      "descrizione": "Seguire percorso segnalato, 300 m tra due punti.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/13.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "80f2cb0379de848d9a866183cb4216e793a20e9d99159750f104328c69fc557e"
+      }
+    },
+    {
+      "rif": "13.3",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "Punto o punti di passaggio obbligatori.",
+      "descrizione": "Punto o punti di passaggio obbligatori.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/13.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "be89f3ff4d7972d89c7c6bdadfcea29b199f7bb0e4ab68af8ed8b4cce26cd4c5"
+      }
+    },
+    {
+      "rif": "13.4",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "Percorso obbligatorio attraverso una zona vietata.",
+      "descrizione": "Percorso obbligatorio attraverso una zona vietata.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/13.4.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "32da1b5648eccab6fcb4711fc5e30c58510303e0bc1a15e563892d78d7a47a64"
+      }
+    },
+    {
+      "rif": "13.5",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "Seguire percorso obbligato per 50 m fino al cambio carta.",
+      "descrizione": "Seguire percorso obbligato per 50 m fino al cambio carta.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/13.5.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "b8ffcfc949b5bfe31172d9191069e2a7bf77d5ce0f5c50f7b4a2af6d405f046e"
+      }
+    },
+    {
+      "rif": "14.1",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "400 m dall’ultimo punto all’arrivo. Seguire il percorso segnalato.",
+      "descrizione": "400 m dall’ultimo punto all’arrivo. Seguire il percorso segnalato.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/14.1.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "aace0841bcbbfa5faabb5fda7b2e5f4e226db204da1585336692b6c96a994dc3"
+      }
+    },
+    {
+      "rif": "14.2",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "380 m dall’ultimo punto fino all’arrivo. Percorso non segnalato.",
+      "descrizione": "380 m dall’ultimo punto fino all’arrivo. Percorso non segnalato.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/14.2.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "a8ad29e3fd3125a8f72631bc88137765c7e3379a7425a7a0fefa0ccf680351a5"
+      }
+    },
+    {
+      "rif": "14.3",
+      "fonte": "S3",
+      "sezione": "istruzioni",
+      "nome": "150 m dall’ultimo punto all’arrivo. Percorso non segnalato fino al canalone d’arrivo, poi seguire percorso segnalato.",
+      "descrizione": "150 m dall’ultimo punto all’arrivo. Percorso non segnalato fino al canalone d’arrivo, poi seguire percorso segnalato.",
+      "pagina": 16,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/14.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "2b5ac6ece78024cdd31ef21ff15b2b56e857215a7876a863804b32258c9c563c"
+      }
+    }
+  ]
+}
