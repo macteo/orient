@@ -63,3 +63,7 @@ needs to stay private. Recorded as an open question, not a risk.
 *A base path of `/orient/` breaks absolute links.* It does, which is why
 [007](007-route-conventions.md) forbids absolute paths and
 [009](009-cicd-and-releases.md) checks every link in the built output.
+
+## Change Log
+
+- 2026-09-05 — the first attempt to enable Pages on the private repository returned "Your current plan does not support GitHub Pages for this repository"; the repository was made public (as this decision provides) and Pages enabled with build type *workflow*. URL: https://macteo.github.io/orient/ — HTTPS enforced. The open question is closed.

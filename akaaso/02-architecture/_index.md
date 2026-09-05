@@ -26,9 +26,8 @@ they are written anyway so nobody adds the thing by habit.
 
 ## Open Questions
 
-- [ ] **Repository visibility** (001). Pages on a private repository needs a
-      paid plan; the API does not show the plan from this session. Resolved
-      by the first deploy: it works, or the repository goes public.
+- [x] Repository visibility — the free plan refused Pages on the private
+      repo; made public and Pages enabled (build type workflow) on 2026-09-05.
 - [ ] **Custom domain** (001, 007). Optional; if wanted, decides the base
       path before launch rather than after.
 
