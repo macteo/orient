@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orient.example/content/schema/sezioni.schema.json",
+  "title": "Sezioni",
+  "description": "Registro dei quattro mazzi e delle loro sezioni, nell'ordine fisso della home.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "mazzi"],
+  "properties": {
+    "v": { "const": 1 },
+    "mazzi": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": false,
+      "prefixItems": [
+        { "$ref": "#/$defs/mazzoDescrizioniSimboli" },
+        { "$ref": "#/$defs/mazzoDescrizioniComplete" },
+        { "$ref": "#/$defs/mazzoEsempi" },
+        { "$ref": "#/$defs/mazzoIsom" }
+      ]
+    }
+  },
+  "$defs": {
+    "sezione": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "etichetta", "ordine"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "etichetta": { "type": "string", "minLength": 1 },
+        "ordine": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "mazzoBase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "nome", "tipo", "fonte", "ordine", "sezioni"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "nome": { "type": "string", "minLength": 1 },
+        "tipo": {
+          "type": "string",
+          "enum": ["simbolo", "riga", "esempio", "simbolo-isom"]
+        },
+        "fonte": { "type": "string", "minLength": 1 },
+        "ordine": { "type": "integer", "minimum": 1 },
+        "sezioni": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sezione" }
+        }
+      }
+    },
+    "mazzoDescrizioniSimboli": {
+      "allOf": [{ "$ref": "#/$defs/mazzoBase" }],
+      "type": "object",
+      "properties": {
+        "id": { "const": "descrizioni-simboli" },
+        "tipo": { "const": "simbolo" },
+        "sezioni": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "items": false,
+          "prefixItems": [
+            { "properties": { "id": { "const": "colonna-c" } } },
+            { "properties": { "id": { "const": "d-morfologici" } } },
+            { "properties": { "id": { "const": "d-rocce" } } },
+            { "properties": { "id": { "const": "d-idrografia" } } },
+            { "properties": { "id": { "const": "d-vegetazione" } } },
+            { "properties": { "id": { "const": "d-costruzioni" } } },
+            { "properties": { "id": { "const": "d-particolari" } } },
+            { "properties": { "id": { "const": "colonna-e" } } },
+            { "properties": { "id": { "const": "colonna-f" } } },
+            { "properties": { "id": { "const": "colonna-g" } } },
+            { "properties": { "id": { "const": "colonna-h" } } },
+            { "properties": { "id": { "const": "istruzioni" } } }
+          ]
+        }
+      }
+    },
+    "mazzoDescrizioniComplete": {
+      "allOf": [{ "$ref": "#/$defs/mazzoBase" }],
+      "type": "object",
+      "properties": {
+        "id": { "const": "descrizioni-complete" },
+        "tipo": { "const": "riga" },
+        "sezioni": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": false,
+          "prefixItems": [
+            { "properties": { "id": { "const": "ufficiali" } } },
+            { "properties": { "id": { "const": "d-morfologici" } } },
+            { "properties": { "id": { "const": "d-rocce" } } },
+            { "properties": { "id": { "const": "d-idrografia" } } },
+            { "properties": { "id": { "const": "d-vegetazione" } } },
+            { "properties": { "id": { "const": "d-costruzioni" } } },
+            { "properties": { "id": { "const": "d-particolari" } } }
+          ]
+        }
+      }
+    },
+    "mazzoEsempi": {
+      "allOf": [{ "$ref": "#/$defs/mazzoBase" }],
+      "type": "object",
+      "properties": {
+        "id": { "const": "esempi" },
+        "tipo": { "const": "esempio" },
+        "sezioni": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": false,
+          "prefixItems": [
+            { "properties": { "id": { "const": "d-morfologici" } } },
+            { "properties": { "id": { "const": "d-rocce" } } },
+            { "properties": { "id": { "const": "d-idrografia" } } },
+            { "properties": { "id": { "const": "d-vegetazione" } } },
+            { "properties": { "id": { "const": "d-costruzioni" } } },
+            { "properties": { "id": { "const": "d-particolari" } } }
+          ]
+        }
+      }
+    },
+    "mazzoIsom": {
+      "allOf": [{ "$ref": "#/$defs/mazzoBase" }],
+      "type": "object",
+      "properties": {
+        "id": { "const": "isom" },
+        "tipo": { "const": "simbolo-isom" },
+        "sezioni": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": false,
+          "prefixItems": [
+            { "properties": { "id": { "const": "forme" } } },
+            { "properties": { "id": { "const": "rocce" } } },
+            { "properties": { "id": { "const": "acqua" } } },
+            { "properties": { "id": { "const": "vegetazione" } } },
+            { "properties": { "id": { "const": "opere" } } },
+            { "properties": { "id": { "const": "tracciato" } } }
+          ]
+        }
+      }
+    }
+  }
+}
