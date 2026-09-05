@@ -7,3 +7,4 @@ transcrive. Ogni agente che aggiunge un journey aggiunge qui una sola riga.
 | Test name | Story |
 |---|---|
 | journey-prima-serie-di-flash-card | S-001 |
+| journey-righe-complete | S-003 | `e2e/journeys/righe-complete.spec.ts` |
