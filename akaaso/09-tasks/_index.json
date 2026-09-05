@@ -548,6 +548,11 @@
           "at": "2026-09-05T10:56:02.701Z",
           "event": "gate",
           "note": "check:content green (9 OK, 1 skipped: generate.json); npm test 97 passed; tsc clean; build ok; 0 conflict markers"
+        },
+        {
+          "at": "2026-09-05T10:56:43.470Z",
+          "event": "gate",
+          "note": "correction: one test failed after merge (hardcoded schema count); fixed on develop; npm test now 96 passed, 1 skipped — gate green"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
