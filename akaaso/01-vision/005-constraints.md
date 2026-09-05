@@ -13,10 +13,11 @@
 - **Money.** Static hosting only. No paid service, no server to run.
 - **Form.** A website with a public URL that works in a phone browser. Fixed
   by the brief. The stack is a Level 2 decision.
-- **Content.** Only documents from `sources/`, and in v1 only two of the
-  three: [S3] and [S1]. [S2] stays converted and unused
-  ([004](004-scope-boundaries.md)). No other symbol source. Artwork
-  extraction is a Level 3 decision.
+- **Content.** Text (names, definitions, sections) from [S3] and [S1]
+  only; [S2] stays converted and unused ([004](004-scope-boundaries.md)).
+  Artwork from [S4] for the control descriptions and [S5] for ISOM, both
+  found on 2026-09-05. No other source. The extraction pipeline is a
+  Level 3 decision.
 - **Language.** Interface and content in Italian. Names and definitions are
   reproduced verbatim from the sources — the founder's instruction and the
   NoDerivatives licence say the same thing. The specification itself stays
@@ -24,14 +25,24 @@
 - **Licences.**
   - [S1] and [S2] are CC BY-ND 4.0 [F1]: their symbol drawings may be
     reproduced verbatim, with attribution, and not modified.
-  - [S3] states no licence. IOF copyright is presumed. v1 reproduces its
-    pictograms verbatim with attribution, for family use. **The founder
-    accepted this risk on 2026-09-05**, which resolves tension T1 for v1.
-    It is revisited before any promotion beyond the family.
+  - [S3] states no licence. IOF copyright is presumed. **The founder
+    accepted this risk on 2026-09-05** for family use, which resolved
+    tension T1 for v1. Later the same day the risk shrank: the pictogram
+    artwork now comes from [S4], Purple Pen's vectors under a BSD licence,
+    so nothing drawn is taken from [S3] any more — only its Italian names
+    and one-line definitions, which [S4]'s `lang.json` also carries in
+    Italian as a cross-check.
+  - [S5], the IOF Map Commission's own per-symbol illustrations for ISOM
+    2017-2, is CC BY-ND 4.0 like [S1] and supplies the ISOM deck's artwork.
+    Cropping or masking the printed annotations is reproduction of a part,
+    not adaptation; redrawing would be, and is not done.
 - **No personal data.** The site collects nothing: no accounts, no analytics,
   no cookies, no third-party requests. Children use it. This is the one rule
   in Level 1 that code can break, and it is the one with an enforcement
-  mechanism.
+  mechanism. Results stored in the learner's own browser
+  ([004](004-scope-boundaries.md), since 2026-09-05) do not breach it: they
+  never leave the device, carry no name or identifier, and the site cannot
+  read them from anywhere else.
 
 ## The Reasoning
 
@@ -86,4 +97,9 @@ option 2 or 3 is executed first.
 
 ## Change Log
 
+- 2026-09-05 (later) — clarified that on-device results storage (1.004 amendment) is compatible with the no-personal-data rule; the rule itself is unchanged.
+- 2026-09-05 (later) — artwork sources named: [S4] Purple Pen SVGs (BSD) for the pictograms, [S5] the IOF Map Commission's per-symbol PDFs (CC BY-ND) for ISOM. The [S3] licence risk now covers text only. 2.003 updated the same day.
 - 2026-09-05 — confirmed by the founder, who accepted the [S3] licence risk (T1 resolved for v1). Content narrowed to [S3] and [S1]; a language constraint added: Italian interface and verbatim content, English spec.
+
+[S4]: <../../sources/svg-control-descriptions/PROVENANCE.md>
+[S5]: <../../sources/iof-isom-2017-2-revision-6-links/PROVENANCE.md>

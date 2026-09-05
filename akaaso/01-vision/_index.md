@@ -1,6 +1,6 @@
 # Level 1 — Vision & Scope
 
-**Status:** Review complete — awaiting sign-off (decisions confirmed 2026-09-05)
+**Status:** Signed off 2026-09-05
 
 The brief arrived in one paragraph: something like Orisym, in Italian, built
 on the IOF and ISOM references supplied as PDFs; a simple website that
@@ -69,7 +69,7 @@ None at this level. The four asked on 2026-09-05 were answered the same day:
   auth to design; a content pipeline that must extract artwork from two
   PDFs (Level 3); an Italian interface; and two enforcement mechanisms to
   make concrete. Most of Level 2's ten required decisions will be short.
-- **Sign-off:** pending — founder, on reading this review.
+- **Sign-off:** founder, 2026-09-05 — "vai", together with the Level 2 answers.
 
 [S1]: <../sources/ISOM_2017-2_CH_IT.md>
 [S2]: <../sources/ISSprOM_2019-2_IT.md>

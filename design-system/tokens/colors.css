@@ -1,0 +1,171 @@
+/* Imported from the Claude Design project "Orient site base scaffold" (c9a24f16-5b6a-4e90-a8d8-8cd508302a1b),
+   design system "Braisor - Preline" (095ff135-97b7-4430-ba48-8c6b4874b775), on 2026-09-05.
+   Do not hand-edit; re-import instead, so the local copy and the design project stay in step. */
+/* Preline UI — Color System
+   Extracted verbatim from the Preline UI Figma. Palette is the Tailwind CSS color
+   scale; brand accent is the configurable --tint token (default #f5771e, macteo.com
+   orange) — override --tint alone and every derived shade follows. */
+
+:root {
+  /* ---- Tint (site accent — THE configurable brand knob) ----
+     macteo.com orange. Override --tint alone to re-brand: every derived
+     shade, hover/active state and focus ring below follows automatically. */
+  --tint: #f5771e;
+  --tint-50:  color-mix(in srgb, var(--tint) 7%, white);
+  --tint-100: color-mix(in srgb, var(--tint) 14%, white);
+  --tint-200: color-mix(in srgb, var(--tint) 28%, white);
+  --tint-400: color-mix(in srgb, var(--tint) 72%, white);
+  --tint-500: color-mix(in srgb, var(--tint) 88%, white);
+  --tint-600: var(--tint);
+  --tint-700: color-mix(in srgb, var(--tint) 86%, black);
+  --tint-800: color-mix(in srgb, var(--tint) 70%, black);
+  --tint-ring: color-mix(in srgb, var(--tint) 32%, transparent);
+
+  /* ---- Grayscale (Tailwind "gray") ---- */
+  --gray-50:  rgb(248, 250, 252);
+  --gray-100: rgb(243, 244, 246);
+  --gray-200: rgb(229, 231, 235);
+  --gray-300: rgb(209, 213, 219);
+  --gray-400: rgb(156, 163, 175);
+  --gray-500: rgb(107, 114, 128);
+  --gray-600: rgb(75, 85, 99);
+  --gray-700: rgb(55, 65, 81);
+  --gray-800: rgb(31, 41, 55);
+  --gray-900: rgb(17, 24, 39);
+  --gray-950: rgb(3, 7, 18);
+
+  --slate-800: rgb(30, 41, 59);
+  --slate-900: rgb(15, 23, 42);
+  --slate-950: rgb(2, 6, 23);
+
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+
+  /* ---- Blue (brand / primary) ---- */
+  --blue-50:  rgb(239, 246, 255);
+  --blue-100: rgb(219, 234, 254);
+  --blue-200: rgb(191, 219, 254);
+  --blue-300: rgb(147, 197, 253);
+  --blue-400: rgb(96, 165, 250);
+  --blue-500: rgb(59, 130, 246);
+  --blue-600: rgb(37, 99, 235);
+  --blue-700: rgb(29, 78, 216);
+  --blue-800: rgb(30, 64, 175);
+  --blue-900: rgb(30, 58, 138);
+  --blue-950: rgb(23, 37, 84);
+
+  /* ---- Red (danger) ---- */
+  --red-50:  rgb(254, 242, 242);
+  --red-100: rgb(254, 226, 226);
+  --red-200: rgb(254, 202, 202);
+  --red-300: rgb(252, 165, 165);
+  --red-400: rgb(248, 113, 113);
+  --red-500: rgb(239, 68, 68);
+  --red-600: rgb(220, 38, 38);
+  --red-700: rgb(185, 28, 28);
+  --red-800: rgb(153, 27, 27);
+  --red-900: rgb(127, 29, 29);
+
+  /* ---- Green (success, "green") ---- */
+  --green-50:  rgb(240, 253, 244);
+  --green-100: rgb(220, 252, 231);
+  --green-200: rgb(187, 247, 208);
+  --green-300: rgb(134, 239, 172);
+  --green-400: rgb(74, 222, 128);
+  --green-500: rgb(34, 197, 94);
+  --green-600: rgb(22, 163, 74);
+  --green-700: rgb(21, 128, 61);
+  --green-800: rgb(22, 101, 52);
+  --green-900: rgb(20, 83, 45);
+
+  /* ---- Teal (Preline's "success" token) ---- */
+  --teal-50:  rgb(240, 253, 250);
+  --teal-100: rgb(204, 251, 241);
+  --teal-200: rgb(153, 246, 228);
+  --teal-300: rgb(94, 234, 212);
+  --teal-400: rgb(45, 212, 191);
+  --teal-500: rgb(20, 184, 166);
+  --teal-600: rgb(13, 148, 136);
+  --teal-700: rgb(15, 118, 110);
+  --teal-800: rgb(17, 94, 89);
+  --teal-900: rgb(19, 78, 74);
+
+  /* ---- Yellow (warning) ---- */
+  --yellow-50:  rgb(254, 252, 232);
+  --yellow-100: rgb(254, 249, 195);
+  --yellow-200: rgb(254, 240, 138);
+  --yellow-300: rgb(253, 224, 71);
+  --yellow-400: rgb(250, 204, 21);
+  --yellow-500: rgb(234, 179, 8);
+  --yellow-600: rgb(202, 138, 4);
+  --yellow-700: rgb(161, 98, 7);
+  --yellow-800: rgb(133, 77, 14);
+  --yellow-900: rgb(113, 63, 18);
+
+  /* ---- Orange ---- */
+  --orange-50:  rgb(255, 247, 237);
+  --orange-100: rgb(255, 237, 213);
+  --orange-400: rgb(251, 146, 60);
+  --orange-500: rgb(249, 115, 22);
+  --orange-600: rgb(234, 88, 12);
+  --orange-700: rgb(194, 65, 12);
+  --orange-800: rgb(154, 52, 18);
+
+  /* ---- Indigo ---- */
+  --indigo-50:  rgb(238, 242, 255);
+  --indigo-100: rgb(224, 231, 255);
+  --indigo-500: rgb(99, 102, 241);
+  --indigo-600: rgb(79, 70, 229);
+  --indigo-700: rgb(67, 56, 202);
+  --indigo-800: rgb(55, 48, 163);
+
+  /* ---- Purple ---- */
+  --purple-50:  rgb(250, 245, 255);
+  --purple-100: rgb(243, 232, 255);
+  --purple-500: rgb(168, 85, 247);
+  --purple-600: rgb(147, 51, 234);
+  --purple-700: rgb(126, 34, 206);
+  --purple-800: rgb(107, 33, 168);
+
+  /* ---- Pink ---- */
+  --pink-50:  rgb(253, 242, 248);
+  --pink-100: rgb(252, 231, 243);
+  --pink-500: rgb(236, 72, 153);
+  --pink-600: rgb(219, 39, 119);
+  --pink-700: rgb(190, 24, 93);
+  --pink-800: rgb(157, 23, 77);
+
+  /* ================= SEMANTIC ALIASES (light / default theme) ================= */
+
+  /* Brand */
+  --color-brand:        var(--tint-600);
+  --color-brand-hover:  var(--tint-700);
+  --color-brand-active: var(--tint-800);
+  --color-brand-soft:   var(--tint-100);
+  --color-brand-subtle: var(--tint-50);
+
+  /* Text */
+  --text-title:      var(--gray-800);   /* headings / primary text */
+  --text-body:       var(--gray-600);   /* default paragraph */
+  --text-secondary:  var(--gray-500);   /* muted / captions */
+  --text-tertiary:   var(--gray-400);   /* placeholders / disabled */
+  --text-on-brand:   var(--white);
+  --text-brand:      var(--tint-600);   /* links */
+  --text-invalid:    var(--red-500);
+  --text-success:    var(--teal-500);
+
+  /* Surfaces */
+  --surface-body:      var(--white);
+  --surface-card:      var(--white);
+  --surface-muted:     var(--gray-50);
+  --surface-inverse:   var(--gray-800);
+  --surface-overlay:   rgba(31, 41, 55, 0.5);   /* modal/offcanvas backdrop */
+
+  /* Borders */
+  --border-color:        var(--gray-200);
+  --border-color-strong: var(--gray-300);
+  --border-color-focus:  var(--tint-600);
+
+  /* Focus ring (Preline uses a 2px ring + white offset via box-shadow) */
+  --ring-color: var(--tint-ring);
+}

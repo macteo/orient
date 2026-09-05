@@ -1,0 +1,26 @@
+/* Imported from the Claude Design project "Orient site base scaffold" (c9a24f16-5b6a-4e90-a8d8-8cd508302a1b),
+   design system "Braisor - Preline" (095ff135-97b7-4430-ba48-8c6b4874b775), on 2026-09-05.
+   Do not hand-edit; re-import instead, so the local copy and the design project stay in step. */
+/* Preline UI — Elevation / Shadows
+   Preline layers Tailwind's shadow scale. Dropdowns, popovers, modals and
+   floating cards use shadow-lg / shadow-xl; resting cards use shadow-sm or a
+   flat 1px border. Values sampled from the Figma Shadows page. */
+
+:root {
+  --shadow-xs:  0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm:  0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow:     0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl:  0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Preline's signature soft dropdown shadow */
+  --shadow-dropdown: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+
+  /* Inset field shadow */
+  --shadow-inset: inset 0 0 0 1px rgb(243, 244, 246), inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* Focus ring (2px brand ring, used as box-shadow) */
+  --focus-ring: 0 0 0 2px var(--white), 0 0 0 4px var(--ring-color);
+}

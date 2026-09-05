@@ -46,7 +46,14 @@
       "S3": "sources/iof_descrizioni_punti_ital.md",
       "F1": "https://creativecommons.org/licenses/by-nd/4.0/",
       "F2": "https://apps.apple.com/us/app/orisym-orienteering-symbols/id6553980733",
-      "F3": "https://www.iknow-o.com/"
+      "F3": "https://www.iknow-o.com/",
+      "S4": "sources/svg-control-descriptions/PROVENANCE.md",
+      "S5": "sources/iof-isom-2017-2-revision-6-links/PROVENANCE.md",
+      "F4": "https://github.com/perliedman/svg-control-descriptions",
+      "F5": "https://github.com/petergolde/PurplePen",
+      "F6": "https://orienteering.sport/iof/mapping/",
+      "S6": "https://claude.ai/design/p/c9a24f16-5b6a-4e90-a8d8-8cd508302a1b?file=Orient.dc.html"
     }
-  }
+  },
+  "theme": "../design-system/styles.css"
 }

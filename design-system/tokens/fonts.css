@@ -1,0 +1,9 @@
+/* Imported from the Claude Design project "Orient site base scaffold" (c9a24f16-5b6a-4e90-a8d8-8cd508302a1b),
+   design system "Braisor - Preline" (095ff135-97b7-4430-ba48-8c6b4874b775), on 2026-09-05.
+   Do not hand-edit; re-import instead, so the local copy and the design project stay in step. */
+/* Preline UI — Webfonts
+   Primary UI typeface: Inter (all weights). Monospace: used sparingly for code (kbd, WYSIWYG).
+   Inter is loaded from Google Fonts CDN. If you need self-hosted binaries, drop them in
+   assets/fonts/ and swap the @import for local @font-face rules. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;700&display=swap');

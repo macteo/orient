@@ -1,0 +1,20 @@
+/* Imported from the Claude Design project "Orient site base scaffold" (c9a24f16-5b6a-4e90-a8d8-8cd508302a1b),
+   design system "Braisor - Preline" (095ff135-97b7-4430-ba48-8c6b4874b775), on 2026-09-05.
+   Do not hand-edit; re-import instead, so the local copy and the design project stay in step. */
+/* ============================================================
+   PRELINE UI — Design System · Global CSS entry point
+   Consumers link THIS one file. It is an @import manifest only.
+   ============================================================ */
+
+/* Webfonts (Inter + JetBrains Mono) */
+@import './tokens/fonts.css';
+
+/* Authorable design tokens (clean, px-based, semantic) */
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+@import './tokens/shadows.css';
+
+/* Complete Figma Variable dump — ships the full token set (all themes:
+   Default, Dark, Retro, Harvest) to consumers who need exact fidelity. */
+@import './tokens/fig-tokens.css';

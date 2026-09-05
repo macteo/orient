@@ -1,0 +1,54 @@
+/* Imported from the Claude Design project "Orient site base scaffold" (c9a24f16-5b6a-4e90-a8d8-8cd508302a1b),
+   design system "Braisor - Preline" (095ff135-97b7-4430-ba48-8c6b4874b775), on 2026-09-05.
+   Do not hand-edit; re-import instead, so the local copy and the design project stay in step. */
+/* Preline UI — Spacing, Radius & Layout
+   4px spacing grid (Tailwind). Radius scale from Figma Variables (Border Radius/*). */
+
+:root {
+  /* ---- Spacing scale (4px grid) ---- */
+  --space-0:   0;
+  --space-px:  1px;
+  --space-0-5: 2px;
+  --space-1:   4px;
+  --space-1-5: 6px;
+  --space-2:   8px;
+  --space-2-5: 10px;
+  --space-3:   12px;
+  --space-3-5: 14px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-7:   28px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+
+  /* ---- Border radius (px, from Figma Border Radius collection) ---- */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;   /* default card radius */
+  --radius-2xl:  16px;
+  --radius-3xl:  24px;
+  --radius-full: 9999px;
+
+  /* Component defaults */
+  --radius-button: var(--radius-lg);   /* Preline buttons: lg (8px) */
+  --radius-input:  var(--radius-lg);
+  --radius-card:   var(--radius-xl);
+
+  /* ---- Border widths ---- */
+  --border-width:   1px;   /* @kind spacing */
+  --border-width-2: 2px;   /* @kind spacing */
+
+  /* ---- Containers (max-widths) ---- */
+  --container-sm:  640px;   /* @kind spacing */
+  --container-md:  768px;   /* @kind spacing */
+  --container-lg:  1024px;  /* @kind spacing */
+  --container-xl:  1280px;  /* @kind spacing */
+  --container-2xl: 1536px;  /* @kind spacing */
+}
