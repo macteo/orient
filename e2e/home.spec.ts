@@ -218,4 +218,46 @@ test.describe('F-001 — home: scelta del mazzo e delle sezioni', () => {
       expect(misura?.height ?? 0).toBeGreaterThanOrEqual(44);
     }
   });
+
+  test('telefono: le card chiuse non vengono schiacciate — nome, riga meta e "Apri" restano interi @home', async ({
+    page,
+  }) => {
+    // Regressione segnalata dal fondatore su iPhone: con il primo mazzo
+    // aperto la lista è più alta del viewport, e le card chiuse (flex item
+    // con overflow:hidden dentro una colonna ad altezza limitata) venivano
+    // compresse fino a tagliare la riga meta e la scritta "Apri".
+    await page.setViewportSize({ width: 390, height: 700 });
+    await page.goto('./');
+
+    const card = page.locator('.orient-mazzo');
+    const n = await card.count();
+    expect(n).toBe(MAZZI.length);
+    for (let i = 0; i < n; i += 1) {
+      const misure = await card.nth(i).evaluate((el) => {
+        const intestazione = el.querySelector('.orient-mazzo__intestazione') as HTMLElement;
+        const caret = el.querySelector('.orient-mazzo__caret') as HTMLElement;
+        const nome = el.querySelector('.orient-mazzo__nome') as HTMLElement;
+        const meta = el.querySelector('.orient-mazzo__meta') as HTMLElement;
+        const box = el.getBoundingClientRect();
+        const c = caret.getBoundingClientRect();
+        const centroIntestazione = (intestazione.getBoundingClientRect().top + intestazione.getBoundingClientRect().bottom) / 2;
+        return {
+          clientHeight: el.clientHeight,
+          scrollHeight: el.scrollHeight,
+          caretDentro: c.top >= box.top && c.bottom <= box.bottom,
+          metaDentro: meta.getBoundingClientRect().bottom <= box.bottom,
+          caretCentrato: Math.abs((c.top + c.bottom) / 2 - centroIntestazione) <= 2,
+          nomeSopraMeta: nome.getBoundingClientRect().bottom <= meta.getBoundingClientRect().top + 1,
+        };
+      });
+      expect(misure.clientHeight, `card ${i}: contenuto tagliato`).toBeGreaterThanOrEqual(misure.scrollHeight);
+      expect(misure.caretDentro, `card ${i}: "Apri/Chiudi" fuori dalla card`).toBe(true);
+      expect(misure.metaDentro, `card ${i}: riga meta tagliata`).toBe(true);
+      expect(misure.caretCentrato, `card ${i}: "Apri/Chiudi" non centrato in verticale`).toBe(true);
+      expect(misure.nomeSopraMeta, `card ${i}: nome e riga meta sovrapposti`).toBe(true);
+    }
+    for (const mazzo of MAZZI.slice(1)) {
+      await expect(page.locator('.orient-mazzo', { hasText: mazzo.nome }).locator('.orient-mazzo__caret')).toHaveText('APRI');
+    }
+  });
 });
