@@ -60,19 +60,19 @@ const mazzoSenzaColonne: MazzoBuild = {
   carte: {
     i1: {
       id: 'i1', mazzo: 'isom', tipo: 'simbolo-isom', sezione: 'forme',
-      isom: { rif: '101', nome: 'Curva di livello', geometria: 'L', descrizione: 'd', artwork: { path: 'x', formato: 'png' } },
+      isom: { rif: '101', nome: 'Curva di livello', geometria: 'L', descrizione: 'd', artwork: { path: 'x', formato: 'png' }, sezione: 'Forme del terreno' },
     },
     i2: {
       id: 'i2', mazzo: 'isom', tipo: 'simbolo-isom', sezione: 'forme',
-      isom: { rif: '102', nome: 'Curva direttrice', geometria: 'L', descrizione: 'd', artwork: { path: 'x', formato: 'png' } },
+      isom: { rif: '102', nome: 'Curva direttrice', geometria: 'L', descrizione: 'd', artwork: { path: 'x', formato: 'png' }, sezione: 'Forme del terreno' },
     },
     i3: {
       id: 'i3', mazzo: 'isom', tipo: 'simbolo-isom', sezione: 'rocce',
-      isom: { rif: '201', nome: 'Roccia', geometria: 'A', descrizione: 'd', artwork: { path: 'x', formato: 'png' } },
+      isom: { rif: '201', nome: 'Roccia', geometria: 'A', descrizione: 'd', artwork: { path: 'x', formato: 'png' }, sezione: 'Rocce e sassi' },
     },
     i4: {
       id: 'i4', mazzo: 'isom', tipo: 'simbolo-isom', sezione: 'rocce',
-      isom: { rif: '202', nome: 'Masso', geometria: 'P', descrizione: 'd', artwork: { path: 'x', formato: 'png' } },
+      isom: { rif: '202', nome: 'Masso', geometria: 'P', descrizione: 'd', artwork: { path: 'x', formato: 'png' }, sezione: 'Rocce e sassi' },
     },
   },
   distrattori: {

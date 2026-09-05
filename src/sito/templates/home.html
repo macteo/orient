@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- Template della home (R-001). `scripts/build-mazzi.ts` lo riscrive in
+     `index.html` alla radice, sostituendo i segnaposto {{…}}. Non modificare
+     `index.html`: modifica questo file. -->
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Flash card e quiz sulle descrizioni dei punti e sui simboli ISOM." />
+    <title>{{TITOLO_DOCUMENTO}}</title>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="border-b" style="border-color: var(--gray-200); background: var(--white);">
+      <div class="mx-auto flex w-full max-w-2xl flex-wrap items-baseline gap-x-3 px-4 py-4">
+        <a href="{{RADICE}}" class="text-xl font-bold tracking-tight" style="color: var(--gray-800);">orient</a>
+        <span class="text-sm" style="color: var(--gray-500);">Descrizioni dei punti e simboli ISOM</span>
+      </div>
+    </header>
+
+    <main id="app" class="mx-auto w-full max-w-2xl flex-1 px-4 py-5" data-titolo="{{TITOLO}}"></main>
+
+    <footer class="border-t" style="border-color: var(--gray-200); background: var(--white);">
+      <div class="mx-auto w-full max-w-2xl px-4 py-4 text-sm" style="color: var(--gray-500);">
+        <a href="{{RADICE}}fonti/">Fonti e licenze</a>
+      </div>
+    </footer>
+
+    <script type="application/json" id="mazzi">{{MAZZI}}</script>
+    <script type="module" src="/src/pages/home.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Template di una serie (R-002 flash card, R-003 quiz). `scripts/build-mazzi.ts`
+     lo emette una volta per mazzo × modalità in
+     `.generated/pages/<mazzo>/<modalità>/index.html`, sostituendo i segnaposto
+     {{…}}; il JSON del mazzo è inlinato in `#mazzo`. -->
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>{{TITOLO_DOCUMENTO}}</title>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="border-b" style="border-color: var(--gray-200); background: var(--white);">
+      <div class="mx-auto flex w-full max-w-2xl items-baseline gap-3 px-4 py-4">
+        <a href="{{RADICE}}" class="text-xl font-bold tracking-tight" style="color: var(--gray-800);">orient</a>
+        <span class="text-sm" style="color: var(--gray-500);">{{MAZZO_NOME}}</span>
+      </div>
+    </header>
+
+    <main
+      id="app"
+      class="mx-auto w-full max-w-2xl flex-1 px-4 py-5"
+      data-titolo="{{TITOLO}}"
+      data-mazzo="{{MAZZO_ID}}"
+      data-modo="{{MODO}}"
+    ></main>
+
+    <footer class="border-t" style="border-color: var(--gray-200); background: var(--white);">
+      <div class="mx-auto flex w-full max-w-2xl gap-4 px-4 py-4 text-sm" style="color: var(--gray-500);">
+        <a href="{{RADICE}}">Home</a>
+        <a href="../risultati/">Risultati</a>
+        <a href="{{RADICE}}fonti/">Fonti e licenze</a>
+      </div>
+    </footer>
+
+    <script type="application/json" id="mazzo">{{MAZZO}}</script>
+    <script type="module" src="/src/pages/{{ENTRY}}.ts"></script>
+  </body>
+</html>

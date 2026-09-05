@@ -13,8 +13,18 @@ export type Direzione8 = 'N' | 'NE' | 'E' | 'SE' | 'S' | 'SW' | 'W' | 'NW';
 /** Le quattro geometrie ISOM (punto, linea, area, testo). */
 export type Geometria = 'L' | 'P' | 'A' | 'T';
 
-/** Un'immagine di corredo di una carta: percorso e formato, mai ricolorata o ritagliata. */
-export type Artwork = { path: string; formato: 'svg' | 'png' };
+/**
+ * Un'immagine di corredo di una carta: percorso e formato, mai ricolorata o
+ * ritagliata. `origine` e `sha256` esistono solo nel contenuto sorgente
+ * (`content/simboli/*.json`) e sono opzionali qui, perché il JSON del mazzo
+ * emesso a build porta soltanto ciò che una faccia usa (F-006).
+ */
+export type Artwork = {
+  path: string;
+  formato: 'svg' | 'png';
+  origine?: 'S1' | 'S3' | 'S4' | 'S5';
+  sha256?: string;
+};
 
 /** Una cella della riga di descrizione (colonne C–H). */
 export type Cella = { rif: string; direzione?: Direzione8 };
@@ -69,6 +79,8 @@ export type Carta = {
     geometria: Geometria;
     descrizione: string;
     artwork: Artwork;
+    /** L'etichetta della sezione ISOM (es. «3.2 Rocce e sassi»), stampata sul retro. */
+    sezione: string;
   };
 };
 
