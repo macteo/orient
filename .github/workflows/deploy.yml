@@ -1,0 +1,117 @@
+# .github/workflows/deploy.yml — CI e deploy (F-009).
+#
+# Su ogni push a `main` e su ogni pull request: installo, controllo il
+# contenuto, i test, la build, il controllo di dist/, lo smoke Playwright.
+# Solo su push a `main`, e solo se tutto questo è verde, un secondo job
+# pubblica `dist/` su GitHub Pages.
+#
+# Nota sulla base e su vite preview: `vite.config.ts` legge `VITE_BASE` sia
+# in fase di build (per riscrivere gli asset assoluti) sia in fase di
+# `vite preview` (per sapere sotto quale percorso servire `dist/`), e
+# `playwright.config.ts` la rilegge a sua volta per costruire `baseURL`. Se
+# la si passasse solo sul comando di build (com'è scritto nella spec del
+# task), lo step dello smoke — un comando a parte — non la vedrebbe più:
+# la build resterebbe sotto `/orient/` ma `vite preview` e Playwright
+# assumerebbero `/` di default, e le pagine annidate (`<mazzo>/quiz/`…)
+# risponderebbero con la home invece che con se stesse (verificato a mano:
+# è un disallineamento fra chi costruisce e chi serve, non un bug di Vite
+# né di playwright.config.ts, che va già bene così). La soluzione più
+# semplice è tenere `VITE_BASE` costante per tutti gli step dello stesso
+# job: la si fissa qui sotto, a livello di job, invece che sul singolo
+# comando di build.
+#
+# Spec: akaaso/09-tasks/P1-SITO-CONFIG-ci-deploy.md
+# Architettura: akaaso/02-architecture/001-hosting-and-deployment.md, 009-cicd-and-releases.md
+# Feature: akaaso/04-features/009-ci-e-deploy.md
+
+name: CI e deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Verifica
+    runs-on: ubuntu-latest
+    env:
+      VITE_BASE: ${{ vars.VITE_BASE || '/orient/' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Installa Chromium per Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Contenuto (schemi, inventari, checksum, diff di rigenerazione)
+        run: npm run check:content
+        env:
+          CI: '1'
+
+      - name: Test unitari (Vitest)
+        run: npm test
+
+      - name: Build (VITE_BASE=${{ env.VITE_BASE }})
+        run: npm run build
+
+      - name: Controllo di dist/ (link, origin, token)
+        run: npm run check:dist
+
+      - name: Smoke Playwright (ogni pagina emessa carica senza errori)
+        run: npm run e2e:smoke
+
+  deploy:
+    name: Deploy
+    needs: checks
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      VITE_BASE: ${{ vars.VITE_BASE || '/orient/' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      # Rifatta qui invece di riusare quella del job `checks`: i job girano
+      # su runner separati e non condividono il filesystem, e `needs: checks`
+      # serve a bloccare il deploy finché quel job non è verde, non a
+      # passargli la build. La build è deterministica dagli stessi
+      # sorgenti/contenuti già verificati, quindi rifarla è equivalente e
+      # più semplice di un artifact intermedio.
+      - name: Build (VITE_BASE=${{ env.VITE_BASE }})
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
