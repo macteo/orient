@@ -9,7 +9,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "S",
       "branch": "task/p1-contenuti-data-fonti-e-sezioni",
@@ -35,6 +35,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:08:05.477Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:08:05.523Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-data-fonti-e-sezioni, sha: aebe09d"
         }
       ],
       "notes": null
@@ -45,7 +55,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "L",
       "branch": "task/p1-contenuti-tool-extract-esempi",
@@ -66,6 +76,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:15:18.123Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:15:18.166Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-extract-esempi, sha: 7b39787; 107 esempi, 9 page-3 rows"
         }
       ],
       "notes": null
@@ -76,7 +96,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-extract-isom",
@@ -97,6 +117,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:08:05.007Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:08:05.042Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-extract-isom, sha: c30c031; add/add on stub main.swift resolved with the task's version"
         }
       ],
       "notes": null
@@ -107,7 +137,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-parse-descrizioni",
@@ -128,6 +158,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:23:42.438Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:23:42.483Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-parse-descrizioni, sha: 64d8b4c; 115 simboli, 176 svg"
         }
       ],
       "notes": null
@@ -138,7 +178,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "S",
       "branch": "task/p1-contenuti-tool-parse-isom",
@@ -159,6 +199,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:18:36.964Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:18:37.009Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-parse-isom, sha: 5a85f19; 107 simboli, 46 esclusi"
         }
       ],
       "notes": null
@@ -169,7 +219,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "Config",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "M",
       "branch": "task/p1-sito-config-scaffold",
@@ -186,6 +236,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T09:54:29.879Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T09:54:29.911Z",
+          "event": "merged",
+          "note": "direct on develop, sha: 8ee842b; fix 'add @types/node' follows"
         }
       ],
       "notes": "infrastructure: serves every story"
@@ -196,7 +256,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "S",
       "branch": "develop",
@@ -217,6 +277,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T10:25:08.701Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:25:08.732Z",
+          "event": "gate",
+          "note": "npm test 1/1; tsc clean; build ok (VITE_BASE=/orient/); check:content stub; 0 conflict markers; all content JSON parses; fix: de-hyphenation in unisciRighe"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
@@ -227,7 +297,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "Logic",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-allenamento-logic-serie-quiz-storage",
@@ -254,6 +324,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:41:43.150Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:41:43.196Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-logic-serie-quiz-storage, sha: 4951e5c; 51 tests"
         }
       ],
       "notes": null
@@ -264,7 +344,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-facce",
@@ -288,6 +368,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:51:05.429Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:51:05.524Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-facce, sha: dad0bb1; pixel test vs page-3 crop green in Playwright"
         }
       ],
       "notes": null
@@ -298,7 +388,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-contenuti-data-compatibilita",
@@ -319,6 +409,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:35:48.368Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:35:48.412Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-data-compatibilita, sha: e045172"
         }
       ],
       "notes": null
@@ -329,7 +429,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-contenuti-data-righe-ufficiali",
@@ -351,6 +451,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:34:34.742Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:34:34.784Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-data-righe-ufficiali, sha: 713ff67; row 4 G cell 11.3E flagged for eye check"
         }
       ],
       "notes": null
@@ -361,7 +471,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-check-content",
@@ -388,6 +498,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:56:02.525Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:56:02.641Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-check-content, sha: d03f779; two integration fixes on develop"
         }
       ],
       "notes": null
@@ -398,7 +518,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "S",
       "branch": "develop",
@@ -418,6 +538,21 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T10:56:02.671Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:56:02.701Z",
+          "event": "gate",
+          "note": "check:content green (9 OK, 1 skipped: generate.json); npm test 97 passed; tsc clean; build ok; 0 conflict markers"
+        },
+        {
+          "at": "2026-09-05T10:56:43.470Z",
+          "event": "gate",
+          "note": "correction: one test failed after merge (hardcoded schema count); fixed on develop; npm test now 96 passed, 1 skipped — gate green"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
@@ -428,7 +563,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 2,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-generate-righe",
@@ -451,6 +586,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:15:36.407Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:15:36.451Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-generate-righe, sha: 6977f09; 200 rows, seed 20260905"
         }
       ],
       "notes": null
@@ -461,7 +606,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 2,
       "effort": "S",
       "branch": "develop",
@@ -477,6 +622,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T11:15:36.484Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:15:36.518Z",
+          "event": "gate",
+          "note": "check:content all OK incl. regen diff; npm test 106 passed; tsc clean; build ok; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
@@ -487,7 +642,7 @@
       "module": "mazzi",
       "phase": 1,
       "layer": "Build",
-      "status": "todo",
+      "status": "done",
       "wave": 3,
       "effort": "L",
       "branch": "task/p1-mazzi-build-decks-e-pagine",
@@ -521,6 +676,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:35:03.683Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:35:03.727Z",
+          "event": "merged",
+          "note": "branch: task/p1-mazzi-build-decks-e-pagine, sha: e820a3f; 14 pages, 538 artwork files via public/"
         }
       ],
       "notes": null
@@ -531,7 +696,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 3,
       "effort": "S",
       "branch": "develop",
@@ -547,6 +712,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T11:35:03.759Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:35:03.789Z",
+          "event": "gate",
+          "note": "check:content OK; npm test 125 passed; tsc clean; build ok under /orient/ (4 quiz pages, fonti); e2e:smoke 15 passed; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
@@ -557,7 +732,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-flashcard",
@@ -584,6 +759,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:58:55.531Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:58:55.575Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-flashcard, sha: 2b0713c; reported the sprite namespace bug, fixed on develop"
         }
       ],
       "notes": null
@@ -594,7 +779,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-quiz",
@@ -621,6 +806,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:00:45.616Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:00:45.662Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-quiz, sha: 88de305"
         }
       ],
       "notes": null
@@ -631,7 +826,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-risultati",
@@ -659,6 +854,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:08:07.656Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:08:07.701Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-risultati, sha: 166ddb3"
         }
       ],
       "notes": null
@@ -669,7 +874,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "S",
       "branch": "task/p1-sito-ui-fonti",
@@ -690,6 +895,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:52:40.319Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:52:40.363Z",
+          "event": "merged",
+          "note": "branch: task/p1-sito-ui-fonti, sha: f3f9bd0"
         }
       ],
       "notes": null
@@ -700,7 +915,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-sito-ui-home",
@@ -728,6 +943,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:06:34.392Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:06:34.437Z",
+          "event": "merged",
+          "note": "branch: task/p1-sito-ui-home, sha: 85d8a11"
         }
       ],
       "notes": null
@@ -738,7 +963,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "S",
       "branch": "develop",
@@ -758,6 +983,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T12:08:07.733Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:08:07.766Z",
+          "event": "gate",
+          "note": "check:content OK; npm test all green; tsc clean; build ok /orient/; full Playwright suite green; 0 conflict markers; sprite namespace fix applied this wave"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
@@ -768,7 +1003,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-e2e-journey-prima-serie-di-flash-card",
@@ -791,6 +1026,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:26:30.868Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:26:30.910Z",
+          "event": "merged",
+          "note": "branch: task/p1-e2e-journey-prima-serie-di-flash-card, sha: d256e42; 7 tests; finding: results subtitle shows 'N sezioni' for an all-sections run"
         }
       ],
       "notes": null
@@ -801,7 +1046,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-e2e-journey-quiz-con-ripasso",
@@ -825,6 +1070,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:43:40.734Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:43:40.777Z",
+          "event": "merged",
+          "note": "branch: task/p1-e2e-journey-quiz-con-ripasso, sha: 0f6be7f; two app findings fixed on develop"
         }
       ],
       "notes": null
@@ -835,7 +1090,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-e2e-journey-righe-complete",
@@ -860,6 +1115,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:29:23.865Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:29:23.913Z",
+          "event": "merged",
+          "note": "branch: task/p1-e2e-journey-righe-complete, sha: 744c5a3; 4 tests + 2 skipped with reasons"
         }
       ],
       "notes": null
@@ -870,7 +1135,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "Config",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-sito-config-ci-deploy",
@@ -895,6 +1160,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:41:07.569Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:41:07.613Z",
+          "event": "merged",
+          "note": "branch: task/p1-sito-config-ci-deploy, sha: 862a43f; deploy verified on the merge to main"
         }
       ],
       "notes": "infrastructure: serves every story"
@@ -905,7 +1180,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "S",
       "branch": "develop",
@@ -924,6 +1199,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T12:43:40.809Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:43:40.841Z",
+          "event": "gate",
+          "note": "final gate: npm test 205 passed; tsc clean; check:content 9 OK; build /orient/ + check:dist 3 OK; full Playwright 65 passed, 2 skipped with reasons; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"

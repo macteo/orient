@@ -1,0 +1,3117 @@
+{
+  "v": 1,
+  "count": 200,
+  "seed": 20260905,
+  "versioneRegole": 1,
+  "sorgente": "S3",
+  "righe": [
+    {
+      "id": "dc:gen:0001",
+      "codice": "gen-0001",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "1.1"
+        }
+      },
+      "testo": "Terrazzo più a sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0002",
+      "codice": "gen-0002",
+      "celle": {
+        "D": {
+          "rif": "3.1"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Lago, estremità nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0003",
+      "codice": "gen-0003",
+      "celle": {
+        "D": {
+          "rif": "2.4"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "SE"
+        }
+      },
+      "testo": "Sasso, angolo sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0004",
+      "codice": "gen-0004",
+      "celle": {
+        "D": {
+          "rif": "3.7"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Palude, parte nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0005",
+      "codice": "gen-0005",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SE"
+        },
+        "D": {
+          "rif": "1.3"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "W"
+        }
+      },
+      "testo": "Rientranza più a sud-est, estremità ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0006",
+      "codice": "gen-0006",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "2.7"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "W"
+        }
+      },
+      "testo": "Terreno pietroso/sassoso superiore, estremità ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0007",
+      "codice": "gen-0007",
+      "celle": {
+        "D": {
+          "rif": "2.2"
+        },
+        "F": "1.5",
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Torre di roccia, spuntone, 1.5 m d’altezza, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0008",
+      "codice": "gen-0008",
+      "celle": {
+        "D": {
+          "rif": "3.8"
+        }
+      },
+      "testo": "Isola in una palude",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0009",
+      "codice": "gen-0009",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "1.8"
+        },
+        "F": "0.5"
+      },
+      "testo": "Piccola fossa più a sud, 0.5 m di profondità",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0010",
+      "codice": "gen-0010",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "6.2"
+        },
+        "G": {
+          "rif": "11.1",
+          "direzione": "W"
+        }
+      },
+      "testo": "Oggetto particolare più a sud, parte ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0011",
+      "codice": "gen-0011",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "1.8"
+        },
+        "F": "1.0",
+        "G": {
+          "rif": "11.8",
+          "direzione": "NE"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Piccola fossa superiore, 1.0 m di profondità, estremità nord-est, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0012",
+      "codice": "gen-0012",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "1.1"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "W"
+        }
+      },
+      "testo": "Terrazzo centrale, parte ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0013",
+      "codice": "gen-0013",
+      "celle": {
+        "D": {
+          "rif": "3.11"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Cisterna d’acqua, pozzo, abbeveratoio, angolo sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0014",
+      "codice": "gen-0014",
+      "celle": {
+        "D": {
+          "rif": "1.15"
+        },
+        "G": {
+          "rif": "11.1",
+          "direzione": "N"
+        }
+      },
+      "testo": "Terreno accidentato, parte nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0015",
+      "codice": "gen-0015",
+      "celle": {
+        "D": {
+          "rif": "3.6"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "S"
+        }
+      },
+      "testo": "Striscia di palude, angolo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0016",
+      "codice": "gen-0016",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "N"
+        },
+        "D": {
+          "rif": "1.11"
+        }
+      },
+      "testo": "Sella più a nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0017",
+      "codice": "gen-0017",
+      "celle": {
+        "D": {
+          "rif": "2.5"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Sassaia, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0018",
+      "codice": "gen-0018",
+      "celle": {
+        "D": {
+          "rif": "3.4"
+        }
+      },
+      "testo": "Fiume, ruscello, corso d’acqua",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0019",
+      "codice": "gen-0019",
+      "celle": {
+        "D": {
+          "rif": "2.9"
+        },
+        "G": {
+          "rif": "11.6",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Passaggio stretto, punta nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0020",
+      "codice": "gen-0020",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "1.13"
+        },
+        "F": "0.5",
+        "G": {
+          "rif": "11.5",
+          "direzione": "W"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Buca inferiore, 0.5 m di profondità, angolo ovest, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0021",
+      "codice": "gen-0021",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        }
+      },
+      "testo": "Galleria",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0022",
+      "codice": "gen-0022",
+      "celle": {
+        "D": {
+          "rif": "3.3"
+        },
+        "F": "0.5"
+      },
+      "testo": "Buca profonda con acqua, 0.5 m di profondità",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0023",
+      "codice": "gen-0023",
+      "celle": {
+        "D": {
+          "rif": "6.1"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Oggetto particolare, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0024",
+      "codice": "gen-0024",
+      "celle": {
+        "D": {
+          "rif": "4.2"
+        },
+        "G": {
+          "rif": "11.14",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Terreno semi-aperto, piede sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0025",
+      "codice": "gen-0025",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "3.10"
+        }
+      },
+      "testo": "Sorgente superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0026",
+      "codice": "gen-0026",
+      "celle": {
+        "D": {
+          "rif": "5.20"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Monumento o statua, angolo nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0027",
+      "codice": "gen-0027",
+      "celle": {
+        "D": {
+          "rif": "4.8"
+        }
+      },
+      "testo": "Gruppo d’alberi",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0028",
+      "codice": "gen-0028",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "W"
+        },
+        "D": {
+          "rif": "2.5"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Sassaia più a ovest, parte nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0029",
+      "codice": "gen-0029",
+      "celle": {
+        "D": {
+          "rif": "5.12"
+        },
+        "E": {
+          "rif": "5.12"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra area pavimentata e area pavimentata",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0030",
+      "codice": "gen-0030",
+      "celle": {
+        "D": {
+          "rif": "3.2"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Stagno, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0031",
+      "codice": "gen-0031",
+      "celle": {
+        "D": {
+          "rif": "1.16"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Formicaio (termitaio), angolo nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0032",
+      "codice": "gen-0032",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "5.13"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Rovina, rudere più a sud, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0033",
+      "codice": "gen-0033",
+      "celle": {
+        "D": {
+          "rif": "3.7"
+        }
+      },
+      "testo": "Palude",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0034",
+      "codice": "gen-0034",
+      "celle": {
+        "D": {
+          "rif": "5.24"
+        },
+        "G": {
+          "rif": "11.14",
+          "direzione": "NE"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Scala, piede nord-est, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0035",
+      "codice": "gen-0035",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "1.3"
+        },
+        "E": {
+          "rif": "8.7"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "S"
+        }
+      },
+      "testo": "Rientranza inferiore, paludoso, angolo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0036",
+      "codice": "gen-0036",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Galleria, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0037",
+      "codice": "gen-0037",
+      "celle": {
+        "D": {
+          "rif": "5.23"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "S"
+        }
+      },
+      "testo": "Sottopassaggio, parte sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0038",
+      "codice": "gen-0038",
+      "celle": {
+        "D": {
+          "rif": "3.9"
+        }
+      },
+      "testo": "Fontana",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0039",
+      "codice": "gen-0039",
+      "celle": {
+        "D": {
+          "rif": "5.1"
+        },
+        "E": {
+          "rif": "5.1"
+        },
+        "F": {
+          "rif": "10.1"
+        }
+      },
+      "testo": "Strada, incrocio",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0040",
+      "codice": "gen-0040",
+      "celle": {
+        "D": {
+          "rif": "5.14"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "SE"
+        }
+      },
+      "testo": "Condotta, angolo sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0041",
+      "codice": "gen-0041",
+      "celle": {
+        "D": {
+          "rif": "1.4"
+        },
+        "G": {
+          "rif": "11.2",
+          "direzione": "N"
+        }
+      },
+      "testo": "Scarpata ripida, bordo nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0042",
+      "codice": "gen-0042",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "W"
+        },
+        "D": {
+          "rif": "6.1"
+        }
+      },
+      "testo": "Oggetto particolare più a ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0043",
+      "codice": "gen-0043",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Galleria superiore, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0044",
+      "codice": "gen-0044",
+      "celle": {
+        "D": {
+          "rif": "1.9"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Collina, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0045",
+      "codice": "gen-0045",
+      "celle": {
+        "D": {
+          "rif": "2.4"
+        },
+        "H": {
+          "rif": "12.3"
+        }
+      },
+      "testo": "Sasso, punto radio o tv",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0046",
+      "codice": "gen-0046",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "2.9"
+        },
+        "G": {
+          "rif": "11.1",
+          "direzione": "E"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Passaggio stretto centrale, parte est, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0047",
+      "codice": "gen-0047",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "3.9"
+        }
+      },
+      "testo": "Fontana inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0048",
+      "codice": "gen-0048",
+      "celle": {
+        "D": {
+          "rif": "4.8"
+        },
+        "E": {
+          "rif": "4.8"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra gruppo d’alberi e gruppo d’alberi",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0049",
+      "codice": "gen-0049",
+      "celle": {
+        "D": {
+          "rif": "1.16"
+        }
+      },
+      "testo": "Formicaio (termitaio)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0050",
+      "codice": "gen-0050",
+      "celle": {
+        "D": {
+          "rif": "3.6"
+        }
+      },
+      "testo": "Striscia di palude",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0051",
+      "codice": "gen-0051",
+      "celle": {
+        "D": {
+          "rif": "5.8"
+        },
+        "E": {
+          "rif": "8.11"
+        },
+        "F": "1.0",
+        "G": {
+          "rif": "11.2",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Muro in pietra, rovinato, distrutto, 1.0 m d’altezza, bordo nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0052",
+      "codice": "gen-0052",
+      "celle": {
+        "D": {
+          "rif": "5.12"
+        },
+        "F": "5x5",
+        "G": {
+          "rif": "11.5",
+          "direzione": "W"
+        }
+      },
+      "testo": "Area pavimentata, 5 x 5 m, angolo ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0053",
+      "codice": "gen-0053",
+      "celle": {
+        "D": {
+          "rif": "1.1"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Terrazzo, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0054",
+      "codice": "gen-0054",
+      "celle": {
+        "D": {
+          "rif": "5.1"
+        },
+        "E": {
+          "rif": "5.1"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra strada e strada",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0055",
+      "codice": "gen-0055",
+      "celle": {
+        "D": {
+          "rif": "4.7"
+        },
+        "G": {
+          "rif": "11.11"
+        }
+      },
+      "testo": "Limite di vegetazione, in cima a, sopra",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0056",
+      "codice": "gen-0056",
+      "celle": {
+        "D": {
+          "rif": "5.13"
+        },
+        "G": {
+          "rif": "11.1",
+          "direzione": "N"
+        }
+      },
+      "testo": "Rovina, rudere, parte nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0057",
+      "codice": "gen-0057",
+      "celle": {
+        "D": {
+          "rif": "3.2"
+        },
+        "G": {
+          "rif": "11.10"
+        },
+        "H": {
+          "rif": "12.1"
+        }
+      },
+      "testo": "Stagno, parte inferiore, pronto soccorso",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0058",
+      "codice": "gen-0058",
+      "celle": {
+        "D": {
+          "rif": "5.24"
+        },
+        "E": {
+          "rif": "5.24"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra scala e scala",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0059",
+      "codice": "gen-0059",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "5.12"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Area pavimentata inferiore, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0060",
+      "codice": "gen-0060",
+      "celle": {
+        "D": {
+          "rif": "1.4"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Scarpata ripida, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0061",
+      "codice": "gen-0061",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "N"
+        },
+        "D": {
+          "rif": "5.2"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Sentiero, pista più a nord, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0062",
+      "codice": "gen-0062",
+      "celle": {
+        "D": {
+          "rif": "5.17"
+        },
+        "G": {
+          "rif": "11.6",
+          "direzione": "SE"
+        }
+      },
+      "testo": "Cippo di confine, tumulo di pietre, punta sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0063",
+      "codice": "gen-0063",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "6.1"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Oggetto particolare più a sud, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0064",
+      "codice": "gen-0064",
+      "celle": {
+        "D": {
+          "rif": "1.2"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Naso, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0065",
+      "codice": "gen-0065",
+      "celle": {
+        "D": {
+          "rif": "1.4"
+        },
+        "F": "2.5",
+        "G": {
+          "rif": "11.11"
+        }
+      },
+      "testo": "Scarpata ripida, 2.5 m d’altezza, in cima a, sopra",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0066",
+      "codice": "gen-0066",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "5.4"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "E"
+        }
+      },
+      "testo": "Ponte centrale, angolo est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0067",
+      "codice": "gen-0067",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "1.10"
+        },
+        "G": {
+          "rif": "11.2",
+          "direzione": "SW"
+        },
+        "H": {
+          "rif": "12.3"
+        }
+      },
+      "testo": "Collinetta centrale, bordo sud-ovest, punto radio o tv",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0068",
+      "codice": "gen-0068",
+      "celle": {
+        "D": {
+          "rif": "1.7"
+        },
+        "F": "2.5",
+        "G": {
+          "rif": "11.14",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Fossa, 2.5 m di profondità, piede nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0069",
+      "codice": "gen-0069",
+      "celle": {
+        "D": {
+          "rif": "2.6"
+        }
+      },
+      "testo": "Gruppo di sassi",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0070",
+      "codice": "gen-0070",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "5.16"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Posta del cacciatore più a sud, estremità sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0071",
+      "codice": "gen-0071",
+      "celle": {
+        "D": {
+          "rif": "3.5"
+        },
+        "E": {
+          "rif": "3.5"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra piccolo canale, rigagnolo e piccolo canale, rigagnolo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0072",
+      "codice": "gen-0072",
+      "celle": {
+        "D": {
+          "rif": "3.4"
+        },
+        "E": {
+          "rif": "3.4"
+        },
+        "F": {
+          "rif": "10.1"
+        }
+      },
+      "testo": "Fiume, ruscello, corso d’acqua, incrocio",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0073",
+      "codice": "gen-0073",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "1.11"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "E"
+        }
+      },
+      "testo": "Sella inferiore, angolo est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0074",
+      "codice": "gen-0074",
+      "celle": {
+        "D": {
+          "rif": "4.4"
+        }
+      },
+      "testo": "Radura",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0075",
+      "codice": "gen-0075",
+      "celle": {
+        "D": {
+          "rif": "5.15"
+        },
+        "E": {
+          "rif": "5.15"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra torre e torre",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0076",
+      "codice": "gen-0076",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Galleria, parte sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0077",
+      "codice": "gen-0077",
+      "celle": {
+        "D": {
+          "rif": "1.11"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Sella, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0078",
+      "codice": "gen-0078",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "1.8"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Piccola fossa più a sud, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0079",
+      "codice": "gen-0079",
+      "celle": {
+        "D": {
+          "rif": "5.20"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "N"
+        }
+      },
+      "testo": "Monumento o statua, parte nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0080",
+      "codice": "gen-0080",
+      "celle": {
+        "D": {
+          "rif": "1.14"
+        },
+        "E": {
+          "rif": "8.6"
+        },
+        "F": "1.5",
+        "G": {
+          "rif": "11.9"
+        }
+      },
+      "testo": "Buca profonda, roccioso, sassoso, 1.5 m di profondità, parte superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0081",
+      "codice": "gen-0081",
+      "celle": {
+        "D": {
+          "rif": "5.24"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Scala, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0082",
+      "codice": "gen-0082",
+      "celle": {
+        "D": {
+          "rif": "4.5"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Boschetto fitto, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0083",
+      "codice": "gen-0083",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Galleria, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0084",
+      "codice": "gen-0084",
+      "celle": {
+        "D": {
+          "rif": "3.6"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "W"
+        }
+      },
+      "testo": "Striscia di palude, parte ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0085",
+      "codice": "gen-0085",
+      "celle": {
+        "D": {
+          "rif": "1.11"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Sella, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0086",
+      "codice": "gen-0086",
+      "celle": {
+        "D": {
+          "rif": "1.1"
+        },
+        "G": {
+          "rif": "11.14",
+          "direzione": "SW"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Terrazzo, piede sud-ovest, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0087",
+      "codice": "gen-0087",
+      "celle": {
+        "D": {
+          "rif": "5.18"
+        }
+      },
+      "testo": "Mangiatoia",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0088",
+      "codice": "gen-0088",
+      "celle": {
+        "D": {
+          "rif": "1.9"
+        },
+        "E": {
+          "rif": "8.1"
+        },
+        "G": {
+          "rif": "11.2",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Collina, basso, bordo nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0089",
+      "codice": "gen-0089",
+      "celle": {
+        "D": {
+          "rif": "3.6"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "S"
+        }
+      },
+      "testo": "Striscia di palude, angolo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0090",
+      "codice": "gen-0090",
+      "celle": {
+        "D": {
+          "rif": "2.9"
+        }
+      },
+      "testo": "Passaggio stretto",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0091",
+      "codice": "gen-0091",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "S"
+        },
+        "D": {
+          "rif": "1.1"
+        },
+        "G": {
+          "rif": "11.14",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Terrazzo più a sud, piede nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0092",
+      "codice": "gen-0092",
+      "celle": {
+        "D": {
+          "rif": "5.23"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Sottopassaggio, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0093",
+      "codice": "gen-0093",
+      "celle": {
+        "D": {
+          "rif": "5.9"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Recinto, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0094",
+      "codice": "gen-0094",
+      "celle": {
+        "D": {
+          "rif": "2.7"
+        },
+        "G": {
+          "rif": "11.6",
+          "direzione": "W"
+        }
+      },
+      "testo": "Terreno pietroso/sassoso, punta ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0095",
+      "codice": "gen-0095",
+      "celle": {
+        "D": {
+          "rif": "5.23"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Sottopassaggio, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0096",
+      "codice": "gen-0096",
+      "celle": {
+        "D": {
+          "rif": "5.4"
+        },
+        "E": {
+          "rif": "5.4"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra ponte e ponte",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0097",
+      "codice": "gen-0097",
+      "celle": {
+        "D": {
+          "rif": "1.14"
+        },
+        "E": {
+          "rif": "8.6"
+        },
+        "F": "0.5"
+      },
+      "testo": "Buca profonda, roccioso, sassoso, 0.5 m di profondità",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0098",
+      "codice": "gen-0098",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "N"
+        },
+        "D": {
+          "rif": "5.11"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Edificio più a nord, angolo sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0099",
+      "codice": "gen-0099",
+      "celle": {
+        "D": {
+          "rif": "6.1"
+        }
+      },
+      "testo": "Oggetto particolare",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0100",
+      "codice": "gen-0100",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "2.5"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Sassaia superiore, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0101",
+      "codice": "gen-0101",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "1.9"
+        },
+        "E": {
+          "rif": "8.1"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Collina inferiore, basso, parte nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0102",
+      "codice": "gen-0102",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "1.13"
+        },
+        "F": "0.5",
+        "G": {
+          "rif": "11.3",
+          "direzione": "SE"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Buca superiore, 0.5 m di profondità, parte sud-est, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0103",
+      "codice": "gen-0103",
+      "celle": {
+        "D": {
+          "rif": "2.5"
+        },
+        "G": {
+          "rif": "11.11"
+        }
+      },
+      "testo": "Sassaia, in cima a, sopra",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0104",
+      "codice": "gen-0104",
+      "celle": {
+        "D": {
+          "rif": "5.5"
+        },
+        "E": {
+          "rif": "5.5"
+        },
+        "F": {
+          "rif": "10.1"
+        }
+      },
+      "testo": "Linea elettrica, incrocio",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0105",
+      "codice": "gen-0105",
+      "celle": {
+        "D": {
+          "rif": "5.2"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Sentiero, pista, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0106",
+      "codice": "gen-0106",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "1.14"
+        },
+        "F": "2.0",
+        "G": {
+          "rif": "11.5",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Buca profonda inferiore, 2.0 m di profondità, angolo nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0107",
+      "codice": "gen-0107",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "2.6"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Gruppo di sassi superiore, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0108",
+      "codice": "gen-0108",
+      "celle": {
+        "D": {
+          "rif": "3.3"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Buca profonda con acqua, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0109",
+      "codice": "gen-0109",
+      "celle": {
+        "D": {
+          "rif": "2.6"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "SE"
+        }
+      },
+      "testo": "Gruppo di sassi, estremità sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0110",
+      "codice": "gen-0110",
+      "celle": {
+        "D": {
+          "rif": "5.19"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "S"
+        }
+      },
+      "testo": "Carbonaia, angolo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0111",
+      "codice": "gen-0111",
+      "celle": {
+        "D": {
+          "rif": "4.2"
+        }
+      },
+      "testo": "Terreno semi-aperto",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0112",
+      "codice": "gen-0112",
+      "celle": {
+        "D": {
+          "rif": "2.6"
+        },
+        "G": {
+          "rif": "11.2",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Gruppo di sassi, bordo nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0113",
+      "codice": "gen-0113",
+      "celle": {
+        "D": {
+          "rif": "5.13"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "S"
+        }
+      },
+      "testo": "Rovina, rudere, angolo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0114",
+      "codice": "gen-0114",
+      "celle": {
+        "D": {
+          "rif": "5.15"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Torre, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0115",
+      "codice": "gen-0115",
+      "celle": {
+        "D": {
+          "rif": "5.4"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "E"
+        }
+      },
+      "testo": "Ponte, angolo est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0116",
+      "codice": "gen-0116",
+      "celle": {
+        "D": {
+          "rif": "1.15"
+        },
+        "G": {
+          "rif": "11.14",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Terreno accidentato, piede sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0117",
+      "codice": "gen-0117",
+      "celle": {
+        "D": {
+          "rif": "5.20"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Monumento o statua, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0118",
+      "codice": "gen-0118",
+      "celle": {
+        "D": {
+          "rif": "5.8"
+        },
+        "G": {
+          "rif": "11.2",
+          "direzione": "S"
+        }
+      },
+      "testo": "Muro in pietra, bordo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0119",
+      "codice": "gen-0119",
+      "celle": {
+        "D": {
+          "rif": "3.1"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Lago, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0120",
+      "codice": "gen-0120",
+      "celle": {
+        "D": {
+          "rif": "5.24"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Scala, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0121",
+      "codice": "gen-0121",
+      "celle": {
+        "D": {
+          "rif": "5.11"
+        },
+        "F": "8x4",
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Edificio, 8 x 4 m, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0122",
+      "codice": "gen-0122",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "4.8"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Gruppo d’alberi superiore, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0123",
+      "codice": "gen-0123",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SE"
+        },
+        "D": {
+          "rif": "3.7"
+        },
+        "E": {
+          "rif": "8.5"
+        },
+        "G": {
+          "rif": "11.1",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Palude più a sud-est, aperto, parte nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0124",
+      "codice": "gen-0124",
+      "celle": {
+        "D": {
+          "rif": "5.9"
+        },
+        "E": {
+          "rif": "8.11"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Recinto, rovinato, distrutto, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0125",
+      "codice": "gen-0125",
+      "celle": {
+        "D": {
+          "rif": "4.9"
+        },
+        "E": {
+          "rif": "4.9"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra albero particolare e albero particolare",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0126",
+      "codice": "gen-0126",
+      "celle": {
+        "D": {
+          "rif": "5.13"
+        },
+        "H": {
+          "rif": "12.1"
+        }
+      },
+      "testo": "Rovina, rudere, pronto soccorso",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0127",
+      "codice": "gen-0127",
+      "celle": {
+        "D": {
+          "rif": "5.10"
+        },
+        "E": {
+          "rif": "5.10"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra punto di passaggio e punto di passaggio",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0128",
+      "codice": "gen-0128",
+      "celle": {
+        "D": {
+          "rif": "5.14"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "SE"
+        }
+      },
+      "testo": "Condotta, estremità sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0129",
+      "codice": "gen-0129",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "3.10"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Sorgente superiore, angolo sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0130",
+      "codice": "gen-0130",
+      "celle": {
+        "D": {
+          "rif": "5.13"
+        }
+      },
+      "testo": "Rovina, rudere",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0131",
+      "codice": "gen-0131",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "5.6"
+        },
+        "G": {
+          "rif": "11.12"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Pilone di linea elettrica centrale, sotto, al di sotto di, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0132",
+      "codice": "gen-0132",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "2.7"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "W"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Terreno pietroso/sassoso centrale, parte ovest, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0133",
+      "codice": "gen-0133",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "5.24"
+        }
+      },
+      "testo": "Scala centrale",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0134",
+      "codice": "gen-0134",
+      "celle": {
+        "D": {
+          "rif": "2.4"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Sasso, estremità sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0135",
+      "codice": "gen-0135",
+      "celle": {
+        "D": {
+          "rif": "2.1"
+        }
+      },
+      "testo": "Roccia, parete rocciosa",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0136",
+      "codice": "gen-0136",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "1.15"
+        }
+      },
+      "testo": "Terreno accidentato superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0137",
+      "codice": "gen-0137",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SW"
+        },
+        "D": {
+          "rif": "5.6"
+        },
+        "G": {
+          "rif": "11.7"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Pilone di linea elettrica più a sud-ovest, curva, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0138",
+      "codice": "gen-0138",
+      "celle": {
+        "D": {
+          "rif": "3.1"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "N"
+        }
+      },
+      "testo": "Lago, parte nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0139",
+      "codice": "gen-0139",
+      "celle": {
+        "D": {
+          "rif": "3.5"
+        },
+        "G": {
+          "rif": "11.11"
+        }
+      },
+      "testo": "Piccolo canale, rigagnolo, in cima a, sopra",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0140",
+      "codice": "gen-0140",
+      "celle": {
+        "D": {
+          "rif": "5.8"
+        },
+        "E": {
+          "rif": "8.11"
+        },
+        "F": "3.0",
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Muro in pietra, rovinato, distrutto, 3.0 m d’altezza, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0141",
+      "codice": "gen-0141",
+      "celle": {
+        "D": {
+          "rif": "5.2"
+        }
+      },
+      "testo": "Sentiero, pista",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0142",
+      "codice": "gen-0142",
+      "celle": {
+        "D": {
+          "rif": "1.8"
+        },
+        "F": "1.0",
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Piccola fossa, 1.0 m di profondità, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0143",
+      "codice": "gen-0143",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "1.5"
+        }
+      },
+      "testo": "Cava inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0144",
+      "codice": "gen-0144",
+      "celle": {
+        "D": {
+          "rif": "5.9"
+        },
+        "F": "1.0",
+        "G": {
+          "rif": "11.3",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Recinto, 1.0 m d’altezza, parte nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0145",
+      "codice": "gen-0145",
+      "celle": {
+        "D": {
+          "rif": "1.12"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Depressione, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0146",
+      "codice": "gen-0146",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "3.8"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Isola in una palude superiore, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0147",
+      "codice": "gen-0147",
+      "celle": {
+        "D": {
+          "rif": "3.2"
+        }
+      },
+      "testo": "Stagno",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0148",
+      "codice": "gen-0148",
+      "celle": {
+        "D": {
+          "rif": "5.1"
+        }
+      },
+      "testo": "Strada",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0149",
+      "codice": "gen-0149",
+      "celle": {
+        "D": {
+          "rif": "5.5"
+        },
+        "E": {
+          "rif": "5.5"
+        },
+        "F": {
+          "rif": "10.2"
+        }
+      },
+      "testo": "Linea elettrica, bivio, biforcazione",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0150",
+      "codice": "gen-0150",
+      "celle": {
+        "D": {
+          "rif": "1.3"
+        },
+        "E": {
+          "rif": "8.2"
+        }
+      },
+      "testo": "Rientranza, piatto, poco profondo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0151",
+      "codice": "gen-0151",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "2.3"
+        }
+      },
+      "testo": "Caverna centrale",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0152",
+      "codice": "gen-0152",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SE"
+        },
+        "D": {
+          "rif": "3.11"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Cisterna d’acqua, pozzo, abbeveratoio più a sud-est, parte nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0153",
+      "codice": "gen-0153",
+      "celle": {
+        "D": {
+          "rif": "1.8"
+        },
+        "F": "0.5",
+        "G": {
+          "rif": "11.5",
+          "direzione": "E"
+        }
+      },
+      "testo": "Piccola fossa, 0.5 m di profondità, angolo est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0154",
+      "codice": "gen-0154",
+      "celle": {
+        "D": {
+          "rif": "4.2"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Terreno semi-aperto, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0155",
+      "codice": "gen-0155",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SE"
+        },
+        "D": {
+          "rif": "6.2"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "S"
+        }
+      },
+      "testo": "Oggetto particolare più a sud-est, angolo sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0156",
+      "codice": "gen-0156",
+      "celle": {
+        "D": {
+          "rif": "1.16"
+        },
+        "G": {
+          "rif": "11.11"
+        }
+      },
+      "testo": "Formicaio (termitaio), in cima a, sopra",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0157",
+      "codice": "gen-0157",
+      "celle": {
+        "D": {
+          "rif": "5.13"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Rovina, rudere, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0158",
+      "codice": "gen-0158",
+      "celle": {
+        "D": {
+          "rif": "4.2"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "E"
+        }
+      },
+      "testo": "Terreno semi-aperto, parte est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0159",
+      "codice": "gen-0159",
+      "celle": {
+        "D": {
+          "rif": "1.8"
+        },
+        "G": {
+          "rif": "11.1",
+          "direzione": "N"
+        }
+      },
+      "testo": "Piccola fossa, parte nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0160",
+      "codice": "gen-0160",
+      "celle": {
+        "D": {
+          "rif": "1.14"
+        },
+        "F": "0.5",
+        "G": {
+          "rif": "11.4",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Buca profonda, 0.5 m di profondità, angolo sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0161",
+      "codice": "gen-0161",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "6.2"
+        }
+      },
+      "testo": "Oggetto particolare superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0162",
+      "codice": "gen-0162",
+      "celle": {
+        "D": {
+          "rif": "4.4"
+        },
+        "F": "8x4",
+        "G": {
+          "rif": "11.14",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Radura, 8 x 4 m, piede nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0163",
+      "codice": "gen-0163",
+      "celle": {
+        "D": {
+          "rif": "6.2"
+        }
+      },
+      "testo": "Oggetto particolare",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0164",
+      "codice": "gen-0164",
+      "celle": {
+        "D": {
+          "rif": "2.7"
+        },
+        "G": {
+          "rif": "11.11"
+        }
+      },
+      "testo": "Terreno pietroso/sassoso, in cima a, sopra",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0165",
+      "codice": "gen-0165",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SE"
+        },
+        "D": {
+          "rif": "1.12"
+        }
+      },
+      "testo": "Depressione più a sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0166",
+      "codice": "gen-0166",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "1.5"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Cava superiore, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0167",
+      "codice": "gen-0167",
+      "celle": {
+        "D": {
+          "rif": "5.8"
+        },
+        "F": "3.0",
+        "G": {
+          "rif": "11.5",
+          "direzione": "N"
+        }
+      },
+      "testo": "Muro in pietra, 3.0 m d’altezza, angolo nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0168",
+      "codice": "gen-0168",
+      "celle": {
+        "D": {
+          "rif": "3.5"
+        }
+      },
+      "testo": "Piccolo canale, rigagnolo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0169",
+      "codice": "gen-0169",
+      "celle": {
+        "D": {
+          "rif": "3.1"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Lago, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0170",
+      "codice": "gen-0170",
+      "celle": {
+        "D": {
+          "rif": "1.13"
+        },
+        "F": "1.5",
+        "G": {
+          "rif": "11.8",
+          "direzione": "SW"
+        }
+      },
+      "testo": "Buca, 1.5 m di profondità, estremità sud-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0171",
+      "codice": "gen-0171",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "E"
+        }
+      },
+      "testo": "Galleria, angolo est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0172",
+      "codice": "gen-0172",
+      "celle": {
+        "C": {
+          "rif": "0.3"
+        },
+        "D": {
+          "rif": "3.10"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "W"
+        }
+      },
+      "testo": "Sorgente superiore, angolo ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0173",
+      "codice": "gen-0173",
+      "celle": {
+        "D": {
+          "rif": "5.8"
+        },
+        "F": "1.0",
+        "G": {
+          "rif": "11.9"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Muro in pietra, 1.0 m d’altezza, parte superiore, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0174",
+      "codice": "gen-0174",
+      "celle": {
+        "D": {
+          "rif": "1.3"
+        }
+      },
+      "testo": "Rientranza",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0175",
+      "codice": "gen-0175",
+      "celle": {
+        "D": {
+          "rif": "5.23"
+        },
+        "G": {
+          "rif": "11.6",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Sottopassaggio, punta nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0176",
+      "codice": "gen-0176",
+      "celle": {
+        "C": {
+          "rif": "0.1",
+          "direzione": "W"
+        },
+        "D": {
+          "rif": "3.5"
+        },
+        "G": {
+          "rif": "11.10"
+        }
+      },
+      "testo": "Piccolo canale, rigagnolo più a ovest, parte inferiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0177",
+      "codice": "gen-0177",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "3.8"
+        },
+        "G": {
+          "rif": "11.2",
+          "direzione": "W"
+        },
+        "H": {
+          "rif": "12.2"
+        }
+      },
+      "testo": "Isola in una palude inferiore, bordo ovest, punti con rifornimento",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0178",
+      "codice": "gen-0178",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.4",
+          "direzione": "N"
+        }
+      },
+      "testo": "Galleria, angolo nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0179",
+      "codice": "gen-0179",
+      "celle": {
+        "D": {
+          "rif": "4.8"
+        },
+        "E": {
+          "rif": "8.9"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Gruppo d’alberi, conifera, sotto, al di sotto di",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0180",
+      "codice": "gen-0180",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "SE"
+        },
+        "D": {
+          "rif": "2.5"
+        },
+        "G": {
+          "rif": "11.6",
+          "direzione": "N"
+        }
+      },
+      "testo": "Sassaia più a sud-est, punta nord",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0181",
+      "codice": "gen-0181",
+      "celle": {
+        "D": {
+          "rif": "2.6"
+        },
+        "G": {
+          "rif": "11.6",
+          "direzione": "SW"
+        },
+        "H": {
+          "rif": "12.3"
+        }
+      },
+      "testo": "Gruppo di sassi, punta sud-ovest, punto radio o tv",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0182",
+      "codice": "gen-0182",
+      "celle": {
+        "D": {
+          "rif": "2.9"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Passaggio stretto, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0183",
+      "codice": "gen-0183",
+      "celle": {
+        "D": {
+          "rif": "2.1"
+        },
+        "F": "0.5"
+      },
+      "testo": "Roccia, parete rocciosa, 0.5 m d’altezza",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0184",
+      "codice": "gen-0184",
+      "celle": {
+        "D": {
+          "rif": "2.6"
+        },
+        "G": {
+          "rif": "11.9"
+        }
+      },
+      "testo": "Gruppo di sassi, parte superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0185",
+      "codice": "gen-0185",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "1.8"
+        },
+        "G": {
+          "rif": "11.7"
+        }
+      },
+      "testo": "Piccola fossa centrale, curva",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0186",
+      "codice": "gen-0186",
+      "celle": {
+        "C": {
+          "rif": "0.2",
+          "direzione": "NW"
+        },
+        "D": {
+          "rif": "1.12"
+        },
+        "F": "0.5",
+        "G": {
+          "rif": "11.14",
+          "direzione": "NW"
+        }
+      },
+      "testo": "Depressione più a nord-ovest, 0.5 m di profondità, piede nord-ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0187",
+      "codice": "gen-0187",
+      "celle": {
+        "D": {
+          "rif": "1.8"
+        },
+        "G": {
+          "rif": "11.9"
+        }
+      },
+      "testo": "Piccola fossa, parte superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0188",
+      "codice": "gen-0188",
+      "celle": {
+        "D": {
+          "rif": "2.4"
+        },
+        "F": "2.5",
+        "G": {
+          "rif": "11.9"
+        }
+      },
+      "testo": "Sasso, 2.5 m d’altezza, parte superiore",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0189",
+      "codice": "gen-0189",
+      "celle": {
+        "D": {
+          "rif": "4.10"
+        },
+        "E": {
+          "rif": "4.10"
+        },
+        "G": {
+          "rif": "11.15"
+        }
+      },
+      "testo": "Tra ceppo, radice e ceppo, radice",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0190",
+      "codice": "gen-0190",
+      "celle": {
+        "D": {
+          "rif": "2.4"
+        },
+        "F": "1.0",
+        "G": {
+          "rif": "11.8",
+          "direzione": "S"
+        }
+      },
+      "testo": "Sasso, 1.0 m d’altezza, estremità sud",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0191",
+      "codice": "gen-0191",
+      "celle": {
+        "D": {
+          "rif": "2.6"
+        },
+        "G": {
+          "rif": "11.3",
+          "direzione": "NE"
+        }
+      },
+      "testo": "Gruppo di sassi, parte nord-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0192",
+      "codice": "gen-0192",
+      "celle": {
+        "D": {
+          "rif": "1.7"
+        },
+        "F": "3.0",
+        "G": {
+          "rif": "11.5",
+          "direzione": "E"
+        }
+      },
+      "testo": "Fossa, 3.0 m di profondità, angolo est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0193",
+      "codice": "gen-0193",
+      "celle": {
+        "D": {
+          "rif": "5.3"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "SE"
+        }
+      },
+      "testo": "Taglio di bosco, angolo sud-est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0194",
+      "codice": "gen-0194",
+      "celle": {
+        "C": {
+          "rif": "0.4"
+        },
+        "D": {
+          "rif": "5.8"
+        },
+        "E": {
+          "rif": "8.11"
+        },
+        "G": {
+          "rif": "11.14",
+          "direzione": "E"
+        }
+      },
+      "testo": "Muro in pietra inferiore, rovinato, distrutto, piede est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0195",
+      "codice": "gen-0195",
+      "celle": {
+        "D": {
+          "rif": "4.9"
+        },
+        "F": "2.0",
+        "G": {
+          "rif": "11.14",
+          "direzione": "W"
+        },
+        "H": {
+          "rif": "12.4"
+        }
+      },
+      "testo": "Albero particolare, 2.0 m d’altezza, piede ovest, controllo",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0196",
+      "codice": "gen-0196",
+      "celle": {
+        "D": {
+          "rif": "3.10"
+        },
+        "G": {
+          "rif": "11.8",
+          "direzione": "E"
+        }
+      },
+      "testo": "Sorgente, estremità est",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0197",
+      "codice": "gen-0197",
+      "celle": {
+        "C": {
+          "rif": "0.5"
+        },
+        "D": {
+          "rif": "2.7"
+        }
+      },
+      "testo": "Terreno pietroso/sassoso centrale",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0198",
+      "codice": "gen-0198",
+      "celle": {
+        "D": {
+          "rif": "5.7"
+        },
+        "G": {
+          "rif": "11.5",
+          "direzione": "W"
+        }
+      },
+      "testo": "Galleria, angolo ovest",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0199",
+      "codice": "gen-0199",
+      "celle": {
+        "D": {
+          "rif": "1.15"
+        },
+        "G": {
+          "rif": "11.13"
+        }
+      },
+      "testo": "Terreno accidentato, al piede (direzione non specificata)",
+      "origine": "generata"
+    },
+    {
+      "id": "dc:gen:0200",
+      "codice": "gen-0200",
+      "celle": {
+        "D": {
+          "rif": "4.5"
+        },
+        "G": {
+          "rif": "11.12"
+        }
+      },
+      "testo": "Boschetto fitto, sotto, al di sotto di",
+      "origine": "generata"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "v": 1,
+  "generato": "2026-09-05",
+  "sorgente": "S1",
+  "esclusi": [
+    {
+      "tipo": "simbolo",
+      "rif": "601",
+      "nome": "Linea del nord magnetico",
+      "motivo": "sezione 3.6 Simboli tecnici, fuori dal perimetro del deck ISOM (akaaso/01-vision/004-scope-boundaries.md; akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "simbolo",
+      "rif": "602",
+      "nome": "Crocino di registro",
+      "motivo": "sezione 3.6 Simboli tecnici, fuori dal perimetro del deck ISOM (akaaso/01-vision/004-scope-boundaries.md; akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "simbolo",
+      "rif": "603",
+      "nome": "Punto quotato",
+      "motivo": "sezione 3.6 Simboli tecnici, fuori dal perimetro del deck ISOM (akaaso/01-vision/004-scope-boundaries.md; akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "simbolo",
+      "rif": "550",
+      "nome": "Poligono di tiro",
+      "motivo": "nessun render S5 disponibile (nessun file \"ISOM 550 …pdf\" in sources/iof-isom-2017-2-revision-6-links/); descritto in [S1] ma assente dal pacchetto artwork"
+    },
+    {
+      "tipo": "variante",
+      "file": "content/artwork/isom/105.2.png",
+      "motivo": "ISOM 105.2 \"Retained earth wall\": variante S5 del simbolo 105, priva di testo proprio in [S1] (il paragrafo \"105 Muro di terra\" descrive solo 105.1 \"Earth wall\"); il simbolo 105 in isom.json punta a 105.1.png"
+    },
+    {
+      "tipo": "variante",
+      "file": "content/artwork/isom/203.2.png",
+      "motivo": "ISOM 203.2 \"Dangerous pit\": variante S5 del simbolo 203, priva di testo proprio in [S1] (il paragrafo \"203 Buca rocciosa o caverna\" descrive solo 203.1 \"Rocky pit or cave\"); il simbolo 203 in isom.json punta a 203.1.png"
+    },
+    {
+      "tipo": "variante",
+      "file": "content/artwork/isom/715.png",
+      "motivo": "ISOM 715 \"Continuing point after map exchange\": presente nel pacchetto artwork S5 ma assente dal testo [S1] (ISOM_2017-2_CH_IT.md non elenca il simbolo 715)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_104.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_105.2.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_107.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_111.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_112_303.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_115.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_201.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_202.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_203.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_207.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_208.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_311.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_312.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_313.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_417.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_419.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_513.2.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_516.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_518.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_524.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_525.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_526.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_527.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_528.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_529.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_530.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_531.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM Def_713.pdf",
+      "motivo": "figura di definizione grafica precisa (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_1.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_10.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_11.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_2.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_3.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_4.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_5.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_6.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_7.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_8.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    },
+    {
+      "tipo": "figura",
+      "file": "ISOM min_dim_9.pdf",
+      "motivo": "figura di dimensione minima (§3.8), non usata per il rendering delle carte (akaaso/03-modules/006-pipeline-isom.md)"
+    }
+  ]
+}

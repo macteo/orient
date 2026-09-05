@@ -1,0 +1,196 @@
+{
+  "v": 1,
+  "mazzi": [
+    {
+      "id": "descrizioni-simboli",
+      "nome": "Descrizioni dei punti",
+      "tipo": "simbolo",
+      "fonte": "simboli/descrizioni-punti.json",
+      "ordine": 1,
+      "sezioni": [
+        {
+          "id": "colonna-c",
+          "etichetta": "Colonna C – Quale degli oggetti simili",
+          "ordine": 1
+        },
+        {
+          "id": "d-morfologici",
+          "etichetta": "Oggetti morfologici",
+          "ordine": 2
+        },
+        {
+          "id": "d-rocce",
+          "etichetta": "Rocce e sassi",
+          "ordine": 3
+        },
+        {
+          "id": "d-idrografia",
+          "etichetta": "Idrografia",
+          "ordine": 4
+        },
+        {
+          "id": "d-vegetazione",
+          "etichetta": "Vegetazione",
+          "ordine": 5
+        },
+        {
+          "id": "d-costruzioni",
+          "etichetta": "Costruzioni",
+          "ordine": 6
+        },
+        {
+          "id": "d-particolari",
+          "etichetta": "Oggetti particolari",
+          "ordine": 7
+        },
+        {
+          "id": "colonna-e",
+          "etichetta": "Colonna E – Informazioni complementari",
+          "ordine": 8
+        },
+        {
+          "id": "colonna-f",
+          "etichetta": "Colonna F – Combinazioni",
+          "ordine": 9
+        },
+        {
+          "id": "colonna-g",
+          "etichetta": "Colonna G – Posizione della lanterna",
+          "ordine": 10
+        },
+        {
+          "id": "colonna-h",
+          "etichetta": "Colonna H – Altre informazioni",
+          "ordine": 11
+        },
+        {
+          "id": "istruzioni",
+          "etichetta": "Istruzioni speciali",
+          "ordine": 12
+        }
+      ]
+    },
+    {
+      "id": "descrizioni-complete",
+      "nome": "Descrizioni complete",
+      "tipo": "riga",
+      "fonte": "righe/ufficiali.json, righe/generate.json",
+      "ordine": 2,
+      "sezioni": [
+        {
+          "id": "ufficiali",
+          "etichetta": "Ufficiali (pagina 3)",
+          "ordine": 1
+        },
+        {
+          "id": "d-morfologici",
+          "etichetta": "Oggetti morfologici",
+          "ordine": 2
+        },
+        {
+          "id": "d-rocce",
+          "etichetta": "Rocce e sassi",
+          "ordine": 3
+        },
+        {
+          "id": "d-idrografia",
+          "etichetta": "Idrografia",
+          "ordine": 4
+        },
+        {
+          "id": "d-vegetazione",
+          "etichetta": "Vegetazione",
+          "ordine": 5
+        },
+        {
+          "id": "d-costruzioni",
+          "etichetta": "Costruzioni",
+          "ordine": 6
+        },
+        {
+          "id": "d-particolari",
+          "etichetta": "Oggetti particolari",
+          "ordine": 7
+        }
+      ]
+    },
+    {
+      "id": "esempi",
+      "nome": "Esempi sul terreno",
+      "tipo": "esempio",
+      "fonte": "esempi/esempi.json",
+      "ordine": 3,
+      "sezioni": [
+        {
+          "id": "d-morfologici",
+          "etichetta": "Oggetti morfologici",
+          "ordine": 1
+        },
+        {
+          "id": "d-rocce",
+          "etichetta": "Rocce e sassi",
+          "ordine": 2
+        },
+        {
+          "id": "d-idrografia",
+          "etichetta": "Idrografia",
+          "ordine": 3
+        },
+        {
+          "id": "d-vegetazione",
+          "etichetta": "Vegetazione",
+          "ordine": 4
+        },
+        {
+          "id": "d-costruzioni",
+          "etichetta": "Costruzioni",
+          "ordine": 5
+        },
+        {
+          "id": "d-particolari",
+          "etichetta": "Oggetti particolari",
+          "ordine": 6
+        }
+      ]
+    },
+    {
+      "id": "isom",
+      "nome": "ISOM 2017-2",
+      "tipo": "simbolo-isom",
+      "fonte": "simboli/isom.json",
+      "ordine": 4,
+      "sezioni": [
+        {
+          "id": "forme",
+          "etichetta": "3.1 Forme del terreno",
+          "ordine": 1
+        },
+        {
+          "id": "rocce",
+          "etichetta": "3.2 Rocce e sassi",
+          "ordine": 2
+        },
+        {
+          "id": "acqua",
+          "etichetta": "3.3 Acqua e paludi",
+          "ordine": 3
+        },
+        {
+          "id": "vegetazione",
+          "etichetta": "3.4 Vegetazione",
+          "ordine": 4
+        },
+        {
+          "id": "opere",
+          "etichetta": "3.5 Opere dell'uomo",
+          "ordine": 5
+        },
+        {
+          "id": "tracciato",
+          "etichetta": "3.7 Simboli di tracciamento percorsi",
+          "ordine": 6
+        }
+      ]
+    }
+  ]
+}

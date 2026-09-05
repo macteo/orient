@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- Template della pagina fonti e licenze (R-005, D-005). `scripts/build-mazzi.ts`
+     la emette in `.generated/pages/fonti/index.html`, sostituendo i segnaposto
+     {{…}}; il registro delle licenze (`content/fonti.json`) è inlinato in
+     `#fonti`. La pagina è uno schermo autosufficiente come nell'artboard
+     (`_artboards/fonti.dc.html`): niente header/footer di sito qui — il link
+     "← Mazzi", l'elenco delle fonti, la barra di contatto e il testo della
+     licenza BSD li rende `src/pages/fonti.ts` dentro `#app`, così il Button
+     di contatto resta l'ultimo elemento attivabile della pagina. I testi
+     delle licenze (`content/licenze/*`) li importa quel modulo con `?raw`. -->
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fonti, attribuzioni e licenze del materiale usato da orient." />
+    <title>{{TITOLO_DOCUMENTO}}</title>
+  </head>
+  <body>
+    <main id="app" data-titolo="{{TITOLO}}"></main>
+
+    <script type="application/json" id="fonti">{{FONTI}}</script>
+    <script type="module" src="/src/pages/fonti.ts"></script>
+  </body>
+</html>

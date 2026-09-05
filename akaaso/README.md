@@ -115,8 +115,6 @@ Coverage: see [06-design/_coverage.md](06-design/_coverage.md).
 
 ## Open Questions
 
-- [ ] Repository visibility — Pages on a private repo needs a paid plan;
-      resolved by the first deploy (Level 2, 001)
 - [ ] Custom domain — optional; decides the base path (Level 2, 001 / 007)
 
 ## Tensions
