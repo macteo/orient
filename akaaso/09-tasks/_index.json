@@ -471,7 +471,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-check-content",
@@ -498,6 +498,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:56:02.525Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:56:02.641Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-check-content, sha: d03f779; two integration fixes on develop"
         }
       ],
       "notes": null
@@ -508,7 +518,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "S",
       "branch": "develop",
@@ -528,6 +538,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T10:56:02.671Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:56:02.701Z",
+          "event": "gate",
+          "note": "check:content green (9 OK, 1 skipped: generate.json); npm test 97 passed; tsc clean; build ok; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
