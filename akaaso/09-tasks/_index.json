@@ -1125,7 +1125,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "Config",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-sito-config-ci-deploy",
@@ -1150,6 +1150,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:41:07.569Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:41:07.613Z",
+          "event": "merged",
+          "note": "branch: task/p1-sito-config-ci-deploy, sha: 862a43f; deploy verified on the merge to main"
         }
       ],
       "notes": "infrastructure: serves every story"

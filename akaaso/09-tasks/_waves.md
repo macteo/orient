@@ -47,6 +47,6 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 - ☑ **P1-E2E-journey-prima-serie-di-flash-card** — Journey S-001 (Test, M)
 - ☐ **P1-E2E-journey-quiz-con-ripasso** — Journey S-002 (Test, M)
 - ☑ **P1-E2E-journey-righe-complete** — Journey S-003 (Test, M)
-- ☐ **P1-SITO-CONFIG-ci-deploy** — GitHub Actions workflow, dist checks, Pages deploy (Config, M)
+- ☑ **P1-SITO-CONFIG-ci-deploy** — GitHub Actions workflow, dist checks, Pages deploy (Config, M)
 - ☐ **WAVE5-E2E-wave-gate** — Wave 5 post-merge gate (Test, S)
 
