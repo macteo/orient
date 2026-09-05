@@ -1,0 +1,932 @@
+{
+  "v": 1,
+  "project": "orient",
+  "generated": "2026-09-05T09:39:34.964Z",
+  "tasks": [
+    {
+      "id": "P1-CONTENUTI-DATA-fonti-e-sezioni",
+      "title": "Licence register, deck sections, licence texts",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 0,
+      "effort": "S",
+      "branch": "task/p1-contenuti-data-fonti-e-sezioni",
+      "commitPrefix": "feat(contenuti): fonti e sezioni",
+      "dependencies": [],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005",
+        "S-006",
+        "S-007",
+        "S-008"
+      ],
+      "features": [
+        "F-005",
+        "F-006"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-DATA-fonti-e-sezioni.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-TOOL-extract-esempi",
+      "title": "Crop worked examples and page-3 rows",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 0,
+      "effort": "L",
+      "branch": "task/p1-contenuti-tool-extract-esempi",
+      "commitPrefix": "feat(contenuti): extract esempi",
+      "dependencies": [],
+      "stories": [
+        "S-004",
+        "S-005",
+        "S-008",
+        "S-009"
+      ],
+      "features": [
+        "F-007"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-TOOL-extract-esempi.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-TOOL-extract-isom",
+      "title": "Render IOF per-symbol ISOM PDFs to PNG",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 0,
+      "effort": "M",
+      "branch": "task/p1-contenuti-tool-extract-isom",
+      "commitPrefix": "feat(contenuti): extract ISOM artwork",
+      "dependencies": [],
+      "stories": [
+        "S-004",
+        "S-005",
+        "S-008",
+        "S-009"
+      ],
+      "features": [
+        "F-007"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-TOOL-extract-isom.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-TOOL-parse-descrizioni",
+      "title": "Parse control-description tables, vendor pictogram SVGs",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 0,
+      "effort": "M",
+      "branch": "task/p1-contenuti-tool-parse-descrizioni",
+      "commitPrefix": "feat(contenuti): parse descrizioni dei punti",
+      "dependencies": [],
+      "stories": [
+        "S-004",
+        "S-005",
+        "S-008",
+        "S-009"
+      ],
+      "features": [
+        "F-007"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-TOOL-parse-descrizioni.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-TOOL-parse-isom",
+      "title": "Parse ISOM 2017-2 symbol list",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 0,
+      "effort": "S",
+      "branch": "task/p1-contenuti-tool-parse-isom",
+      "commitPrefix": "feat(contenuti): parse ISOM",
+      "dependencies": [],
+      "stories": [
+        "S-004",
+        "S-005",
+        "S-008",
+        "S-009"
+      ],
+      "features": [
+        "F-007"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-TOOL-parse-isom.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-SITO-CONFIG-scaffold",
+      "title": "Project scaffold: Vite + TS + Tailwind 4 + Preline 5",
+      "module": "sito",
+      "phase": 1,
+      "layer": "Config",
+      "status": "todo",
+      "wave": 0,
+      "effort": "M",
+      "branch": "task/p1-sito-config-scaffold",
+      "commitPrefix": "chore(sito): project scaffold",
+      "dependencies": [],
+      "stories": [],
+      "features": [
+        "F-009",
+        "F-006"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-SITO-CONFIG-scaffold.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": "infrastructure: serves every story"
+    },
+    {
+      "id": "WAVE0-E2E-wave-gate",
+      "title": "Wave 0 post-merge gate",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 0,
+      "effort": "S",
+      "branch": "develop",
+      "commitPrefix": "test(gate): wave 0 post-merge gate",
+      "dependencies": [
+        "P1-SITO-CONFIG-scaffold",
+        "P1-CONTENUTI-TOOL-parse-descrizioni",
+        "P1-CONTENUTI-TOOL-parse-isom",
+        "P1-CONTENUTI-TOOL-extract-isom",
+        "P1-CONTENUTI-TOOL-extract-esempi",
+        "P1-CONTENUTI-DATA-fonti-e-sezioni"
+      ],
+      "stories": [],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/WAVE0-E2E-wave-gate.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "gate"
+        }
+      ],
+      "notes": "runs inline on develop after the wave's merges; never a spawned agent"
+    },
+    {
+      "id": "P1-ALLENAMENTO-LOGIC-serie-quiz-storage",
+      "title": "Run reducer, quiz options, storage, seeded RNG",
+      "module": "allenamento",
+      "phase": 1,
+      "layer": "Logic",
+      "status": "todo",
+      "wave": 1,
+      "effort": "M",
+      "branch": "task/p1-allenamento-logic-serie-quiz-storage",
+      "commitPrefix": "feat(allenamento): serie, quiz e storage",
+      "dependencies": [
+        "P1-SITO-CONFIG-scaffold"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005",
+        "S-006"
+      ],
+      "features": [
+        "F-002",
+        "F-003",
+        "F-010"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-ALLENAMENTO-LOGIC-serie-quiz-storage.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-ALLENAMENTO-UI-facce",
+      "title": "Card faces and the description-row grid",
+      "module": "allenamento",
+      "phase": 1,
+      "layer": "UI",
+      "status": "todo",
+      "wave": 1,
+      "effort": "M",
+      "branch": "task/p1-allenamento-ui-facce",
+      "commitPrefix": "feat(allenamento): facce delle carte",
+      "dependencies": [
+        "P1-SITO-CONFIG-scaffold"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005"
+      ],
+      "features": [
+        "F-004"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-ALLENAMENTO-UI-facce.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-DATA-compatibilita",
+      "title": "Compatibility table for generated rows",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 1,
+      "effort": "M",
+      "branch": "task/p1-contenuti-data-compatibilita",
+      "commitPrefix": "feat(contenuti): compatibilita",
+      "dependencies": [
+        "P1-CONTENUTI-TOOL-parse-descrizioni"
+      ],
+      "stories": [
+        "S-003",
+        "S-008"
+      ],
+      "features": [
+        "F-008"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-DATA-compatibilita.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-DATA-righe-ufficiali",
+      "title": "Transcribe the nine official rows",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 1,
+      "effort": "M",
+      "branch": "task/p1-contenuti-data-righe-ufficiali",
+      "commitPrefix": "feat(contenuti): righe ufficiali",
+      "dependencies": [
+        "P1-CONTENUTI-TOOL-parse-descrizioni",
+        "P1-CONTENUTI-TOOL-extract-esempi"
+      ],
+      "stories": [
+        "S-003",
+        "S-008"
+      ],
+      "features": [
+        "F-008"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-DATA-righe-ufficiali.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-CONTENUTI-TOOL-check-content",
+      "title": "Content check: schemas, inventories, checksums, determinism",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 1,
+      "effort": "M",
+      "branch": "task/p1-contenuti-tool-check-content",
+      "commitPrefix": "feat(contenuti): check-content",
+      "dependencies": [
+        "P1-CONTENUTI-TOOL-parse-descrizioni",
+        "P1-CONTENUTI-TOOL-parse-isom",
+        "P1-CONTENUTI-TOOL-extract-isom",
+        "P1-CONTENUTI-TOOL-extract-esempi",
+        "P1-CONTENUTI-DATA-fonti-e-sezioni"
+      ],
+      "stories": [
+        "S-004",
+        "S-005",
+        "S-008",
+        "S-009"
+      ],
+      "features": [
+        "F-007"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-TOOL-check-content.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "WAVE1-E2E-wave-gate",
+      "title": "Wave 1 post-merge gate",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 1,
+      "effort": "S",
+      "branch": "develop",
+      "commitPrefix": "test(gate): wave 1 post-merge gate",
+      "dependencies": [
+        "P1-CONTENUTI-DATA-righe-ufficiali",
+        "P1-CONTENUTI-DATA-compatibilita",
+        "P1-CONTENUTI-TOOL-check-content",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage",
+        "P1-ALLENAMENTO-UI-facce"
+      ],
+      "stories": [],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/WAVE1-E2E-wave-gate.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "gate"
+        }
+      ],
+      "notes": "runs inline on develop after the wave's merges; never a spawned agent"
+    },
+    {
+      "id": "P1-CONTENUTI-TOOL-generate-righe",
+      "title": "Prefix-stable generator for description rows",
+      "module": "contenuti",
+      "phase": 1,
+      "layer": "Content",
+      "status": "todo",
+      "wave": 2,
+      "effort": "M",
+      "branch": "task/p1-contenuti-tool-generate-righe",
+      "commitPrefix": "feat(contenuti): generatore di righe",
+      "dependencies": [
+        "P1-CONTENUTI-DATA-righe-ufficiali",
+        "P1-CONTENUTI-DATA-compatibilita",
+        "P1-CONTENUTI-TOOL-check-content"
+      ],
+      "stories": [
+        "S-003",
+        "S-008"
+      ],
+      "features": [
+        "F-008"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-CONTENUTI-TOOL-generate-righe.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "WAVE2-E2E-wave-gate",
+      "title": "Wave 2 post-merge gate",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 2,
+      "effort": "S",
+      "branch": "develop",
+      "commitPrefix": "test(gate): wave 2 post-merge gate",
+      "dependencies": [
+        "P1-CONTENUTI-TOOL-generate-righe"
+      ],
+      "stories": [],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/WAVE2-E2E-wave-gate.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "gate"
+        }
+      ],
+      "notes": "runs inline on develop after the wave's merges; never a spawned agent"
+    },
+    {
+      "id": "P1-MAZZI-BUILD-decks-e-pagine",
+      "title": "Assemble decks and emit the thirteen pages",
+      "module": "mazzi",
+      "phase": 1,
+      "layer": "Build",
+      "status": "todo",
+      "wave": 3,
+      "effort": "L",
+      "branch": "task/p1-mazzi-build-decks-e-pagine",
+      "commitPrefix": "feat(mazzi): build mazzi e pagine",
+      "dependencies": [
+        "P1-SITO-CONFIG-scaffold",
+        "P1-CONTENUTI-TOOL-parse-descrizioni",
+        "P1-CONTENUTI-TOOL-parse-isom",
+        "P1-CONTENUTI-TOOL-extract-isom",
+        "P1-CONTENUTI-TOOL-extract-esempi",
+        "P1-CONTENUTI-DATA-fonti-e-sezioni",
+        "P1-CONTENUTI-DATA-righe-ufficiali",
+        "P1-CONTENUTI-TOOL-generate-righe"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005",
+        "S-006",
+        "S-007",
+        "S-008"
+      ],
+      "features": [
+        "F-006"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-MAZZI-BUILD-decks-e-pagine.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "WAVE3-E2E-wave-gate",
+      "title": "Wave 3 post-merge gate",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 3,
+      "effort": "S",
+      "branch": "develop",
+      "commitPrefix": "test(gate): wave 3 post-merge gate",
+      "dependencies": [
+        "P1-MAZZI-BUILD-decks-e-pagine"
+      ],
+      "stories": [],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/WAVE3-E2E-wave-gate.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "gate"
+        }
+      ],
+      "notes": "runs inline on develop after the wave's merges; never a spawned agent"
+    },
+    {
+      "id": "P1-ALLENAMENTO-UI-flashcard",
+      "title": "Flash-card run page",
+      "module": "allenamento",
+      "phase": 1,
+      "layer": "UI",
+      "status": "todo",
+      "wave": 4,
+      "effort": "M",
+      "branch": "task/p1-allenamento-ui-flashcard",
+      "commitPrefix": "feat(allenamento): flash card",
+      "dependencies": [
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage",
+        "P1-ALLENAMENTO-UI-facce"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005"
+      ],
+      "features": [
+        "F-002",
+        "F-004"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-ALLENAMENTO-UI-flashcard.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-ALLENAMENTO-UI-quiz",
+      "title": "Quiz run page",
+      "module": "allenamento",
+      "phase": 1,
+      "layer": "UI",
+      "status": "todo",
+      "wave": 4,
+      "effort": "M",
+      "branch": "task/p1-allenamento-ui-quiz",
+      "commitPrefix": "feat(allenamento): quiz",
+      "dependencies": [
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage",
+        "P1-ALLENAMENTO-UI-facce"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005"
+      ],
+      "features": [
+        "F-003",
+        "F-004"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-ALLENAMENTO-UI-quiz.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-ALLENAMENTO-UI-risultati",
+      "title": "Results page",
+      "module": "allenamento",
+      "phase": 1,
+      "layer": "UI",
+      "status": "todo",
+      "wave": 4,
+      "effort": "M",
+      "branch": "task/p1-allenamento-ui-risultati",
+      "commitPrefix": "feat(allenamento): risultati",
+      "dependencies": [
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage",
+        "P1-ALLENAMENTO-UI-facce"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005",
+        "S-006"
+      ],
+      "features": [
+        "F-010",
+        "F-004"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-ALLENAMENTO-UI-risultati.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-SITO-UI-fonti",
+      "title": "Attribution page",
+      "module": "sito",
+      "phase": 1,
+      "layer": "UI",
+      "status": "todo",
+      "wave": 4,
+      "effort": "S",
+      "branch": "task/p1-sito-ui-fonti",
+      "commitPrefix": "feat(sito): fonti",
+      "dependencies": [
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-CONTENUTI-DATA-fonti-e-sezioni"
+      ],
+      "stories": [
+        "S-007"
+      ],
+      "features": [
+        "F-005"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-SITO-UI-fonti.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-SITO-UI-home",
+      "title": "Home: deck and section picker",
+      "module": "sito",
+      "phase": 1,
+      "layer": "UI",
+      "status": "todo",
+      "wave": 4,
+      "effort": "M",
+      "branch": "task/p1-sito-ui-home",
+      "commitPrefix": "feat(sito): home",
+      "dependencies": [
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage"
+      ],
+      "stories": [
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005",
+        "S-006",
+        "S-008"
+      ],
+      "features": [
+        "F-001",
+        "F-010"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-SITO-UI-home.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "WAVE4-E2E-wave-gate",
+      "title": "Wave 4 post-merge gate",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 4,
+      "effort": "S",
+      "branch": "develop",
+      "commitPrefix": "test(gate): wave 4 post-merge gate",
+      "dependencies": [
+        "P1-SITO-UI-home",
+        "P1-ALLENAMENTO-UI-flashcard",
+        "P1-ALLENAMENTO-UI-quiz",
+        "P1-ALLENAMENTO-UI-risultati",
+        "P1-SITO-UI-fonti"
+      ],
+      "stories": [],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/WAVE4-E2E-wave-gate.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "gate"
+        }
+      ],
+      "notes": "runs inline on develop after the wave's merges; never a spawned agent"
+    },
+    {
+      "id": "P1-E2E-journey-prima-serie-di-flash-card",
+      "title": "Journey S-001",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 5,
+      "effort": "M",
+      "branch": "task/p1-e2e-journey-prima-serie-di-flash-card",
+      "commitPrefix": "test(e2e): journey S-001",
+      "dependencies": [
+        "P1-SITO-UI-home",
+        "P1-ALLENAMENTO-UI-flashcard",
+        "P1-ALLENAMENTO-UI-facce",
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-UI-risultati",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage"
+      ],
+      "stories": [
+        "S-001"
+      ],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/P1-E2E-journey-prima-serie-di-flash-card.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-E2E-journey-quiz-con-ripasso",
+      "title": "Journey S-002",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 5,
+      "effort": "M",
+      "branch": "task/p1-e2e-journey-quiz-con-ripasso",
+      "commitPrefix": "test(e2e): journey S-002",
+      "dependencies": [
+        "P1-SITO-UI-home",
+        "P1-ALLENAMENTO-UI-quiz",
+        "P1-ALLENAMENTO-UI-flashcard",
+        "P1-ALLENAMENTO-UI-facce",
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-UI-risultati",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage"
+      ],
+      "stories": [
+        "S-002"
+      ],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/P1-E2E-journey-quiz-con-ripasso.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-E2E-journey-righe-complete",
+      "title": "Journey S-003",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 5,
+      "effort": "M",
+      "branch": "task/p1-e2e-journey-righe-complete",
+      "commitPrefix": "test(e2e): journey S-003",
+      "dependencies": [
+        "P1-SITO-UI-home",
+        "P1-ALLENAMENTO-UI-flashcard",
+        "P1-ALLENAMENTO-UI-quiz",
+        "P1-ALLENAMENTO-UI-facce",
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-ALLENAMENTO-UI-risultati",
+        "P1-ALLENAMENTO-LOGIC-serie-quiz-storage",
+        "P1-CONTENUTI-TOOL-generate-righe"
+      ],
+      "stories": [
+        "S-003"
+      ],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/P1-E2E-journey-righe-complete.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "P1-SITO-CONFIG-ci-deploy",
+      "title": "GitHub Actions workflow, dist checks, Pages deploy",
+      "module": "sito",
+      "phase": 1,
+      "layer": "Config",
+      "status": "todo",
+      "wave": 5,
+      "effort": "M",
+      "branch": "task/p1-sito-config-ci-deploy",
+      "commitPrefix": "chore(sito): CI e deploy",
+      "dependencies": [
+        "P1-SITO-CONFIG-scaffold",
+        "P1-CONTENUTI-TOOL-check-content",
+        "P1-MAZZI-BUILD-decks-e-pagine",
+        "P1-SITO-UI-home",
+        "P1-ALLENAMENTO-UI-flashcard",
+        "P1-ALLENAMENTO-UI-quiz",
+        "P1-ALLENAMENTO-UI-risultati",
+        "P1-SITO-UI-fonti"
+      ],
+      "stories": [],
+      "features": [
+        "F-009"
+      ],
+      "spec_path": "akaaso/09-tasks/P1-SITO-CONFIG-ci-deploy.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "unpacked from the akaaso spec"
+        }
+      ],
+      "notes": "infrastructure: serves every story"
+    },
+    {
+      "id": "WAVE5-E2E-wave-gate",
+      "title": "Wave 5 post-merge gate",
+      "module": "Cross-cutting",
+      "phase": 1,
+      "layer": "Test",
+      "status": "todo",
+      "wave": 5,
+      "effort": "S",
+      "branch": "develop",
+      "commitPrefix": "test(gate): wave 5 post-merge gate",
+      "dependencies": [
+        "P1-SITO-CONFIG-ci-deploy",
+        "P1-E2E-journey-prima-serie-di-flash-card",
+        "P1-E2E-journey-quiz-con-ripasso",
+        "P1-E2E-journey-righe-complete"
+      ],
+      "stories": [],
+      "features": [],
+      "spec_path": "akaaso/09-tasks/WAVE5-E2E-wave-gate.md",
+      "history": [
+        {
+          "at": "2026-09-05T09:39:34.964Z",
+          "event": "created",
+          "note": "gate"
+        }
+      ],
+      "notes": "runs inline on develop after the wave's merges; never a spawned agent"
+    }
+  ]
+}
