@@ -7,7 +7,7 @@
 | Wave | Status | Task | Layer | Effort | Stories | Dependencies |
 |---|---|---|---|---|---|---|
 | 0 | ☑ done | [P1-CONTENUTI-DATA-fonti-e-sezioni](P1-CONTENUTI-DATA-fonti-e-sezioni.md) — Licence register, deck sections, licence texts | Content | S | S-001, S-002, S-003, S-004, S-005, S-006, S-007, S-008 | — |
-| 0 | ☐ todo | [P1-CONTENUTI-TOOL-extract-esempi](P1-CONTENUTI-TOOL-extract-esempi.md) — Crop worked examples and page-3 rows | Content | L | S-004, S-005, S-008, S-009 | — |
+| 0 | ☑ done | [P1-CONTENUTI-TOOL-extract-esempi](P1-CONTENUTI-TOOL-extract-esempi.md) — Crop worked examples and page-3 rows | Content | L | S-004, S-005, S-008, S-009 | — |
 | 0 | ☑ done | [P1-CONTENUTI-TOOL-extract-isom](P1-CONTENUTI-TOOL-extract-isom.md) — Render IOF per-symbol ISOM PDFs to PNG | Content | M | S-004, S-005, S-008, S-009 | — |
 | 0 | ☐ todo | [P1-CONTENUTI-TOOL-parse-descrizioni](P1-CONTENUTI-TOOL-parse-descrizioni.md) — Parse control-description tables, vendor pictogram SVGs | Content | M | S-004, S-005, S-008, S-009 | — |
 | 0 | ☐ todo | [P1-CONTENUTI-TOOL-parse-isom](P1-CONTENUTI-TOOL-parse-isom.md) — Parse ISOM 2017-2 symbol list | Content | S | S-004, S-005, S-008, S-009 | — |

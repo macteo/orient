@@ -7,7 +7,7 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 ## Wave 0 — 6 tasks + gate
 
 - ☑ **P1-CONTENUTI-DATA-fonti-e-sezioni** — Licence register, deck sections, licence texts (Content, S)
-- ☐ **P1-CONTENUTI-TOOL-extract-esempi** — Crop worked examples and page-3 rows (Content, L)
+- ☑ **P1-CONTENUTI-TOOL-extract-esempi** — Crop worked examples and page-3 rows (Content, L)
 - ☑ **P1-CONTENUTI-TOOL-extract-isom** — Render IOF per-symbol ISOM PDFs to PNG (Content, M)
 - ☐ **P1-CONTENUTI-TOOL-parse-descrizioni** — Parse control-description tables, vendor pictogram SVGs (Content, M)
 - ☐ **P1-CONTENUTI-TOOL-parse-isom** — Parse ISOM 2017-2 symbol list (Content, S)
