@@ -1,0 +1,114 @@
+{
+  "v": 1,
+  "sorgente": "S3",
+  "pagina": 3,
+  "righe": [
+    {
+      "id": "dc:ufficiale:1",
+      "numero": "1",
+      "codice": "101",
+      "celle": {
+        "D": { "rif": "3.6" },
+        "G": { "rif": "11.7" }
+      },
+      "testo": "Curva striscia di palude",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:2",
+      "numero": "2",
+      "codice": "212",
+      "celle": {
+        "C": { "rif": "0.2", "direzione": "NW" },
+        "D": { "rif": "2.4" },
+        "F": "1.0",
+        "G": { "rif": "11.1", "direzione": "E" }
+      },
+      "testo": "Sasso nord ovest, 1 m d’altezza, lato est",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:3",
+      "numero": "3",
+      "codice": "135",
+      "celle": {
+        "D": { "rif": "4.5" },
+        "E": { "rif": "4.5" },
+        "G": { "rif": "11.15" }
+      },
+      "testo": "Tra due boschetti fitti",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:4",
+      "numero": "4",
+      "codice": "246",
+      "celle": {
+        "C": { "rif": "0.5" },
+        "D": { "rif": "1.12" },
+        "G": { "rif": "11.3", "direzione": "E" }
+      },
+      "testo": "Depressione centrale, parte est",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:5",
+      "numero": "5",
+      "codice": "164",
+      "celle": {
+        "C": { "rif": "0.1", "direzione": "E" },
+        "D": { "rif": "5.13" },
+        "G": { "rif": "11.1", "direzione": "W" }
+      },
+      "testo": "Rovina più a est, parte ovest",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:6",
+      "numero": "6",
+      "codice": "185",
+      "celle": {
+        "D": { "rif": "5.8" },
+        "E": { "rif": "8.11" },
+        "G": { "rif": "11.5", "direzione": "SE" }
+      },
+      "testo": "Muro di sassi, rovinato, angolo esterno sud-est",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:7",
+      "numero": "7",
+      "codice": "178",
+      "celle": {
+        "D": { "rif": "1.2" },
+        "G": { "rif": "11.14", "direzione": "NW" }
+      },
+      "testo": "Naso, piede nord-ovest",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:8",
+      "numero": "8",
+      "codice": "147",
+      "celle": {
+        "C": { "rif": "0.3" },
+        "D": { "rif": "2.1" },
+        "F": "2.0"
+      },
+      "testo": "Roccia superiore, 2 m d’altezza",
+      "origine": "ufficiale"
+    },
+    {
+      "id": "dc:ufficiale:9",
+      "numero": "9",
+      "codice": "149",
+      "celle": {
+        "D": { "rif": "5.2" },
+        "E": { "rif": "5.2" },
+        "F": { "rif": "10.1" }
+      },
+      "testo": "Incrocio sentieri",
+      "origine": "ufficiale"
+    }
+  ]
+}
