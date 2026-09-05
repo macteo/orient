@@ -38,7 +38,7 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 - ☐ **P1-ALLENAMENTO-UI-flashcard** — Flash-card run page (UI, M)
 - ☐ **P1-ALLENAMENTO-UI-quiz** — Quiz run page (UI, M)
 - ☐ **P1-ALLENAMENTO-UI-risultati** — Results page (UI, M)
-- ☐ **P1-SITO-UI-fonti** — Attribution page (UI, S)
+- ☑ **P1-SITO-UI-fonti** — Attribution page (UI, S)
 - ☐ **P1-SITO-UI-home** — Home: deck and section picker (UI, M)
 - ☐ **WAVE4-E2E-wave-gate** — Wave 4 post-merge gate (Test, S)
 

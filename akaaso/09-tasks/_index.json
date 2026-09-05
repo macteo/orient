@@ -844,7 +844,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "S",
       "branch": "task/p1-sito-ui-fonti",
@@ -865,6 +865,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:52:40.319Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:52:40.363Z",
+          "event": "merged",
+          "note": "branch: task/p1-sito-ui-fonti, sha: f3f9bd0"
         }
       ],
       "notes": null
