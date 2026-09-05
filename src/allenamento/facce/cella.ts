@@ -30,10 +30,9 @@ let spriteMontata: Document | null = null;
  */
 function garantisciSprite(doc: Document): void {
   if (spriteMontata === doc) return;
-  const analizzatore = new DOMParser();
-  const spriteDoc = analizzatore.parseFromString(SPRITE_MARKUP, 'image/svg+xml');
-  const radice = spriteDoc.documentElement;
-  doc.body.appendChild(doc.importNode(radice, true));
+  // HTML parsing assigns the SVG namespace implicitly; XML parsing would not
+  // without the xmlns the sprite now carries. Use the HTML path regardless.
+  doc.body.insertAdjacentHTML('beforeend', SPRITE_MARKUP);
   spriteMontata = doc;
 }
 

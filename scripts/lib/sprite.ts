@@ -62,5 +62,5 @@ export function generaSimbolo({ rif, svg }: SimboloSprite): string {
  */
 export function generaSprite(simboli: SimboloSprite[]): string {
   const simboliMarkup = simboli.map(generaSimbolo).join('');
-  return `<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">${simboliMarkup}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">${simboliMarkup}</svg>`;
 }
