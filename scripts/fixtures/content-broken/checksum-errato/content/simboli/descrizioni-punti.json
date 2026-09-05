@@ -1,0 +1,22 @@
+{
+  "v": 1,
+  "generato": "2026-09-05",
+  "sorgente": "S3",
+  "simboli": [
+    {
+      "rif": "0.3",
+      "fonte": "S3",
+      "sezione": "colonna-c",
+      "nome": "superiore",
+      "descrizione": "Il più alto di due oggetti simili oppure il più alto di tanti oggetti simili.",
+      "colonna": "C",
+      "pagina": 7,
+      "artwork": {
+        "path": "content/artwork/descrizioni-punti/0.3.svg",
+        "formato": "svg",
+        "origine": "S4",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ]
+}
