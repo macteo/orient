@@ -35,6 +35,17 @@ export function celleRiga(riga: RigaDescrizione): Slot[] {
   });
 }
 
+/**
+ * Characters the longest unbreakable run of `testo` puts on one line: the
+ * whole text, or — when it contains hyphens, where the browser may wrap —
+ * the longest hyphen-terminated piece ("gen-0038" → "gen-" / "0038" → 4).
+ * facce.css turns it into a font size that keeps that run inside the cell.
+ */
+export function caratteriPerRiga(testo: string): number {
+  const pezzi = testo.split(/(?<=-)/);
+  return Math.max(1, ...pezzi.map((pezzo) => pezzo.length));
+}
+
 /** Builds the printed `.riga` grid (RigaDescrizione.prompt.md) at `size`. */
 export function griglia(riga: RigaDescrizione, size: Size): HTMLDivElement {
   const div = document.createElement('div');
@@ -47,6 +58,7 @@ export function griglia(riga: RigaDescrizione, size: Size): HTMLDivElement {
     } else if ('testo' in slot) {
       const span = document.createElement('span');
       span.textContent = slot.testo;
+      span.style.setProperty('--cpl', String(caratteriPerRiga(slot.testo)));
       cellaDiv.appendChild(span);
     }
     div.appendChild(cellaDiv);

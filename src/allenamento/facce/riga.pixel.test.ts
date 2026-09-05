@@ -76,7 +76,7 @@ describe('riga: AC-2, la griglia della riga 2 corrisponde alla pagina 3', () => 
       expect(div.className).toBe('riga carta');
       expect(div.children).toHaveLength(8);
       const css = readFileSync(join(QUI, 'facce.css'), 'utf8');
-      expect(css).toMatch(/\.riga\s*\{[^}]*grid-template-columns:\s*0\.8fr repeat\(7,\s*1fr\)/);
+      expect(css).toMatch(/\.riga\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*0\.8fr\) repeat\(7,\s*minmax\(0,\s*1fr\)\)/);
       expect(css).toMatch(/\.riga\s*>\s*div\s*\{[^}]*aspect-ratio:\s*1\s*\/\s*1/);
     });
   }
