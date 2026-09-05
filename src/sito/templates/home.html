@@ -9,7 +9,13 @@
     <meta name="description" content="Flash card e quiz sulle descrizioni dei punti e sui simboli ISOM." />
     <title>{{TITOLO_DOCUMENTO}}</title>
   </head>
-  <body class="flex min-h-screen flex-col">
+  <!-- h-dvh (con min-h-screen di riserva per un browser senza l'unità dvh):
+       altezza vera, non un minimo — solo così flex-1 su #app ha uno spazio
+       "avanzato" da riempire invece di crescere con il contenuto. Senza
+       questo, la lista delle sezioni (spesso più lunga della pagina) non
+       scorre al suo interno: trascina in basso tutta la pagina, comprese
+       intestazione, gli altri mazzi e la barra fissa. -->
+  <body class="flex min-h-screen h-dvh flex-col">
     <header class="border-b" style="border-color: var(--gray-200); background: var(--white);">
       <div class="mx-auto flex w-full max-w-2xl flex-wrap items-baseline gap-x-3 px-4 py-4">
         <a href="{{RADICE}}" class="text-xl font-bold tracking-tight" style="color: var(--gray-800);">orient</a>
@@ -17,7 +23,13 @@
       </div>
     </header>
 
-    <main id="app" class="mx-auto w-full max-w-2xl flex-1 px-4 py-5" data-titolo="{{TITOLO}}"></main>
+    <!-- flex flex-col min-h-0: il picker (home.ts) riempie #app con una
+         colonna alta quanto lo spazio restante (già tolti header e footer);
+         min-h-0 le permette di restare più bassa del suo contenuto, così la
+         lista delle sezioni scorre al suo interno (orient-home__lista) e la
+         barra di modalità/carte/avvio (orient-barra) resta sempre visibile
+         sotto di essa, mai sovrapposta — vedi src/sito/home.css. -->
+    <main id="app" class="mx-auto flex w-full max-w-2xl flex-1 min-h-0 flex-col px-4 py-5" data-titolo="{{TITOLO}}"></main>
 
     <footer class="border-t" style="border-color: var(--gray-200); background: var(--white);">
       <div class="mx-auto w-full max-w-2xl px-4 py-4 text-sm" style="color: var(--gray-500);">

@@ -1,0 +1,373 @@
+/* src/sito/home.css — R-001 home (F-001, D-001): deck cards with disclosure
+   and section checkboxes, the mode/direction/size picker and the primary
+   button. Layout, copy and pixel sizes follow
+   akaaso/06-design/_artboards/index.dc.html. Every colour and radius comes
+   from design-system tokens; type is var(--font-sans) only — no hex, no
+   bare typeface names (grep-checked, F-001 Done Criteria 3). */
+
+/* `#app` is `flex flex-col min-h-0` (home.html): this fills it exactly, so
+   the list below can scroll on its own — matching the artboard's phone
+   mock (header, `flex:1; overflow-y:auto` middle, a bottom bar that is
+   simply the last flex item, never overlapping). A page-level sticky bar
+   was tried first and rejected: it floats over whatever content sits
+   behind it for most of the scroll range (a real reachability bug — the
+   last rows of a long, open deck become untappable until you scroll the
+   *whole page* past the bar's own height), so the fixed bar is instead
+   kept outside the scrolling region entirely. */
+
+.orient-home {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.orient-home__lista {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* -------------------------------------------------------------- deck card */
+
+.orient-mazzo {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.orient-mazzo__intestazione {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.orient-mazzo__intestazione:focus-visible {
+  outline: 2px solid var(--tint-600);
+  outline-offset: -2px;
+}
+
+.orient-mazzo__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.orient-mazzo__nome {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.orient-mazzo__meta {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.orient-mazzo__ultimo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.orient-mazzo__ultimo a {
+  color: var(--tint-600);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.orient-mazzo__ultimo a:hover,
+.orient-mazzo__ultimo a:focus-visible {
+  text-decoration: underline;
+}
+
+.orient-mazzo__caret {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.orient-mazzo__sezioni {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* ------------------------------------------------------------ section row */
+
+.orient-riga {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--gray-100);
+  cursor: pointer;
+}
+
+.orient-riga:last-child {
+  border-bottom: 0;
+}
+
+.orient-riga__etichetta {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.orient-riga__conteggio {
+  font-size: 12px;
+  color: var(--gray-400);
+}
+
+/* --------------------------------------------------------------- checkbox */
+
+.orient-checkbox {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.orient-checkbox input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.orient-checkbox__vista {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  pointer-events: none;
+}
+
+.orient-checkbox__vista svg {
+  opacity: 0;
+  color: var(--white);
+}
+
+.orient-checkbox input:checked + .orient-checkbox__vista {
+  border-color: var(--tint-600);
+  background: var(--tint-600);
+}
+
+.orient-checkbox input:checked + .orient-checkbox__vista svg {
+  opacity: 1;
+}
+
+.orient-checkbox input:focus-visible + .orient-checkbox__vista {
+  outline: 2px solid var(--tint-600);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------- bottom bar */
+
+.orient-barra {
+  /* Ultimo elemento della colonna .orient-home, non `position: sticky`: la
+     lista sopra di essa scorre nel proprio riquadro (`overflow-y: auto`),
+     quindi questa barra resta sempre visibile senza mai sovrapporsi al
+     contenuto scorrevole. */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 0 4px;
+  background: var(--gray-50);
+  border-top: 1px solid var(--gray-200);
+}
+
+/* Segmented control (Flash card / Quiz) and direction pills: two equal
+   grid cells; each option is a native radio, visually hidden, immediately
+   followed by the span that carries its look — `position: relative` on the
+   label plus an absolutely-positioned, zero-size input means the label's
+   own size comes from the span, so the sibling selector below can react to
+   `:checked` without a `:has()` dependency. */
+
+.orient-segmento,
+.orient-pillole {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.orient-segmento {
+  background: var(--gray-100);
+  padding: 4px;
+  border-radius: var(--radius-lg);
+}
+
+.orient-opzione,
+.orient-pillola {
+  position: relative;
+  cursor: pointer;
+}
+
+.orient-opzione input,
+.orient-pillola input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.orient-opzione__vista {
+  height: 38px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-500);
+  pointer-events: none;
+}
+
+.orient-opzione input:checked + .orient-opzione__vista {
+  background: var(--white);
+  color: var(--gray-800);
+  box-shadow: var(--shadow-sm);
+}
+
+.orient-pillola__vista {
+  height: 38px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-500);
+  pointer-events: none;
+}
+
+.orient-pillola input:checked + .orient-pillola__vista {
+  border-color: var(--tint-600);
+  background: var(--tint-50);
+  color: var(--tint-700);
+}
+
+.orient-opzione input:focus-visible + .orient-opzione__vista,
+.orient-pillola input:focus-visible + .orient-pillola__vista {
+  outline: 2px solid var(--tint-600);
+  outline-offset: 2px;
+}
+
+/* Size chips: auto width (their label sets the label's size, same trick). */
+
+.orient-carte {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.orient-carte__etichetta {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-right: 4px;
+}
+
+.orient-chip {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.orient-chip input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.orient-chip__vista {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-500);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.orient-chip input:checked + .orient-chip__vista {
+  border-color: var(--tint-600);
+  background: var(--tint-50);
+  color: var(--tint-700);
+}
+
+.orient-chip input:focus-visible + .orient-chip__vista {
+  outline: 2px solid var(--tint-600);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------- start button
+   (buttons/Button.prompt.md: variant solid, color blue, size lg = 60px,
+   radius var(--radius-button); the contract's `href` prop renders an `<a>` —
+   used here when enabled, since a disabled anchor has no native state). */
+
+.orient-inizia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  border-radius: var(--radius-button);
+  background: var(--tint-600);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.orient-inizia:hover {
+  background: var(--tint-700);
+}
+
+.orient-inizia:focus-visible {
+  outline: 2px solid var(--tint-600);
+  outline-offset: 2px;
+}
+
+button.orient-inizia:disabled {
+  background: var(--gray-200);
+  color: var(--gray-400);
+  cursor: not-allowed;
+}
