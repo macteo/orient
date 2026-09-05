@@ -1,0 +1,376 @@
+{
+  "v": 1,
+  "sorgente": "S3",
+  "E": {
+    "1.1": [],
+    "1.2": [
+      "8.8"
+    ],
+    "1.3": [
+      "8.2",
+      "8.7"
+    ],
+    "1.4": [],
+    "1.5": [],
+    "1.6": [
+      "8.11"
+    ],
+    "1.7": [],
+    "1.8": [],
+    "1.9": [
+      "8.1"
+    ],
+    "1.10": [
+      "8.6"
+    ],
+    "1.11": [],
+    "1.12": [],
+    "1.13": [],
+    "1.14": [
+      "8.6"
+    ],
+    "1.15": [],
+    "1.16": [],
+    "2.1": [],
+    "2.2": [],
+    "2.3": [],
+    "2.4": [],
+    "2.5": [],
+    "2.6": [],
+    "2.7": [],
+    "2.8": [],
+    "2.9": [],
+    "3.1": [],
+    "3.2": [],
+    "3.3": [],
+    "3.4": [],
+    "3.5": [],
+    "3.6": [],
+    "3.7": [
+      "8.5"
+    ],
+    "3.8": [],
+    "3.9": [],
+    "3.10": [],
+    "3.11": [],
+    "4.1": [],
+    "4.2": [],
+    "4.3": [],
+    "4.4": [],
+    "4.5": [],
+    "4.6": [],
+    "4.7": [],
+    "4.8": [
+      "8.9",
+      "8.10"
+    ],
+    "4.9": [
+      "8.9",
+      "8.10"
+    ],
+    "4.10": [],
+    "5.1": [],
+    "5.2": [],
+    "5.3": [],
+    "5.4": [],
+    "5.5": [],
+    "5.6": [],
+    "5.7": [],
+    "5.8": [
+      "8.11"
+    ],
+    "5.9": [
+      "8.11"
+    ],
+    "5.10": [],
+    "5.11": [],
+    "5.12": [],
+    "5.13": [
+      "8.4"
+    ],
+    "5.14": [],
+    "5.15": [],
+    "5.16": [],
+    "5.17": [],
+    "5.18": [],
+    "5.19": [],
+    "5.20": [],
+    "5.23": [],
+    "5.24": [],
+    "6.1": [],
+    "6.2": []
+  },
+  "F": {
+    "1.4": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "1.6": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "1.7": {
+      "tipo": "profondita",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "1.8": {
+      "tipo": "profondita",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "1.12": {
+      "tipo": "profondita",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "1.13": {
+      "tipo": "profondita",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "1.14": {
+      "tipo": "profondita",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "2.1": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "2.2": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "2.4": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "3.3": {
+      "tipo": "profondita",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "4.4": {
+      "tipo": "dimensioni",
+      "valori": [
+        "5x5",
+        "8x4",
+        "10x6"
+      ]
+    },
+    "4.5": {
+      "tipo": "dimensioni",
+      "valori": [
+        "5x5",
+        "8x4",
+        "10x6"
+      ]
+    },
+    "4.9": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "5.8": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "5.9": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "5.11": {
+      "tipo": "dimensioni",
+      "valori": [
+        "5x5",
+        "8x4",
+        "10x6"
+      ]
+    },
+    "5.12": {
+      "tipo": "dimensioni",
+      "valori": [
+        "5x5",
+        "8x4",
+        "10x6"
+      ]
+    },
+    "5.15": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    },
+    "5.17": {
+      "tipo": "altezza",
+      "valori": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ]
+    }
+  },
+  "Gdue": [
+    "11.15"
+  ],
+  "combinazioni": [
+    "10.1",
+    "10.2"
+  ],
+  "Gsolo": [
+    "11.1",
+    "11.2",
+    "11.3",
+    "11.4",
+    "11.5",
+    "11.6",
+    "11.7",
+    "11.8",
+    "11.9",
+    "11.10",
+    "11.11",
+    "11.12",
+    "11.13",
+    "11.14"
+  ],
+  "C": {
+    "direzioni": [
+      "0.1",
+      "0.2"
+    ],
+    "senza": [
+      "0.3",
+      "0.4",
+      "0.5"
+    ]
+  },
+  "note": {
+    "1.2": "8.8 sabbioso: «naso in terreno sabbioso» (S3 p. 12).",
+    "1.3": "8.2 piatto/poco profondo: «rientranza piatta»; 8.7 paludoso: «rientranza paludosa» (S3 p. 12).",
+    "1.4": "altezza della scarpata: colonna F si usa quando le dimensioni non sono leggibili dal simbolo di carta (S3 p. 5); formato «Altezza o profondità dell'oggetto in metri» (S3 p. 13, rif. 9.1).",
+    "1.6": "«Usato con il simbolo 8.11 per indicare un muro di terra rovinato» (S3 p. 7); altezza secondo il formato 9.1 «Altezza o profondità dell'oggetto in metri» (S3 p. 13).",
+    "1.7": "profondità della fossa, formato 9.1 «Altezza o profondità dell'oggetto in metri» (S3 p. 13); la definizione non implica una profondità fissa (S3 p. 7).",
+    "1.8": "profondità della piccola fossa, formato 9.1 (S3 p. 13); analoga a 1.7 fossa, in scala minore.",
+    "1.9": "8.1 basso: «collina bassa» (S3 p. 12).",
+    "1.10": "«Usato con il simbolo 8.6 per indicare una collinetta rocciosa» (S3 p. 7).",
+    "1.12": "profondità della depressione, formato 9.1 (S3 p. 13); a differenza di 1.13 «buca» (già «piccola, poco profonda» per definizione) e 1.14 «buca profonda» (già profonda per definizione), la depressione non ha una profondità implicita (S3 p. 8).",
+    "1.13": "profondità della buca, formato 9.1 (S3 p. 13); coerente con la propria definizione «piccola, poco profonda» (S3 p. 8).",
+    "1.14": "«Abbinato con il simbolo 8.6 indica una cavità rocciosa» (S3 p. 8); profondità, formato 9.1 (S3 p. 13).",
+    "2.1": "altezza citata nell'esempio dell'evento: «Roccia superiore, 2 m d'altezza» (S3 p. 3).",
+    "2.2": "altezza dello spuntone, formato 9.1 (S3 p. 13); coerente con «Masso a sviluppo verticale» (S3 p. 8).",
+    "2.4": "altezza citata nell'esempio dell'evento: «Sasso nord ovest, 1 m d'altezza, lato est» (S3 p. 3). Non riceve 8.6 «roccioso» in E: sarebbe ridondante, un sasso è già di natura rocciosa.",
+    "3.3": "profondità della buca con acqua, formato 9.1 (S3 p. 13); stessa famiglia di 1.12-1.14.",
+    "3.7": "8.5 aperto: «palude nel terreno aperto» (S3 p. 12).",
+    "4.4": "dimensioni orizzontali della radura, formato 9.2 «Dimensioni orizzontali dell'oggetto in metri» (S3 p. 13).",
+    "4.5": "dimensioni orizzontali del boschetto, formato 9.2 (S3 p. 13); coppia citata nell'esempio dell'evento «Tra due boschetti fitti» (S3 p. 3, colonna G 11.15).",
+    "4.8": "8.10 latifoglia: «gruppo d'alberi, latifoglie» (S3 p. 12); esteso a 8.9 conifera per coerenza fisica, un gruppo di alberi può essere di conifere o di latifoglie.",
+    "4.9": "8.9 conifera: «albero particolare, conifera» (S3 p. 12); esteso a 8.10 latifoglia per coerenza fisica; altezza dell'albero, formato 9.1 (S3 p. 13).",
+    "5.8": "«Usato con il simbolo 8.11 per indicare un muro di pietra rovinato» (S3 p. 10); esempio dell'evento «Muro di sassi, rovinato, angolo esterno sud-est» (S3 p. 3); altezza, formato 9.1 (S3 p. 13).",
+    "5.9": "«Usato con il simbolo 8.11 per indicare un recinto rovinato» (S3 p. 11); esempio colonna E «recinto rovinato» (S3 p. 12); altezza, formato 9.1 (S3 p. 13).",
+    "5.11": "dimensioni orizzontali dell'edificio, formato 9.2 (S3 p. 13).",
+    "5.12": "dimensioni orizzontali dell'area pavimentata, formato 9.2 (S3 p. 13).",
+    "5.13": "8.4 ricoperto di sterpi, «verde»: «rovina nel verde» (S3 p. 12). Non riceve 8.11 «rovinato»: sarebbe ridondante, una rovina è già un edificio crollato; coerente con l'esempio dell'evento «Rovina più a est, parte ovest», che non usa la colonna E (S3 p. 3).",
+    "5.15": "altezza della torre, formato 9.1 (S3 p. 13); coerente con «costruzione alta» (S3 p. 11).",
+    "5.17": "altezza del cippo di confine / tumulo di pietre, formato 9.1 (S3 p. 13)."
+  }
+}

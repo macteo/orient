@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orient.example/content/schema/compatibilita.schema.json",
+  "title": "Compatibilita",
+  "description": "Tabella di compatibilità, tenuta a mano, che il generatore di righe usa: quali comparse di colonna E sono ammesse per ogni oggetto di colonna D, quali oggetti hanno una dimensione di colonna F e di che tipo, quali posizioni di colonna G richiedono uno o due oggetti, e i requisiti dei due simboli di combinazione. Ogni voce non ovvia cita la riga della fonte da cui viene.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "sorgente", "E", "F", "Gdue", "combinazioni", "Gsolo", "C", "note"],
+  "properties": {
+    "v": { "const": 1 },
+    "sorgente": { "const": "S3" },
+    "E": {
+      "type": "object",
+      "description": "Per ogni rif di colonna D, l'elenco dei rif di colonna E ammessi come comparsa. Un array vuoto è una scelta deliberata: nessuna comparsa ammessa.",
+      "propertyNames": { "$ref": "#/$defs/rifD" },
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/rifE" },
+        "uniqueItems": true
+      }
+    },
+    "F": {
+      "type": "object",
+      "description": "Per ogni rif di colonna D che porta una dimensione, il tipo e i valori realistici ammessi.",
+      "propertyNames": { "$ref": "#/$defs/rifD" },
+      "additionalProperties": { "$ref": "#/$defs/dimensione" }
+    },
+    "Gdue": {
+      "type": "array",
+      "description": "Posizioni di colonna G che richiedono due oggetti (D+E indicati separatamente); attualmente solo «tra, fra, in mezzo».",
+      "items": { "$ref": "#/$defs/rifG" },
+      "uniqueItems": true
+    },
+    "combinazioni": {
+      "type": "array",
+      "description": "I due simboli di colonna F (incrocio, bivio) che richiedono un secondo oggetto D indicato in colonna E.",
+      "items": { "$ref": "#/$defs/rifCombinazione" },
+      "uniqueItems": true
+    },
+    "Gsolo": {
+      "type": "array",
+      "description": "Posizioni di colonna G che richiedono un solo oggetto: tutte le posizioni tranne quelle elencate in Gdue.",
+      "items": { "$ref": "#/$defs/rifG" },
+      "uniqueItems": true
+    },
+    "C": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direzioni", "senza"],
+      "properties": {
+        "direzioni": {
+          "type": "array",
+          "description": "Qualificatori di colonna C che portano una direzione tra le otto.",
+          "items": { "$ref": "#/$defs/rifC" },
+          "uniqueItems": true
+        },
+        "senza": {
+          "type": "array",
+          "description": "Qualificatori di colonna C senza direzione.",
+          "items": { "$ref": "#/$defs/rifC" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "note": {
+      "type": "object",
+      "description": "Per i rif di colonna D con una comparsa E o una dimensione F, il perché: pagina e parole citate dalla fonte.",
+      "propertyNames": { "$ref": "#/$defs/rifD" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "rifD": { "type": "string", "pattern": "^[1-6]\\.\\d{1,2}$" },
+    "rifE": { "type": "string", "pattern": "^8\\.(?:[1-9]|1[01])$" },
+    "rifG": { "type": "string", "pattern": "^11\\.(?:[1-9]|1[0-5])$" },
+    "rifC": { "type": "string", "pattern": "^0\\.[1-5]$" },
+    "rifCombinazione": { "type": "string", "enum": ["10.1", "10.2"] },
+    "dimensione": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tipo", "valori"],
+      "properties": {
+        "tipo": { "type": "string", "enum": ["altezza", "dimensioni", "profondita"] },
+        "valori": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
