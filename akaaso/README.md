@@ -4,9 +4,9 @@ A simple Italian website that turns the IOF control-description and ISOM
 references into flash cards and quizzes with a verdict, for one family to
 memorise orienteering symbols.
 
-**Current focus:** All six levels signed off 2026-09-05; trace pass done. Task unpacking and build next.
-**Next step:** `/akaaso-tasks` to unpack tasks, `/akaaso-build` to build in
-waves, deploy to GitHub Pages.
+**Current focus:** v1 built and deployed — https://macteo.github.io/orient/ (2026-09-05).
+**Next step:** family use; corrections as content edits; v1.1 candidates on
+the deferred list of [1.004](01-vision/004-scope-boundaries.md).
 
 ## Progress
 
@@ -17,7 +17,7 @@ waves, deploy to GitHub Pages.
 - [x] Level 5 — Stories & Journeys — first sign-off 2026-09-05 (trace pass after Level 6)
 - [x] Level 6 — Screen Design — signed off 2026-09-05
 - [x] Level 5 trace pass — S-001…S-007 traced 2026-09-05 (S-008, S-009 have no screens)
-- [ ] Tasks unpacked
+- [x] Tasks unpacked 2026-09-05 — 22 tasks + 6 gates, all done; built in six waves and deployed the same day
 
 ## Decision Registry
 

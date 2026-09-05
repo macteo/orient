@@ -49,3 +49,7 @@ The first deploy resolves the repository-visibility question of
   the spine journey.
 - AC-5 Reverting the last commit and pushing restores the previous site
   within one workflow run.
+
+## Change Log
+
+- 2026-09-05 — first deploy: workflow run on `main` green (jobs *Verifica* and *Deploy*); the site answers at https://macteo.github.io/orient/ with the base path, nested pages and artwork included (AC-1 verified from outside).
