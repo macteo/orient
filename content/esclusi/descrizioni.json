@@ -1,0 +1,65 @@
+{
+  "v": 1,
+  "esclusi": [
+    {
+      "rif": "2.10",
+      "motivo": "artwork presente in S4 ma nessuna riga di testo trovata nelle tabelle S3 (pagine 7–16)",
+      "fonte": "S3"
+    },
+    {
+      "rif": "5.25",
+      "motivo": "artwork presente in S4 ma nessuna riga di testo trovata nelle tabelle S3 (pagine 7–16)",
+      "fonte": "S3"
+    },
+    {
+      "rif": "5.26",
+      "motivo": "artwork presente in S4 ma nessuna riga di testo trovata nelle tabelle S3 (pagine 7–16)",
+      "fonte": "S3"
+    },
+    {
+      "rif": "9.1",
+      "motivo": "Colonna F – Dimensioni: valore numerico d’esempio, non un simbolo cartografico",
+      "fonte": "S3"
+    },
+    {
+      "rif": "9.2",
+      "motivo": "Colonna F – Dimensioni: valore numerico d’esempio, non un simbolo cartografico",
+      "fonte": "S3"
+    },
+    {
+      "rif": "9.3",
+      "motivo": "Colonna F – Dimensioni: valore numerico d’esempio, non un simbolo cartografico",
+      "fonte": "S3"
+    },
+    {
+      "rif": "9.4",
+      "motivo": "Colonna F – Dimensioni: valore numerico d’esempio, non un simbolo cartografico",
+      "fonte": "S3"
+    },
+    {
+      "rif": "12.3",
+      "motivo": "artwork mancante in S4 — ritaglio da S3 richiesto",
+      "fonte": "S3"
+    },
+    {
+      "rif": "13.6",
+      "motivo": "artwork presente in S4 ma nessuna riga di testo trovata nelle tabelle S3 (pagine 7–16)",
+      "fonte": "S3"
+    },
+    {
+      "rif": "15.6",
+      "motivo": "artwork presente in S4 ma nessuna riga di testo trovata nelle tabelle S3 (pagine 7–16)",
+      "fonte": "S3"
+    },
+    {
+      "rif": "13.5control",
+      "motivo": "file S4 «13.5control.svg» fuori dal pattern <rif>[<DIR>].svg; non copiato",
+      "fonte": "S3"
+    },
+    {
+      "rif": "start",
+      "motivo": "file S4 «start.svg» fuori dal pattern <rif>[<DIR>].svg; non copiato",
+      "fonte": "S3"
+    }
+  ]
+}
