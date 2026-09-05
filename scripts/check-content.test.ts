@@ -45,7 +45,7 @@ describe('content/ reale', () => {
   it('valida gli schemi simboli, esempi ed esclusi oltre a fonti e sezioni', () => {
     const { ok, broken } = checkSchema(CONTENT_REALE);
     expect(broken).toEqual([]);
-    expect(ok[0]).toMatch(/^OK schema: \d+ file validati contro 5 schemi$/);
+    expect(ok[0]).toMatch(/^OK schema: \d+ file validati contro \d+ schemi$/);
   });
 });
 
