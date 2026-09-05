@@ -905,7 +905,7 @@
       "module": "sito",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-sito-ui-home",
@@ -933,6 +933,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:06:34.392Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:06:34.437Z",
+          "event": "merged",
+          "note": "branch: task/p1-sito-ui-home, sha: 85d8a11"
         }
       ],
       "notes": null
