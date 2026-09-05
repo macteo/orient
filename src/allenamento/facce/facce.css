@@ -7,13 +7,27 @@
 
 .riga {
   display: grid;
-  grid-template-columns: 0.8fr repeat(7, 1fr);
+  /* minmax(0, …fr): a bare `fr` track never shrinks below its content's
+     min-content width, so the grid could grow past its container. Here the
+     container width is the only authority — the cells adapt to it. */
+  grid-template-columns: minmax(0, 0.8fr) repeat(7, minmax(0, 1fr));
   border: 1.5px solid var(--gray-800);
   background: var(--white);
 }
 
 .riga > div {
   aspect-ratio: 1 / 1;
+  /* The cell must stay square at the track's width. Without these, a code
+     that wraps onto two lines (generated rows: "gen-0038") made its cell
+     taller, the grid row stretched every cell to that height, and the
+     aspect ratio turned the height back into a width — 8 × 48 px on a
+     phone, wider than the card, borders overlapping at the right edge.
+     Now the cell's width comes from the track alone (size containment in
+     the inline axis), overflow is clipped, and the text below scales to fit. */
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  container-type: inline-size;
   border-right: 1.5px solid var(--gray-800);
   display: flex;
   align-items: center;
@@ -21,6 +35,19 @@
   font-family: var(--font-sans);
   font-weight: 600;
   color: var(--gray-800);
+}
+
+/* Text cells (A number, B code, F dimension). `--cpl` is the longest run of
+   characters that has to fit on one line (riga.ts sets it: the whole text,
+   or the longest hyphen-separated piece — "gen-0038" wraps as "gen-" /
+   "0038", 4 per line). 130cqw / cpl keeps that run inside the cell; the
+   per-size `--riga-font` caps it, so short official codes ("212") render at
+   the full size, exactly as before, while long generated codes shrink. */
+.riga > div > span {
+  font-size: min(var(--riga-font), calc(130cqw / var(--cpl, 1)));
+  line-height: 1.1;
+  text-align: center;
+  overflow-wrap: normal;
 }
 
 .riga > div:last-child {
@@ -41,6 +68,7 @@
 }
 
 .riga.carta > div {
+  --riga-font: 16px;
   font-size: 16px;
 }
 
@@ -49,6 +77,7 @@
 }
 
 .riga.tile > div {
+  --riga-font: 11px;
   font-size: 11px;
 }
 
@@ -57,6 +86,7 @@
 }
 
 .riga.lista > div {
+  --riga-font: 9px;
   font-size: 9px;
 }
 
