@@ -68,9 +68,10 @@ function poolDistrattori(carta: Carta, mazzo: MazzoBuild): string[] {
     return sezione;
   }
   const colonna = poolColonna(carta, mazzo);
-  if (colonna.length > 0) {
+  if (colonna.length >= 3) {
     return colonna;
   }
+  // Section and column too small (e.g. colonna-f has two cards): the deck.
   return poolMazzo(carta, mazzo);
 }
 

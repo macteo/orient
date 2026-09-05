@@ -27,13 +27,9 @@
 //      colonna D e trova lì abbastanza nomi distinti — comportamento
 //      corretto, verificato qui.
 //   2. Variant `invalid-input` della storia: "`?direzione=sideways` →
-//      Notice; forward direction used". In `src/pages/quiz.ts`,
-//      `risolviQuery` marca `invalido` solo se `sezioni`/`carte` non sono
-//      validi; una `direzione` sconosciuta ricade silenziosamente sulla
-//      direzione diretta, senza alcun Alert e senza toccare `sezioni`/
-//      `carte` (che restano quelli richiesti, non "tutte le sezioni, 8
-//      carte"). Il test qui sotto verifica il comportamento osservato
-//      (direzione diretta, nessuna notice, sezioni/carte invariate).
+//      Notice; forward direction used". Risolto in wave 5: `risolviQuery`
+//      tratta una `direzione` sconosciuta come input non valido, con la
+//      stessa notice e gli stessi default di sezioni/carte non validi.
 
 import { expect, test, type Page } from '@playwright/test';
 import type { MazzoBuild, Risultato, Serie } from '../../src/mazzi/tipi.ts';
@@ -406,17 +402,16 @@ test.describe('S-002 — Variants', () => {
   test('invalid-input: un valore di direzione sconosciuto usa la direzione diretta, sezioni/carte richieste restano valide @critical', async ({
     page,
   }) => {
-    // Vedi la nota in testa al file: la storia si aspetta una notice qui,
-    // l'app osservata non ne mostra una per una `direzione` da sola non
-    // valida (solo `sezioni`/`carte` attivano lo stato `invalid-input` in
-    // src/pages/quiz.ts) — si verifica qui il comportamento reale.
+    // D-003 `invalid-input`: una `direzione` sconosciuta è input non valido
+    // come una sezione o una dimensione sconosciuta — Alert, tutte le
+    // sezioni, 8 carte, direzione diretta (fix di integrazione wave 5).
     const errori = osservaErrori(page);
-    await page.goto(`${MAZZO}/quiz/?direzione=sideways&sezioni=colonna-g&carte=3`);
+    await page.goto(`${MAZZO}/quiz/?direzione=sideways&sezioni=colonna-g&carte=12`);
 
-    await expect(page.getByText('Sezione non trovata')).toHaveCount(0);
+    await expect(page.getByText('Sezione non trovata')).toBeVisible();
     await expect(page.getByText('Quale oggetto?')).toBeVisible(); // direzione diretta (forward)
-    await expect(page.getByText('1 / 3', { exact: true })).toBeVisible(); // "carte" richiesto preservato (non 8)
-    await expect(page.getByText(SEZIONE_G)).toBeVisible(); // "sezioni" richiesto preservato (non tutte)
+    await expect(page.getByText('1 / 8', { exact: true })).toBeVisible(); // ricade su 8 carte
+    await expect(page.getByText('tutte le sezioni')).toBeVisible(); // ricade su tutte le sezioni
     expect(errori).toEqual([]);
   });
 

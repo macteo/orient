@@ -8,3 +8,4 @@ transcrive. Ogni agente che aggiunge un journey aggiunge qui una sola riga.
 |---|---|
 | journey-prima-serie-di-flash-card | S-001 |
 | journey-righe-complete | S-003 | `e2e/journeys/righe-complete.spec.ts` |
+| journey-quiz-con-ripasso | S-002 | `e2e/journeys/quiz-con-ripasso.spec.ts` |

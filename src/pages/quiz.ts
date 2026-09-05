@@ -84,8 +84,10 @@ function risolviQuery(search: string, mazzo: MazzoBuild): QueryRisolta {
     }
   }
 
-  const invalido = !sezioniValide || !carteValide;
-  const direzione = !invalido && parametri.get('direzione') === 'inversa' ? 'inversa' : undefined;
+  const direzioneParam = parametri.get('direzione');
+  const direzioneValida = direzioneParam === null || direzioneParam === 'inversa';
+  const invalido = !sezioniValide || !carteValide || !direzioneValida;
+  const direzione = !invalido && direzioneParam === 'inversa' ? 'inversa' : undefined;
 
   return {
     sezioni: invalido ? tutteLeSezioni : sezioni,
