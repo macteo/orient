@@ -603,6 +603,14 @@ function validaCelle(
     if (typeof cella === 'string') continue; // colonna F libera (dimensione), non un rif
     if (!cella || typeof cella.rif !== 'string') continue;
     const validi = simboliPerColonna.get(colonna);
+    // S3 rule: with `tra` (11.15) or a combination (10.1/10.2) the second
+    // column-D feature is written in column E — a D ref in E is then valid.
+    const secondoOggetto =
+      colonna === 'E' &&
+      ((riga.celle.G as Cella | undefined)?.rif === '11.15' ||
+        ['10.1', '10.2'].includes((riga.celle.F as Cella | undefined)?.rif ?? '')) &&
+      (simboliPerColonna.get('D')?.has(cella.rif) ?? false);
+    if (secondoOggetto) continue;
     if (!validi || !validi.has(cella.rif)) {
       r.broken.push(
         `BROKEN ${nomeCheck}: riga ${riga.id} cita ${cella.rif} in colonna ${colonna}, rif sconosciuto o colonna errata (${luogo})`,
@@ -738,11 +746,14 @@ function trovaRifPossibili(dato: unknown, percorso: string, trovati: [string, st
   }
   if (isPlainObject(dato)) {
     for (const [chiave, valore] of Object.entries(dato)) {
+      // `valori` are dimension strings ("1.0", "5x5"), `note`/`tipo` are prose: not refs.
+      if (CHIAVI_NON_RIF.has(chiave)) continue;
       if (RIF_DESCRIZIONI_RE.test(chiave)) trovati.push([chiave, `${percorso}.${chiave}`]);
       trovaRifPossibili(valore, `${percorso}.${chiave}`, trovati);
     }
   }
 }
+const CHIAVI_NON_RIF = new Set(['valori', 'note', 'tipo', 'v', 'sorgente']);
 
 export function checkCompatibilita(contentDir: string): Risultato {
   const r = vuoto();
