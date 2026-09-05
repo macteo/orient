@@ -1,0 +1,52 @@
+{
+  "name": "orient",
+  "levels": {
+    "01-vision": {
+      "label": "Level 1",
+      "title": "Vision & Scope"
+    },
+    "02-architecture": {
+      "label": "Level 2",
+      "title": "Architecture & Stack"
+    },
+    "03-modules": {
+      "label": "Level 3",
+      "title": "Modules"
+    },
+    "04-features": {
+      "label": "Level 4",
+      "title": "Features"
+    },
+    "05-stories": {
+      "label": "Level 5",
+      "title": "Stories & Journeys"
+    },
+    "06-design": {
+      "label": "Level 6",
+      "title": "Screen Design"
+    }
+  },
+  "rootDocs": [
+    "README.md",
+    "registers/TENSIONS.md",
+    "registers/SOURCES.md"
+  ],
+  "registers": {
+    "T": "registers/TENSIONS.md"
+  },
+  "exclude": [
+    "09-tasks",
+    "scripts"
+  ],
+  "sources": {
+    "dir": "sources",
+    "codes": {
+      "S1": "sources/ISOM_2017-2_CH_IT.md",
+      "S2": "sources/ISSprOM_2019-2_IT.md",
+      "S3": "sources/iof_descrizioni_punti_ital.md",
+      "F1": "https://creativecommons.org/licenses/by-nd/4.0/",
+      "F2": "https://apps.apple.com/us/app/orisym-orienteering-symbols/id6553980733",
+      "F3": "https://www.iknow-o.com/"
+    }
+  }
+}
