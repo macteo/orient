@@ -14,10 +14,9 @@ as printed, and writes a contact sheet. Spec:
 
 ### Deliverables
 
-- `scripts/extract/Package.swift` (swift-tools 5.9+, macOS 13+, two executable
-  targets: `extract-isom`, `extract-esempi`; the latter is another task —
-  create its folder with a `main.swift` stub if it does not exist yet).
-- `scripts/extract/Sources/extract-isom/main.swift` — PDFKit + CoreGraphics:
+- `scripts/extract/Sources/extract-isom/main.swift` (the package and the stub
+  exist from the scaffold; replace only this file, plus helper files inside
+  this target's folder) — PDFKit + CoreGraphics:
   for each file matching `ISOM (\d{3}(?:\.\d)?|\d{3}-\d{3}) .*\.pdf`, render
   page 1 into a bitmap context filled white at scale 8, save PNG named by the
   ref (`204.png`, `701-703.png`; `101 Contour-1` → `101.png`, `-2` → `101b.png`).

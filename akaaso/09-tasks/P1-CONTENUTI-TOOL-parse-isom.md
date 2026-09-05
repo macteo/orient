@@ -14,12 +14,10 @@ Spec: `akaaso/03-modules/006-pipeline-isom.md`.
 
 ### Deliverables
 
-- `scripts/parse/parse-isom.ts` (uses `scripts/parse/_text.ts` from the
-  descrizioni task if present; otherwise ships its own copy — keep both
-  identical).
+- `scripts/parse/parse-isom.ts` (imports the shared `scripts/parse/_text.ts` from the scaffold).
 - `content/simboli/isom.json` — `{ v: 1, generato, sorgente: "S1", simboli: Simbolo[] }`.
-- Append §3.6 symbols (601 – 603) and any `Def_`/`min_dim_` figures to
-  `content/esclusi.json` (create the file if the other parser has not yet).
+- `content/esclusi/isom.json` — §3.6 symbols (601 – 603) and the `Def_` /
+  `min_dim_` figures, with reasons.
 
 ### Parsing rules
 
@@ -46,7 +44,7 @@ Spec: `akaaso/03-modules/006-pipeline-isom.md`.
    the printed count matches a hand count recorded in the script header.
 2. `204 Masso (P)` has `geometria: "P"`, `sezione: "rocce"`, and a description
    ending at its *Colore:* line, byte-identical to the source.
-3. Section headings are not entries; §3.6 numbers appear in `esclusi.json`.
+3. Section headings are not entries; §3.6 numbers appear in `content/esclusi/isom.json`.
 4. Two runs produce no diff.
 5. Every criterion names an observable effect, not a file that exists.
 

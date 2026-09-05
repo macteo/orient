@@ -22,12 +22,12 @@ reports Italian-name mismatches against `lang.json`. Spec:
   sorted by numeric `rif`.
 - `content/artwork/descrizioni-punti/<rif>.svg` and `<rif><DIR>.svg` for the
   eight-direction pictograms, byte-identical copies of the S4 files.
-- `content/esclusi.json` — `{ v: 1, esclusi: [{ rif, motivo, fonte: "S3" }] }`
+- `content/esclusi/descrizioni.json` — `{ v: 1, esclusi: [{ rif, motivo, fonte: "S3" }] }`
   with column B, 9.1 – 9.4 (dimensions are numbers), and any ref with no artwork.
 - `content/_contact/descrizioni-nomi.md` (git-ignored) — the name cross-check
   report: `rif | nome S3 | nome lang.json it | uguale?`.
-- `scripts/parse/_text.ts` — shared helpers: read the converted markdown,
-  split by `<!-- pagina N -->`, join wrapped lines.
+- Uses `scripts/parse/_text.ts` from the scaffold (do not recreate it; extend
+  only by adding exported functions if you must, never changing existing ones).
 
 ### Parsing rules (S3 text layer)
 
@@ -50,7 +50,7 @@ reports Italian-name mismatches against `lang.json`. Spec:
   where present, else `NE`.
 - Fallback artwork: a ref with no S4 file (expected: 12.3) gets
   `artwork.origine: "S3"` and a placeholder path; log it in `esclusi.json`
-  under `motivo: "artwork mancante in S4 — ritaglio da S3 richiesto"` (the
+  in `content/esclusi/descrizioni.json` under `motivo: "artwork mancante in S4 — ritaglio da S3 richiesto"` (the
   crop itself is done by the extract task's cropper later).
 - `sha256` of each copied SVG recorded in `artwork.sha256`.
 

@@ -16,7 +16,7 @@ official-rows review. Spec: `akaaso/03-modules/005-pipeline-esempi.md`.
 
 ### Deliverables
 
-- `scripts/extract/Sources/extract-esempi/main.swift` (+ `Grid.swift`).
+- `scripts/extract/Sources/extract-esempi/main.swift` (+ `Grid.swift` in the same target folder; the package exists from the scaffold — touch only this target).
 - `content/artwork/esempi/<codice>-carta.png`, `-terreno.png`, `-riga.png` at 4×.
 - `content/esempi/esempi.json` — `{ v: 1, generato, sorgente: "S3", esempi: Esempio[] }`.
 - `content/esempi/sezioni.json` — `{ pagine: { "17": "d-morfologici", … } }` —

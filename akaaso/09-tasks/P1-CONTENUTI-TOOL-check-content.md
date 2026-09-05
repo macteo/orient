@@ -25,7 +25,7 @@ reports them. Spec: `akaaso/04-features/007-estrazione-contenuti.md`,
      `content/schema/<kind>.schema.json` and validates.
   2. **inventario descrizioni** — refs parsed from
      `akaaso/sources/iof_descrizioni_punti_ital.md` (same regex as the parser,
-     import it from `scripts/parse/_text.ts`) minus `esclusi.json` ==
+     import it from `scripts/parse/_text.ts`) minus `content/esclusi/descrizioni.json` ==
      refs in `descrizioni-punti.json`; report missing/extra with the page.
   3. **inventario isom** — same for §3.1 – 3.5, 3.7 of the ISOM text.
   4. **artwork** — every `artwork.path` exists; sha256 matches; for isom fill

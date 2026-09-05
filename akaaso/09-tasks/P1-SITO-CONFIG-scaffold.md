@@ -55,9 +55,20 @@ clone and produce a styled placeholder home.
 - `src/sito/preline.ts` — `import 'preline';` plus `window.HSStaticMethods?.autoInit()`
   after DOM ready.
 - `scripts/build-mazzi.ts`, `scripts/check-content.ts`, `scripts/check-dist.ts`,
-  `scripts/generate-righe.ts`, `scripts/parse/parse-descrizioni.ts`,
-  `scripts/parse/parse-isom.ts` — **stubs** that print `not implemented: <name>`
-  and exit 0, so every npm script resolves. Later tasks replace them.
+  `scripts/generate-righe.ts` — **stubs** that print `not implemented: <name>`
+  and exit 0, so every npm script resolves. Later tasks replace them. Do NOT
+  create the two parser scripts (other wave-0 tasks own them); the
+  `parse:*` npm scripts may point at not-yet-existing files.
+- `scripts/parse/_text.ts` — shared helpers both parsers import:
+  `leggiSorgente(path)` (read a converted markdown source), `pagine(text)`
+  (split on `<!-- pagina N -->` into `{ n, testo }[]`), `unisciRighe(lines)`
+  (join wrapped lines with a single space, trimming), `sha256(buffer)`.
+- `scripts/extract/Package.swift` (swift-tools 5.9, macOS 13, executable
+  targets `extract-isom` and `extract-esempi`) with
+  `Sources/extract-isom/main.swift` and `Sources/extract-esempi/main.swift` as
+  stubs that print their name; `swift build` in that folder must succeed. The
+  two extract tasks fill the stubs.
+- `content/esclusi/.gitkeep` — the parsers each write their own file there.
 - `vitest.config.ts` (`environment: 'jsdom'`, include `src/**/*.test.ts`),
   `src/sanity.test.ts` (one passing test).
 - `playwright.config.ts` — `webServer: { command: 'npm run preview', port: 4173 }`,
