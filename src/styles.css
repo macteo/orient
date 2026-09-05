@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@source "../node_modules/preline/dist/*.js";
+@import "../node_modules/preline/variants.css";
+@plugin "@tailwindcss/forms";
+
+/* Design-system tokens (vendored, never hand-edit). Import the token files
+   directly, NOT design-system/styles.css or tokens/fonts.css, both of which
+   pull Google Fonts over the network. */
+@import "../design-system/tokens/colors.css";
+@import "../design-system/tokens/typography.css";
+@import "../design-system/tokens/spacing.css";
+@import "../design-system/tokens/shadows.css";
+
+/* Self-hosted fonts (no CDN, no Google Fonts). */
+@import "@fontsource-variable/inter";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+:root {
+  --tint: var(--blue-600);
+}
+
+body {
+  margin: 0;
+  background: var(--gray-50);
+  font-family: var(--font-sans);
+}
