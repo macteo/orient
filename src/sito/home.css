@@ -35,6 +35,14 @@
 /* -------------------------------------------------------------- deck card */
 
 .orient-mazzo {
+  /* flex-shrink: 0 — la card è un elemento di .orient-mazzi, colonna flex ad
+     altezza limitata (la lista scorre al suo interno). Con overflow:hidden
+     il minimo automatico di un flex item scende a zero, e senza questo la
+     colonna comprimeva le card per farle stare nel viewport invece di far
+     scorrere la lista: su telefono le card chiuse restavano alte 38 pt, con
+     la riga meta e la scritta "Apri" tagliate (regressione coperta da
+     e2e/home.spec.ts, "telefono: le card chiuse non vengono schiacciate"). */
+  flex-shrink: 0;
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-card);
