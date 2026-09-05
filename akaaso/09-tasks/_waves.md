@@ -18,7 +18,7 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 
 - ☐ **P1-ALLENAMENTO-LOGIC-serie-quiz-storage** — Run reducer, quiz options, storage, seeded RNG (Logic, M)
 - ☐ **P1-ALLENAMENTO-UI-facce** — Card faces and the description-row grid (UI, M)
-- ☐ **P1-CONTENUTI-DATA-compatibilita** — Compatibility table for generated rows (Content, M)
+- ☑ **P1-CONTENUTI-DATA-compatibilita** — Compatibility table for generated rows (Content, M)
 - ☑ **P1-CONTENUTI-DATA-righe-ufficiali** — Transcribe the nine official rows (Content, M)
 - ☐ **P1-CONTENUTI-TOOL-check-content** — Content check: schemas, inventories, checksums, determinism (Content, M)
 - ☐ **WAVE1-E2E-wave-gate** — Wave 1 post-merge gate (Test, S)

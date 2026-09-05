@@ -368,7 +368,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 1,
       "effort": "M",
       "branch": "task/p1-contenuti-data-compatibilita",
@@ -389,6 +389,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:35:48.368Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:35:48.412Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-data-compatibilita, sha: e045172"
         }
       ],
       "notes": null
