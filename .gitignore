@@ -13,3 +13,7 @@ test-results/
 playwright-report/
 scripts/extract/.build/
 .claude/worktrees/
+
+# artwork che scripts/build-mazzi.ts specchia sotto public/ perché Vite lo
+# copi in dist/ (P1-MAZZI-BUILD): copie derivate, l'originale è content/artwork/
+public/content/

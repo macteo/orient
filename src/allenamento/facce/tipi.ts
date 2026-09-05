@@ -1,73 +1,28 @@
-// src/allenamento/facce/tipi.ts — minimal local `Carta` type for the facce
-// module (3.002, F-004). The real `Carta` type will land in
-// `src/mazzi/tipi.ts` from another task; every field name here matches
-// `akaaso/09-tasks/_context.md`'s content model and F-004's Interfaces
-// block, so the two can be unified later without renaming.
+// src/allenamento/facce/tipi.ts — i tipi delle facce (F-004) sono ora quelli
+// del dominio mazzi: questo file è un semplice ri-export di
+// `src/mazzi/tipi.ts`, che è la sola dichiarazione di `Carta` e dei suoi
+// sotto-tipi (3.002). Fino al build dei mazzi le due copie convivevano; ora
+// non c'è più nulla da tenere allineato a mano.
+//
+// Due sole note sul ri-export:
+//   - `Direzione` qui sono gli otto punti cardinali di una cella o di un
+//     simbolo orientabile (`Cella.direzione`, `_context.md`); in
+//     `src/mazzi/tipi.ts` quel tipo si chiama `Direzione8`, perché lì
+//     `Direzione` è già la direzione di una *serie* (`'inversa'`). Il
+//     rinominamento tiene stabile l'API pubblica di `facce/index.ts`.
+//   - `Size` resta dichiarato qui: è una scelta di resa delle facce
+//     (FacciaCarta.prompt.md), non un tipo di contenuto.
 
-/** The eight compass points a symbol or a description-row cell can carry. */
-export type Direzione = 'N' | 'NE' | 'E' | 'SE' | 'S' | 'SW' | 'W' | 'NW';
+export type {
+  Artwork,
+  Carta,
+  Cella,
+  Direzione8 as Direzione,
+  Esempio,
+  Geometria,
+  RigaDescrizione,
+  TipoCarta,
+} from '../../mazzi/tipi.ts';
 
-/** ISOM area/line/point/text geometry letter (content model, 3.002). */
-export type Geometria = 'L' | 'P' | 'A' | 'T';
-
-export type Artwork = {
-  path: string;
-  formato: 'svg' | 'png';
-  origine: 'S4' | 'S5' | 'S3';
-  sha256: string;
-};
-
-/** One RigaDescrizione cell (C, D, E, G, H): a symbol reference. */
-export type Cella = { rif: string; direzione?: Direzione };
-
-export type RigaDescrizione = {
-  id: string;
-  codice: string;
-  /** The printed row number; absent ("—" on the front) for generated rows. */
-  numero?: string;
-  celle: {
-    C?: Cella;
-    D?: Cella;
-    E?: Cella;
-    /** F is a symbol, a literal dimension ("1.0", "5x5"), or empty. */
-    F?: Cella | string;
-    G?: Cella;
-    H?: Cella;
-  };
-  testo: string;
-  origine: 'ufficiale' | 'generata';
-};
-
-export type Esempio = {
-  codice: string;
-  pagina: number;
-  famiglia: string;
-  testo: string;
-  carta: string;
-  terreno: string;
-  riga: string;
-  nascondi?: boolean;
-};
-
+/** La densità con cui una faccia è resa: carta intera, tessera del quiz, riga di elenco. */
 export type Size = 'carta' | 'tile' | 'lista';
-export type TipoCarta = 'simbolo' | 'riga' | 'esempio' | 'simbolo-isom';
-
-export type Carta = {
-  id: string;
-  mazzo: string;
-  tipo: TipoCarta;
-  sezione: string;
-  // Exactly one of these is set, matching `tipo`.
-  simbolo?: { rif: string; nome: string; descrizione: string; artwork: Artwork; direzione?: Direzione };
-  riga?: RigaDescrizione;
-  esempio?: Esempio;
-  isom?: {
-    rif: string;
-    nome: string;
-    geometria: Geometria;
-    descrizione: string;
-    artwork: Artwork;
-    /** Section label (e.g. "Rocce e sassi") — the ISOM back's "section" line. */
-    sezione: string;
-  };
-};
