@@ -210,8 +210,8 @@ test.describe('S-003 — Descrizioni complete: leggere una riga e riconoscerla d
     // Il fronte è la griglia stampata (F-004 AC-2, guardata a pixel da
     // e2e/riga.pixel.spec.ts): qui si verifica solo il contenuto delle
     // celle A e B, che identificano la riga ufficiale 2.
-    await expect(page.locator('.riga.carta > div').nth(0)).toHaveText('2', { exact: true });
-    await expect(page.locator('.riga.carta > div').nth(1)).toHaveText('212', { exact: true });
+    await expect(page.locator('.riga.carta > div').nth(0)).toHaveText('2');
+    await expect(page.locator('.riga.carta > div').nth(1)).toHaveText('212');
 
     // step 4 — Taps to flip
     await cartaCorrente(page).click();
