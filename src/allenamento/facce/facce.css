@@ -1,0 +1,69 @@
+/* src/allenamento/facce/facce.css — the description-row grid
+   (RigaDescrizione.prompt.md) and the plain-image treatment (FacciaCarta.prompt.md),
+   matching the printed page-3 proportions: see the artboards
+   akaaso/06-design/_artboards/[mazzo].flashcard(.retro).dc.html.
+   All colours via design-system tokens; type via var(--font-sans) only
+   (F-004 AC-4: no hex colours, no bare typeface names). */
+
+.riga {
+  display: grid;
+  grid-template-columns: 0.8fr repeat(7, 1fr);
+  border: 1.5px solid var(--gray-800);
+  background: var(--white);
+}
+
+.riga > div {
+  aspect-ratio: 1 / 1;
+  border-right: 1.5px solid var(--gray-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.riga > div:last-child {
+  border-right: 0;
+}
+
+.riga svg {
+  width: 72%;
+  height: 72%;
+  color: var(--gray-800);
+}
+
+/* Sizes: the grid is 7.8 "fr" units wide (0.8fr for A + 7 × 1fr for B–H);
+   these max-widths cap each unit at ≈40/26/20 px while staying fluid (the
+   grid still shrinks to 100% of a narrower container). */
+.riga.carta {
+  max-width: 312px;
+}
+
+.riga.carta > div {
+  font-size: 16px;
+}
+
+.riga.tile {
+  max-width: 203px;
+}
+
+.riga.tile > div {
+  font-size: 11px;
+}
+
+.riga.lista {
+  max-width: 156px;
+}
+
+.riga.lista > div {
+  font-size: 9px;
+}
+
+.img-bianco {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  object-fit: contain;
+  display: block;
+}

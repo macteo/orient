@@ -11,6 +11,9 @@
 @import "../design-system/tokens/spacing.css";
 @import "../design-system/tokens/shadows.css";
 
+/* Card faces (F-004): the description-row grid and the plain-image treatment. */
+@import "./allenamento/facce/facce.css";
+
 /* Self-hosted fonts (no CDN, no Google Fonts). */
 @import "@fontsource-variable/inter";
 @import "@fontsource/jetbrains-mono/400.css";
