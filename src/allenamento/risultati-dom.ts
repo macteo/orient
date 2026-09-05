@@ -94,14 +94,22 @@ function etichettaSezione(id: string, sezioni: Sezione[]): string {
 }
 
 /** `sezioni: []` in un `Risultato` vuol dire "nessun filtro": tutto il mazzo. */
+/** Un run senza filtro: nessuna sezione salvata, oppure tutte quelle del mazzo (il run page salva l'elenco completo). */
+export function sonoTutte(ids: string[], sezioni: Sezione[]): boolean {
+  if (ids.length === 0) return true;
+  if (sezioni.length === 0) return false;
+  const scelte = new Set(ids);
+  return sezioni.every((s) => scelte.has(s.id));
+}
+
 export function elencoSezioni(ids: string[], sezioni: Sezione[]): string {
-  if (ids.length === 0) return 'tutte le sezioni';
+  if (sonoTutte(ids, sezioni)) return 'tutte le sezioni';
   return ids.map((id) => etichettaSezione(id, sezioni)).join(', ');
 }
 
 /** Il titolo del run in testa alla schermata: `<mazzo> · <sezioni>`, o `N sezioni` oltre due. */
 export function titoloSerie(nomeMazzo: string, ids: string[], sezioni: Sezione[]): string {
-  if (ids.length === 0) return `${nomeMazzo} · tutte le sezioni`;
+  if (sonoTutte(ids, sezioni)) return `${nomeMazzo} · tutte le sezioni`;
   if (ids.length > 2) return `${ids.length} sezioni`;
   return `${nomeMazzo} · ${elencoSezioni(ids, sezioni)}`;
 }

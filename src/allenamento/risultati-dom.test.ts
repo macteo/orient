@@ -132,11 +132,17 @@ describe('elencoSezioni / titoloSerie', () => {
     { id: 'a', etichetta: 'Alfa', carte: [] },
     { id: 'b', etichetta: 'Beta', carte: [] },
     { id: 'c', etichetta: 'Gamma', carte: [] },
+    { id: 'd', etichetta: 'Delta', carte: [] },
   ];
 
   it('array vuoto: "tutte le sezioni" (nessun filtro)', () => {
     expect(elencoSezioni([], sezioni)).toBe('tutte le sezioni');
     expect(titoloSerie('Mazzo', [], sezioni)).toBe('Mazzo · tutte le sezioni');
+  });
+
+  it('tutte le sezioni del mazzo salvate per esteso: ancora "tutte le sezioni"', () => {
+    expect(elencoSezioni(['a', 'b', 'c', 'd'], sezioni)).toBe('tutte le sezioni');
+    expect(titoloSerie('Mazzo', ['d', 'c', 'b', 'a'], sezioni)).toBe('Mazzo · tutte le sezioni');
   });
 
   it('una o due sezioni: elencate per etichetta', () => {
@@ -154,7 +160,10 @@ describe('elencoSezioni / titoloSerie', () => {
 });
 
 describe('descriviRun', () => {
-  const sezioni: Sezione[] = [{ id: 'colonna-g', etichetta: 'Colonna G', carte: [] }];
+  const sezioni: Sezione[] = [
+    { id: 'colonna-g', etichetta: 'Colonna G', carte: [] },
+    { id: 'colonna-h', etichetta: 'Colonna H', carte: [] },
+  ];
 
   it('flash card su tutte le sezioni', () => {
     expect(descriviRun(risultato({ modo: 'flashcard', sezioni: [], viste: 12 }), sezioni)).toBe('flash card · tutte le sezioni · 12 carte');
