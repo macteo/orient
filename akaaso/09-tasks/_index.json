@@ -168,7 +168,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "S",
       "branch": "task/p1-contenuti-tool-parse-isom",
@@ -189,6 +189,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:18:36.964Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:18:37.009Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-parse-isom, sha: 5a85f19; 107 simboli, 46 esclusi"
         }
       ],
       "notes": null
