@@ -78,13 +78,13 @@ describe('fixture: riga ufficiale che cita un rif sconosciuto', () => {
 describe('fixture: riga generata modificata a mano', () => {
   it('segnala la cella corrotta di una riga origine "generata"', async () => {
     const contentDir = copiaFixture('riga-generata-modificata');
-    const { broken, skipped } = await checkRighe(contentDir);
+    const { broken } = await checkRighe(contentDir);
     expect(broken.some((b) => b.startsWith('BROKEN righe generate: riga dc:gen:0001 cita 0.1 in colonna D'))).toBe(true);
-    // La rigenerazione byte-per-byte non è ancora disponibile in questo
-    // repository (scripts/lib/righe-regole.ts non esiste finché
-    // P1-CONTENUTI-TOOL-generate-righe non atterra): il confronto viene
-    // saltato, non fallisce silenziosamente né va in errore.
-    expect(skipped.some((s) => s.includes('scripts/lib/righe-regole.ts assente'))).toBe(true);
+    // Ora che scripts/lib/righe-regole.ts esiste (P1-CONTENUTI-TOOL-generate-righe),
+    // il confronto byte-per-byte non viene più saltato: rigenera la riga 1 con lo
+    // stesso count/seed dell'intestazione della fixture dal content/ reale (questa
+    // funzione non prende un contentDir) e la trova diversa dalla cella corrotta.
+    expect(broken.some((b) => b.includes('generate.json diverso dalla rigenerazione'))).toBe(true);
   });
 });
 
