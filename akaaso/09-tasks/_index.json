@@ -1080,7 +1080,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-e2e-journey-righe-complete",
@@ -1105,6 +1105,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:29:23.865Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:29:23.913Z",
+          "event": "merged",
+          "note": "branch: task/p1-e2e-journey-righe-complete, sha: 744c5a3; 4 tests + 2 skipped with reasons"
         }
       ],
       "notes": null
