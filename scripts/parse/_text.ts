@@ -42,11 +42,28 @@ export function pagine(text: string): Pagina[] {
  * extraction wrapped across multiple source lines.
  */
 export function unisciRighe(lines: string[]): string {
-  return lines
-    .map((riga) => riga.trim())
-    .filter((riga) => riga.length > 0)
-    .join(' ');
+  const pulite = lines.map((riga) => riga.trim()).filter((riga) => riga.length > 0);
+  let testo = '';
+  for (const riga of pulite) {
+    if (testo === '') { testo = riga; continue; }
+    const spezzata = /([A-Za-zÀ-ÿ]+)-$/.exec(testo);
+    if (spezzata && /^[a-zà-ÿ]/.test(riga)) {
+      // The PDF broke a word at a line end. Rejoin it, keeping the hyphen only
+      // for compounds whose first half is a known prefix (nord-ovest, semi-aperto).
+      const prefisso = spezzata[1].toLowerCase();
+      testo = PREFISSI_COMPOSTI.has(prefisso) ? testo + riga : testo.slice(0, -1) + riga;
+    } else {
+      testo += ' ' + riga;
+    }
+  }
+  return testo;
 }
+
+/** First halves of Italian compounds that legitimately keep their hyphen at a line break. */
+const PREFISSI_COMPOSTI = new Set([
+  'nord', 'sud', 'est', 'ovest', 'semi', 'non', 'ex', 'anti', 'auto', 'contro', 'pre', 'post',
+  'pseudo', 'sotto', 'sopra', 'inter', 'intra', 'micro', 'macro', 'multi', 'mono',
+]);
 
 /** Returns the lowercase hex SHA-256 digest of a buffer. */
 export function sha256(buffer: Uint8Array): string {

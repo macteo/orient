@@ -273,7 +273,7 @@ function estraiRigheGrezze(whitelist: Set<string>): RigaGrezza[] {
 // 3. Nomi curati (la metà "Definizione" di ogni riga — vedi la nota in testa
 //    al file sul perché non è ricavabile dalla sola posizione del testo).
 //    Ogni valore è la forma esatta che unisciRighe() produce dal sorgente
-//    (compresi gli artefatti "parola- spezzata" degli a capo a metà parola:
+//    (compresi gli artefatti "parolaspezzata" degli a capo a metà parola:
 //    unisciRighe unisce le righe con uno spazio, senza togliere il trattino).
 // ---------------------------------------------------------------------------
 
@@ -282,24 +282,24 @@ const NOMI: Record<string, string> = {
   '1.1': 'Terrazzo', '1.2': 'Naso', '1.3': 'Rientranza', '1.4': 'Scarpata ripida', '1.5': 'Cava',
   '1.6': 'Muro di terra', '1.7': 'Fossa', '1.8': 'Piccola fossa', '1.9': 'Collina', '1.10': 'Collinetta',
   '1.11': 'Sella', '1.12': 'Depressione', '1.13': 'Buca', '1.14': 'Buca profonda',
-  '1.15': 'Terreno acciden- tato', '1.16': 'Formicaio (termitaio)',
+  '1.15': 'Terreno accidentato', '1.16': 'Formicaio (termitaio)',
   '2.1': 'Roccia, parete rocciosa', '2.2': 'Torre di roccia, spuntone', '2.3': 'Caverna', '2.4': 'Sasso',
-  '2.5': 'Sassaia', '2.6': 'Gruppo di sassi', '2.7': 'Terreno pietro- so/sassoso', '2.8': 'Roccia nuda',
+  '2.5': 'Sassaia', '2.6': 'Gruppo di sassi', '2.7': 'Terreno pietroso/sassoso', '2.8': 'Roccia nuda',
   '2.9': 'Passaggio stretto',
   '3.1': 'Lago', '3.2': 'Stagno', '3.3': 'Buca profonda con acqua',
   '3.4': 'Fiume, ruscello, corso d’acqua', '3.5': 'Piccolo canale, rigagnolo',
   '3.6': 'Striscia di palude', '3.7': 'Palude', '3.8': 'Isola in una palude', '3.9': 'Fontana',
   '3.10': 'Sorgente', '3.11': 'Cisterna d’acqua, pozzo, abbeveratoio',
   '4.1': 'Terreno aperto, campo', '4.2': 'Terreno semi-aperto', '4.3': 'Angolo di bosco', '4.4': 'Radura',
-  '4.5': 'Boschetto fitto', '4.6': 'Boschetto fitto, lineare', '4.7': 'Limite di vege- tazione',
-  '4.8': 'Gruppo d’alberi', '4.9': 'Albero parti- colare', '4.10': 'Ceppo, radice',
+  '4.5': 'Boschetto fitto', '4.6': 'Boschetto fitto, lineare', '4.7': 'Limite di vegetazione',
+  '4.8': 'Gruppo d’alberi', '4.9': 'Albero particolare', '4.10': 'Ceppo, radice',
   '5.1': 'Strada', '5.2': 'Sentiero, pista', '5.3': 'Taglio di bosco', '5.4': 'Ponte',
   '5.5': 'Linea elettrica', '5.6': 'Pilone di linea elettrica', '5.7': 'Galleria', '5.8': 'Muro in pietra',
-  '5.9': 'Recinto', '5.10': 'Punto di passaggio', '5.11': 'Edificio', '5.12': 'Area pavimen- tata',
-  '5.13': 'Rovina, rudere', '5.14': 'Condotta', '5.15': 'Torre', '5.16': 'Posta del cac- ciatore',
-  '5.17': 'Cippo di con- fine, tumulo di pietre', '5.18': 'Mangiatoia', '5.19': 'Carbonaia',
+  '5.9': 'Recinto', '5.10': 'Punto di passaggio', '5.11': 'Edificio', '5.12': 'Area pavimentata',
+  '5.13': 'Rovina, rudere', '5.14': 'Condotta', '5.15': 'Torre', '5.16': 'Posta del cacciatore',
+  '5.17': 'Cippo di confine, tumulo di pietre', '5.18': 'Mangiatoia', '5.19': 'Carbonaia',
   '5.20': 'Monumento o statua', '5.23': 'Sottopassaggio', '5.24': 'Scala',
-  '6.1': 'Oggetto parti- colare', '6.2': 'Oggetto parti- colare',
+  '6.1': 'Oggetto particolare', '6.2': 'Oggetto particolare',
   '8.1': 'Basso', '8.2': 'Piatto, poco profondo', '8.3': 'Profondo',
   '8.4': 'Ricoperto di sterpi, «verde»', '8.5': 'Aperto', '8.6': 'Roccioso, sassoso',
   '8.7': 'Paludoso', '8.8': 'Sabbioso', '8.9': 'Conifera', '8.10': 'Latifoglia',
