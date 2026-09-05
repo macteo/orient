@@ -137,7 +137,7 @@
       "module": "contenuti",
       "phase": 1,
       "layer": "Content",
-      "status": "todo",
+      "status": "done",
       "wave": 0,
       "effort": "M",
       "branch": "task/p1-contenuti-tool-parse-descrizioni",
@@ -158,6 +158,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T10:23:42.438Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T10:23:42.483Z",
+          "event": "merged",
+          "note": "branch: task/p1-contenuti-tool-parse-descrizioni, sha: 64d8b4c; 115 simboli, 176 svg"
         }
       ],
       "notes": null
