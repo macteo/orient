@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orient.example/content/schema/righe.schema.json",
+  "title": "Righe",
+  "description": "Righe di descrizione dei punti (colonne C-H): le nove ufficiali della pagina 3 e, in seguito, quelle generate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "sorgente", "pagina", "righe"],
+  "properties": {
+    "v": { "const": 1 },
+    "sorgente": { "type": "string", "minLength": 1 },
+    "pagina": { "type": "integer", "minimum": 1 },
+    "righe": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/riga" }
+    }
+  },
+  "$defs": {
+    "direzione": {
+      "type": "string",
+      "enum": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+    },
+    "cella": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rif"],
+      "properties": {
+        "rif": { "type": "string", "minLength": 1 },
+        "direzione": { "$ref": "#/$defs/direzione" }
+      }
+    },
+    "cellaF": {
+      "oneOf": [
+        { "$ref": "#/$defs/cella" },
+        { "type": "string", "minLength": 1 }
+      ]
+    },
+    "celle": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "C": { "$ref": "#/$defs/cella" },
+        "D": { "$ref": "#/$defs/cella" },
+        "E": { "$ref": "#/$defs/cella" },
+        "F": { "$ref": "#/$defs/cellaF" },
+        "G": { "$ref": "#/$defs/cella" },
+        "H": { "$ref": "#/$defs/cella" }
+      }
+    },
+    "riga": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "codice", "celle", "testo", "origine"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^dc:(ufficiale|gen):[0-9]+$" },
+        "numero": { "type": "string", "minLength": 1 },
+        "codice": { "type": "string", "minLength": 1 },
+        "celle": { "$ref": "#/$defs/celle" },
+        "testo": { "type": "string", "minLength": 1 },
+        "origine": { "type": "string", "enum": ["ufficiale", "generata"] }
+      }
+    }
+  }
+}
