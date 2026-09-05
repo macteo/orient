@@ -1046,7 +1046,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "M",
       "branch": "task/p1-e2e-journey-quiz-con-ripasso",
@@ -1070,6 +1070,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:43:40.734Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:43:40.777Z",
+          "event": "merged",
+          "note": "branch: task/p1-e2e-journey-quiz-con-ripasso, sha: 0f6be7f; two app findings fixed on develop"
         }
       ],
       "notes": null
@@ -1170,7 +1180,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 5,
       "effort": "S",
       "branch": "develop",
@@ -1189,6 +1199,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T12:43:40.809Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:43:40.841Z",
+          "event": "gate",
+          "note": "final gate: npm test 205 passed; tsc clean; check:content 9 OK; build /orient/ + check:dist 3 OK; full Playwright 65 passed, 2 skipped with reasons; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"
