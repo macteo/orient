@@ -12,7 +12,7 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 - ☑ **P1-CONTENUTI-TOOL-parse-descrizioni** — Parse control-description tables, vendor pictogram SVGs (Content, M)
 - ☑ **P1-CONTENUTI-TOOL-parse-isom** — Parse ISOM 2017-2 symbol list (Content, S)
 - ☑ **P1-SITO-CONFIG-scaffold** — Project scaffold: Vite + TS + Tailwind 4 + Preline 5 (Config, M)
-- ☐ **WAVE0-E2E-wave-gate** — Wave 0 post-merge gate (Test, S)
+- ☑ **WAVE0-E2E-wave-gate** — Wave 0 post-merge gate (Test, S)
 
 ## Wave 1 — 5 tasks + gate
 
