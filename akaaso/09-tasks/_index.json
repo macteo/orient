@@ -642,7 +642,7 @@
       "module": "mazzi",
       "phase": 1,
       "layer": "Build",
-      "status": "todo",
+      "status": "done",
       "wave": 3,
       "effort": "L",
       "branch": "task/p1-mazzi-build-decks-e-pagine",
@@ -676,6 +676,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T11:35:03.683Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:35:03.727Z",
+          "event": "merged",
+          "note": "branch: task/p1-mazzi-build-decks-e-pagine, sha: e820a3f; 14 pages, 538 artwork files via public/"
         }
       ],
       "notes": null
@@ -686,7 +696,7 @@
       "module": "Cross-cutting",
       "phase": 1,
       "layer": "Test",
-      "status": "todo",
+      "status": "done",
       "wave": 3,
       "effort": "S",
       "branch": "develop",
@@ -702,6 +712,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "gate"
+        },
+        {
+          "at": "2026-09-05T11:35:03.759Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T11:35:03.789Z",
+          "event": "gate",
+          "note": "check:content OK; npm test 125 passed; tsc clean; build ok under /orient/ (4 quiz pages, fonti); e2e:smoke 15 passed; 0 conflict markers"
         }
       ],
       "notes": "runs inline on develop after the wave's merges; never a spawned agent"

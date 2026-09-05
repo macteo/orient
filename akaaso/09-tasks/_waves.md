@@ -30,8 +30,8 @@ Wave N = every impl task whose dependencies all sit in waves 0..N-1. A gate task
 
 ## Wave 3 — 1 tasks + gate
 
-- ☐ **P1-MAZZI-BUILD-decks-e-pagine** — Assemble decks and emit the thirteen pages (Build, L)
-- ☐ **WAVE3-E2E-wave-gate** — Wave 3 post-merge gate (Test, S)
+- ☑ **P1-MAZZI-BUILD-decks-e-pagine** — Assemble decks and emit the thirteen pages (Build, L)
+- ☑ **WAVE3-E2E-wave-gate** — Wave 3 post-merge gate (Test, S)
 
 ## Wave 4 — 5 tasks + gate
 
