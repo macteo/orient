@@ -779,7 +779,7 @@
       "module": "allenamento",
       "phase": 1,
       "layer": "UI",
-      "status": "todo",
+      "status": "done",
       "wave": 4,
       "effort": "M",
       "branch": "task/p1-allenamento-ui-quiz",
@@ -806,6 +806,16 @@
           "at": "2026-09-05T09:39:34.964Z",
           "event": "created",
           "note": "unpacked from the akaaso spec"
+        },
+        {
+          "at": "2026-09-05T12:00:45.616Z",
+          "event": "status",
+          "note": "done"
+        },
+        {
+          "at": "2026-09-05T12:00:45.662Z",
+          "event": "merged",
+          "note": "branch: task/p1-allenamento-ui-quiz, sha: 88de305"
         }
       ],
       "notes": null
