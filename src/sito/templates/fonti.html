@@ -1,9 +1,13 @@
 <!doctype html>
-<!-- Template della pagina fonti e licenze (R-005). `scripts/build-mazzi.ts` la
-     emette in `.generated/pages/fonti/index.html`, sostituendo i segnaposto
+<!-- Template della pagina fonti e licenze (R-005, D-005). `scripts/build-mazzi.ts`
+     la emette in `.generated/pages/fonti/index.html`, sostituendo i segnaposto
      {{…}}; il registro delle licenze (`content/fonti.json`) è inlinato in
-     `#fonti`. I testi delle licenze (`content/licenze/*`) li importa la pagina
-     con `?raw`. -->
+     `#fonti`. La pagina è uno schermo autosufficiente come nell'artboard
+     (`_artboards/fonti.dc.html`): niente header/footer di sito qui — il link
+     "← Mazzi", l'elenco delle fonti, la barra di contatto e il testo della
+     licenza BSD li rende `src/pages/fonti.ts` dentro `#app`, così il Button
+     di contatto resta l'ultimo elemento attivabile della pagina. I testi
+     delle licenze (`content/licenze/*`) li importa quel modulo con `?raw`. -->
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
@@ -11,21 +15,8 @@
     <meta name="description" content="Fonti, attribuzioni e licenze del materiale usato da orient." />
     <title>{{TITOLO_DOCUMENTO}}</title>
   </head>
-  <body class="flex min-h-screen flex-col">
-    <header class="border-b" style="border-color: var(--gray-200); background: var(--white);">
-      <div class="mx-auto flex w-full max-w-2xl items-baseline gap-3 px-4 py-4">
-        <a href="{{RADICE}}" class="text-xl font-bold tracking-tight" style="color: var(--gray-800);">orient</a>
-        <span class="text-sm" style="color: var(--gray-500);">Fonti e licenze</span>
-      </div>
-    </header>
-
-    <main id="app" class="mx-auto w-full max-w-2xl flex-1 px-4 py-5" data-titolo="{{TITOLO}}"></main>
-
-    <footer class="border-t" style="border-color: var(--gray-200); background: var(--white);">
-      <div class="mx-auto w-full max-w-2xl px-4 py-4 text-sm" style="color: var(--gray-500);">
-        <a href="{{RADICE}}">Home</a>
-      </div>
-    </footer>
+  <body>
+    <main id="app" data-titolo="{{TITOLO}}"></main>
 
     <script type="application/json" id="fonti">{{FONTI}}</script>
     <script type="module" src="/src/pages/fonti.ts"></script>
