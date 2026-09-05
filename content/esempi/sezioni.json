@@ -1,0 +1,20 @@
+{
+  "v": 1,
+  "generato": "2026-09-05",
+  "sorgente": "S3",
+  "nota": "Le pagine 17 – 28 di S3 percorrono la colonna D nel suo ordine (oggetti morfologici, rocce e sassi, idrografia, vegetazione, costruzioni, oggetti particolari), quindi ogni pagina è assegnata alla famiglia della maggioranza delle sue righe, leggendo le \"Descrizione con testo\". Tre pagine sono a cavallo di due famiglie e la maggioranza decide: pagina 20 apre con \"Formicaio\" (1.16, morfologici) e prosegue con le rocce; pagina 24 apre con \"Sorgente\" e \"Cisterna d’acqua\" (3.10 e 3.11, idrografia) e prosegue con la vegetazione; pagina 25 apre con \"Limite di vegetazione\", \"Gruppo d’alberi\", \"Albero particolare\" e \"Radice\" (4.7 – 4.10, vegetazione) e prosegue con strade e sentieri (costruzioni). La famiglia \"d-particolari\" (6.1, 6.2) non compare: S3 non ne dà esempi.",
+  "pagine": {
+    "17": "d-morfologici",
+    "18": "d-morfologici",
+    "19": "d-morfologici",
+    "20": "d-rocce",
+    "21": "d-rocce",
+    "22": "d-idrografia",
+    "23": "d-idrografia",
+    "24": "d-vegetazione",
+    "25": "d-costruzioni",
+    "26": "d-costruzioni",
+    "27": "d-costruzioni",
+    "28": "d-costruzioni"
+  }
+}
