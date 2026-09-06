@@ -31,7 +31,9 @@ sentence is shown and she picks the right row among four.
 ## Preconditions
 
 - `righe/ufficiali.json` has the nine page-3 rows; `righe/generate.json`
-  has two hundred generated rows, `check:content` green.
+  has the generated rows (two hundred at v1, five hundred since 2026-09-06 —
+  the journey reads every count from the build, never from prose),
+  `check:content` green.
 - Storage empty or not; irrelevant.
 
 ## Journey Steps
@@ -40,9 +42,9 @@ sentence is shown and she picks the right row among four.
 |---|-------------|------------|--------|---------------|-----------|---------|---------------|
 | 1 | Opens the site, opens the deck *Descrizioni complete* | R-001 (/) | D-001 | entry point | — | sito | deck shows sections *Ufficiali* (9) and the D families with generated counts |
 | 2 | Keeps *Ufficiali* and *Rocce e sassi*, flash card, chip *8* | R-001 | D-001 | change the picker | — | sito | button *Inizia · 8 carte* |
-| 3 | Taps *Inizia* | R-002 (/descrizioni-complete/flashcard/?sezioni=ufficiali,d-rocce&carte=8) | D-002 | tap "Inizia" in modalità Flash card | — | allenamento, mazzi | run of 8: official rows first, then generated; front = `riga` face: eight bordered cells, A `2`, B `212`, C `0.2NW`, D `2.4`, F `1.0`, G `11.1E` |
-| 4 | Taps to flip | R-002 | D-002 | tap the card | — | allenamento | back: row small, sentence *Sasso nord ovest, 1 m d'altezza, lato est*, no badge |
-| 5 | Grades, continues to a generated row, flips | R-002 | D-002 | tap "Lo sapevo" or "Non lo sapevo" | — | allenamento | next card; its back shows the template sentence and the *generata* badge |
+| 3 | Taps *Inizia* | R-002 (/descrizioni-complete/flashcard/?sezioni=ufficiali,d-rocce&carte=8) | D-002 | tap "Inizia" in modalità Flash card | — | allenamento, mazzi | run of 8 drawn from the two sections, in the app's seeded shuffle order (read back from `orient.serie.v1`); front = `riga` face: eight bordered cells, A the row number (`—` when generated), B the code — for official row 2: `2`, `212`, C `0.2NW`, D `2.4`, F `1.0`, G `11.1E` |
+| 4 | Taps to flip | R-002 | D-002 | tap the card | — | allenamento | back: row small, the row's sentence verbatim from `righe/*.json` (row 2: *Sasso nord ovest, 1 m d'altezza, lato est*); badge only when generated |
+| 5 | Grades, continues through the run, flipping every card | R-002 | D-002 | tap "Lo sapevo" or "Non lo sapevo" | — | allenamento | each back shows its sentence verbatim; a generated row's back shows the template sentence and the *generata* badge (the `retro` variant guarantees one of each) |
 | 6 | Finishes the run | R-004 (/descrizioni-complete/risultati/) | D-004 | completion of the run | — | allenamento | `Risultato` for `descrizioni-complete` |
 | 7 | Taps *Torna ai mazzi* | R-001 (/) | D-001 | tap "Torna ai mazzi" | — | sito | home with the deck's last score |
 | 8 | Same deck, *Quiz*, *Nome → simbolo* | R-001 | D-001 | change the picker | — | sito | direction pills shown; reverse selected |
@@ -60,14 +62,22 @@ sentence is shown and she picks the right row among four.
 
 | Variant | Trigger | Expected behavior |
 |---------|---------|-------------------|
-| `retro` | Flip | Sentence and small row; badge only on generated rows |
+| `retro` | Flip — one run on *Ufficiali* alone, one on *Rocce e sassi* alone (all generated) | Sentence and small row; badge only on generated rows, whatever the shuffle |
 | `verdetto` | Tile picked | Marks and panel; the panel shows the right sentence |
 | Only generated sections | *Ufficiali* unchecked | Run has no official row; all backs carry the badge |
 | `empty` | `?sezioni=d-particolari` on a build where no generated row landed there | Empty state, link to R-001 |
-| Deck grown | Curator regenerated with count 400 (S-008) | Section counts on the home rise; card ids of the first 200 unchanged; earlier results still resolve |
+| Deck grown | Curator regenerated with a higher count (S-008; done 2026-09-06 with count 500) | Section counts on the home rise; card ids of the first 200 unchanged; earlier results still resolve; the journey still passes because it pins no card order |
 
 ## E2E Mapping
 
 - **Test name:** journey-righe-complete
 - **Tier:** @critical
-- **Seeding:** built site with the v1 `generate.json` (count 200, recorded seed); test-only RNG seed for the run
+- **Seeding:** built site with the current `generate.json` (count 500 since 2026-09-06, seed 20260905); test-only RNG seed for the run; the run's card order is read from `orient.serie.v1`, so the test never pins which row comes first
+
+## Change log
+
+- 2026-09-06 — Deck grown from 200 to 500 generated rows. The journey used
+  to pin seed 7's first two cards (official row 2, then `dc:gen:0006`); a
+  bigger pool reshuffles the same seed, so it now reads the run order from
+  storage and checks every card against `righe/*.json`. The `retro` variant
+  runs once per section type to keep the official/generated pair covered.

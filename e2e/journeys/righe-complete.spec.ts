@@ -14,16 +14,16 @@
 // di ricostruire l'URL a mano: la corsa che ne segue è quella che l'utente
 // otterrebbe, solo riproducibile.
 //
-// Il seme 7 sulle sole sezioni "Ufficiali" + "Rocce e sassi" (39 carte) è
-// stato scelto perché con `content/righe/ufficiali.json` e
-// `content/righe/generate.json` correnti la prima carta mescolata è
-// `dc:ufficiale:2` (la riga ufficiale 2, quella del test a pixel
-// `e2e/riga.pixel.spec.ts`) e la seconda è una riga generata
-// (`dc:gen:0006`) — esattamente la coppia "ufficiale poi generata" che lo
-// step 5 della storia richiede. Non è una proprietà dell'app ("le ufficiali
-// vengono prima" vale solo per il pool prima del mescolamento, non per
-// l'ordine della corsa): è stato trovato mescolando `content/righe/*.json`
-// con lo stesso RNG (mulberry32) fuori da Playwright, poi fissato qui.
+// Il seme (`?seme=7` per le flash card, `3` per il quiz) rende la corsa
+// riproducibile, ma il test NON fissa quale carta esca per prima: l'ordine
+// mescolato dall'app viene riletto da `localStorage.orient.serie.v1`
+// (`Serie.carte`) e ogni carta è confrontata con `content/righe/*.json`
+// (celle A/B sul fronte, frase verbatim e badge sul retro). Così la storia
+// regge anche quando il curatore rigenera più righe (Variant "Deck grown":
+// 200 → 500 il 2026-09-06) e il mescolamento dello stesso seme cambia. La
+// coppia "ufficiale poi generata" che la storia vuole vedere è garantita
+// dalla Variant `retro`, che corre una volta sulle sole *Ufficiali* e una
+// sulle sole *Rocce e sassi* (tutte generate), qualunque sia l'ordine.
 
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -37,10 +37,41 @@ const MAZZO_ID = 'descrizioni-complete';
 const NOME_MAZZO = 'Descrizioni complete';
 const CHIAVE_RISULTATI = 'orient.risultati.v1';
 
-// La stessa frase con l'apostrofo tipografico U+2019 di content/righe/ufficiali.json
-// (riga 2) e content/righe/generate.json (dc:gen:0006) — verbatim, mai parafrasata.
-const FRASE_UFFICIALE_2 = 'Sasso nord ovest, 1 m d’altezza, lato est';
-const FRASE_GENERATA_0006 = 'Terreno pietroso/sassoso superiore, estremità ovest';
+const CHIAVE_SERIE = 'orient.serie.v1';
+
+// ------------------------------------------------------------ righe reali
+
+type RigaContenuto = {
+  id: string;
+  numero?: string;
+  codice: string;
+  testo: string;
+  origine: 'ufficiale' | 'generata';
+};
+
+/**
+ * Le righe del mazzo, lette dagli stessi file che il build inlina
+ * (content/righe/ufficiali.json e generate.json): le frasi sono confrontate
+ * verbatim (apostrofo tipografico U+2019 compreso), mai parafrasate.
+ */
+function leggiRighe(): Map<string, RigaContenuto> {
+  const righe = new Map<string, RigaContenuto>();
+  for (const nome of ['ufficiali.json', 'generate.json']) {
+    const documento = JSON.parse(readFileSync(join(RADICE, 'content/righe', nome), 'utf8')) as
+      | RigaContenuto[]
+      | { righe: RigaContenuto[] };
+    for (const riga of Array.isArray(documento) ? documento : documento.righe) righe.set(riga.id, riga);
+  }
+  return righe;
+}
+
+const RIGHE = leggiRighe();
+
+function rigaDiContenuto(id: string): RigaContenuto {
+  const riga = RIGHE.get(id);
+  if (!riga) throw new Error(`journeys/righe-complete: la carta ${id} non è in content/righe/*.json`);
+  return riga;
+}
 
 // ------------------------------------------------------------ contenuto reale
 
@@ -125,9 +156,27 @@ function cartaCorrente(page: Page): Locator {
   return page.locator('[role="button"][aria-label^="Carta"]');
 }
 
-async function giraEVotaSapevo(page: Page): Promise<void> {
-  await cartaCorrente(page).click();
-  await page.getByRole('button', { name: 'Lo sapevo', exact: true }).click();
+/** L'ordine reale della corsa, come l'app l'ha mescolato e salvato (`Serie.carte`). */
+async function leggiOrdineSerie(page: Page): Promise<string[]> {
+  await expect(page.getByText(/^1 \/ \d+$/)).toBeVisible();
+  const grezzo = await page.evaluate((chiave) => window.localStorage.getItem(chiave), CHIAVE_SERIE);
+  if (!grezzo) throw new Error('journeys/righe-complete: nessuna serie in corso in localStorage');
+  return (JSON.parse(grezzo) as { carte: string[] }).carte;
+}
+
+/** Fronte: le celle A (numero, o "—" se generata) e B (codice) identificano la riga. */
+async function verificaFronte(page: Page, id: string): Promise<void> {
+  const riga = rigaDiContenuto(id);
+  await expect(page.locator('.riga.carta > div').nth(0)).toHaveText(riga.numero ?? '—');
+  await expect(page.locator('.riga.carta > div').nth(1)).toHaveText(riga.codice);
+}
+
+/** Retro: riga piccola, la frase verbatim del contenuto, badge `generata` solo se generata. */
+async function verificaRetro(page: Page, id: string): Promise<void> {
+  const riga = rigaDiContenuto(id);
+  await expect(page.locator('.riga.tile')).toBeVisible();
+  await expect(page.getByText(riga.testo, { exact: true })).toBeVisible();
+  await expect(page.getByText('generata', { exact: true })).toHaveCount(riga.origine === 'generata' ? 1 : 0);
 }
 
 async function leggiRisultati(page: Page): Promise<Risultato[]> {
@@ -207,30 +256,31 @@ test.describe('S-003 — Descrizioni complete: leggere una riga e riconoscerla d
       expect(url.searchParams.get('carte')).toBe('8');
     }
     await expect(page.getByText('1 / 8', { exact: true })).toBeVisible();
+    // L'ordine della corsa è quello che l'app ha mescolato (seme 7) e salvato:
+    // si legge da lì, e ogni carta si confronta con content/righe/*.json.
+    const ordine = await leggiOrdineSerie(page);
+    expect(ordine).toHaveLength(8);
+    expect(new Set(ordine).size).toBe(8);
+    test.info().annotations.push({ type: 'ordine', description: ordine.join(' ') });
     // Il fronte è la griglia stampata (F-004 AC-2, guardata a pixel da
     // e2e/riga.pixel.spec.ts): qui si verifica solo il contenuto delle
-    // celle A e B, che identificano la riga ufficiale 2.
-    await expect(page.locator('.riga.carta > div').nth(0)).toHaveText('2');
-    await expect(page.locator('.riga.carta > div').nth(1)).toHaveText('212');
+    // celle A e B, che identificano la riga.
+    await verificaFronte(page, ordine[0]);
 
     // step 4 — Taps to flip
     await cartaCorrente(page).click();
-    await expect(page.getByText(FRASE_UFFICIALE_2, { exact: true })).toBeVisible();
-    await expect(page.getByText('generata')).toHaveCount(0);
+    await verificaRetro(page, ordine[0]);
 
-    // step 5 — Grades, continues to a generated row, flips
-    await page.getByRole('button', { name: 'Lo sapevo', exact: true }).click();
-    await expect(page.getByText('2 / 8', { exact: true })).toBeVisible();
-    await cartaCorrente(page).click();
-    await expect(page.getByText(FRASE_GENERATA_0006, { exact: true })).toBeVisible();
-    await expect(page.getByText('generata')).toBeVisible();
-    await page.getByRole('button', { name: 'Lo sapevo', exact: true }).click();
-
-    // step 6 — Finishes the run
-    for (let i = 3; i <= 8; i += 1) {
-      await expect(page.getByText(`${i} / 8`, { exact: true })).toBeVisible();
-      await giraEVotaSapevo(page);
+    // step 5 / step 6 — Grades, continues through the run flipping every
+    // card (sentence verbatim, badge only on generated rows), finishes
+    for (let i = 1; i < 8; i += 1) {
+      await page.getByRole('button', { name: 'Lo sapevo', exact: true }).click();
+      await expect(page.getByText(`${i + 1} / 8`, { exact: true })).toBeVisible();
+      await verificaFronte(page, ordine[i]);
+      await cartaCorrente(page).click();
+      await verificaRetro(page, ordine[i]);
     }
+    await page.getByRole('button', { name: 'Lo sapevo', exact: true }).click();
     await page.waitForURL(/\/descrizioni-complete\/risultati\//);
     await expect(page.getByRole('heading', { name: 'Serie completata' })).toBeVisible();
     await expect(page.locator('[data-riga="punteggio"]')).toHaveText('8 / 8');
@@ -300,19 +350,26 @@ test.describe('S-003 — Descrizioni complete: leggere una riga e riconoscerla d
 test.describe('S-003 — Variant: retro', () => {
   test('flip: sentence and small row; badge only on generated rows', async ({ page }) => {
     const errori = osservaErrori(page);
-    await page.goto('descrizioni-complete/flashcard/?sezioni=ufficiali,d-rocce&carte=8&seme=7');
-
-    // Prima carta (seme 7): ufficiale — nessun badge, riga piccola sul retro.
-    await cartaCorrente(page).click();
-    await expect(page.locator('.riga.tile')).toBeVisible();
-    await expect(page.getByText(FRASE_UFFICIALE_2, { exact: true })).toBeVisible();
-    await expect(page.getByText('generata')).toHaveCount(0);
-
-    // Seconda carta (dopo un voto): generata — stesso layout, badge in più.
-    await page.getByRole('button', { name: 'Lo sapevo', exact: true }).click();
-    await cartaCorrente(page).click();
-    await expect(page.getByText(FRASE_GENERATA_0006, { exact: true })).toBeVisible();
-    await expect(page.getByText('generata')).toBeVisible();
+    // Una corsa sulle sole *Ufficiali* e una sulle sole *Rocce e sassi*
+    // (tutte generate): la prima carta di ciascuna è per costruzione del
+    // tipo voluto, qualunque sia il mescolamento — la variante non dipende
+    // dal seme né dal numero di righe generate.
+    const corse = [
+      { sezioni: 'ufficiali', origine: 'ufficiale' },
+      { sezioni: 'd-rocce', origine: 'generata' },
+    ] as const;
+    for (const [indice, corsa] of corse.entries()) {
+      if (indice > 0) {
+        // Chiude la corsa precedente, altrimenti l'app la riprenderebbe.
+        await page.evaluate((chiave) => window.localStorage.removeItem(chiave), CHIAVE_SERIE);
+      }
+      await page.goto(`descrizioni-complete/flashcard/?sezioni=${corsa.sezioni}&carte=8&seme=7`);
+      const [prima] = await leggiOrdineSerie(page);
+      expect(rigaDiContenuto(prima).origine).toBe(corsa.origine);
+      await verificaFronte(page, prima);
+      await cartaCorrente(page).click();
+      await verificaRetro(page, prima);
+    }
 
     expect(errori).toEqual([]);
   });
